@@ -20,19 +20,18 @@ The Redox rev.1 is the first available version of the Redox keyboard. Hardware a
 
 #### Bill-of-Materials
 
-  - **70**x Cherry MX compatible switches
-  - **2**x Redox PCBs
-  - **70**x 1N4148 diodes (SMD diodes can also be used)
-  - **2**x PJ-320A 4 Poles 3.5mm TRRS Connector
-  - **2**x 4.7k Ohm resistors (need to be soldered on one half only)
-  - **2**x Through hole momentary switch 6mm x 6mm x 4.3mm
-  - **2**x Arduino Pro Micro compatible microcontrollers 
-  - **70**x Cherry MX compatible keycaps
-    - **10**x 1.25u keycaps
-    - **6**x 1.5u keycaps
-    - **54**x 1u keycaps
-  - **1**x TRRS cable
-  - **1**x USB micro cable
+| Qty | Item                                          | Notes                                               |
+|----:|-----------------------------------------------|-----------------------------------------------------|
+|  70 | Cherry MX compatible switches                 |                                                     |
+|   2 | Redox PCBs                                    |                                                     |
+|  70 | 1N4148 diodes                                 | SMD diodes can also be used                         |
+|   2 | PJ-320A 4 poles 3.5 mm TRRS connectors        |                                                     |
+|   2 | 4.7 kOhm resistors                            | Need to be soldered on one half only                |
+|   2 | Through hole momentary switch                 | Dimensions 6mm x 6mm x 4.3mm                        |
+|   2 | Arduino Pro Micro compatible microcontrollers |                                                     |
+|   1 | TRRS cable                                    |                                                     |
+|   1 | USB micro cable                               |                                                     |
+|  70 | Cherry MX compatible keycaps                  | 10x 1.25u keycaps, 6x 1.5u keycaps, 54x 1u keycaps, |
 
 #### Assembly
 
