@@ -6,14 +6,15 @@
 
 The Redox project is an open-source, [QMK (Quantum Mechanical Keyboard Firmware)](https://github.com/qmk/qmk_firmware) powered, ergonomic split mechanical keyboard. This repository will be used to share information about the project and instruction on how to use and assembly the Redox keyboard.
 
-**Designer bio**: [Mattia Dal Ben (aka u/TiaMaT102)](mailto:matthewdibi@gmail.com) obtained a master's degree in Electronic Engineering with a specialization in Computer Science at the University of Udine. Currently works as a Software Engineer in R&D department for a big IoT and Embedded Computers company. Mechanical keyboard enthusiast and maker, the Redox keyboard is the result of all of his passions.
+**Designer's bio**: [Mattia Dal Ben (aka u/TiaMaT102)](mailto:matthewdibi@gmail.com) obtained a master's degree in Engineering Electronics with a specialization in Computer Science at the University of Udine. Currently works as a Software Engineer in R&D department for a big IoT and Embedded Computers company. Mechanical keyboard enthusiast and maker, the Redox keyboard is the result of all of his passions.
 
 
 ## Related projects
 
-- [Redox prototype](https://www.thingiverse.com/thing:2704567): handwired 3D printed Redox prototype. Freely available.
-- [Tilted Redox case](https://www.thingiverse.com/thing:2767216): tilted case for the Redox prototype.
-- [couscous-kbd](https://github.com/CoenSchalkwijk/couscous-kbd): Redox inspired parametric OpenSCAD keyboard design.
+- Redox prototype
+  - [Redox prototype](https://www.thingiverse.com/thing:2704567): handwired 3D printed Redox prototype. Freely available.
+  - [Tilted Redox case](https://www.thingiverse.com/thing:2767216): tilted case for the Redox prototype.
+  - [couscous-kbd](https://github.com/CoenSchalkwijk/couscous-kbd): Redox inspired parametric OpenSCAD keyboard design.
 
 ## Redox rev.1
 
