@@ -25,11 +25,11 @@ Hardware availability:
 
 ### Building instructions
 
-  - [Bill of materials](#Bill-of-Materials)
-  - [Assembly](#Assembly)
-  - [RGB Underglow](#RGB-Underglow)
-  - [Firmware](#Firmware)
-  - [Layout customization](#Layout)
+  - [Bill of materials](#bill-of-materials)
+  - [Assembly](#assembly)
+  - [RGB Underglow](#rgb-underglow)
+  - [Firmware](#firmware)
+  - [Layout customization](#layout)
 
 #### Bill-of-Materials
 
@@ -61,7 +61,7 @@ Installation steps:
   3. Solder momentary switches.
   4. Solder 4.7k Ohm resistors **on one half only**. If you are going for the RGB-underglow ignore this step.
   5. Solder the Pro Micro header pins (**do not solder the Pro Micro controllers yet**).
-  6. Optional see [RGB-underglow instructions](#RGB-Underglow).
+  6. Optional see [RGB-underglow instructions](#rgb-underglow).
 - Flip the PCBs.
 - Solder switches to the PCB.
 - Flip the PCBs again.
