@@ -27,6 +27,7 @@ Hardware availability:
 
   - [Bill of materials](#Bill-of-Materials)
   - [Assembly](#Assembly)
+  - [RGB Underglow](#RGB-Underglow)
   - [Firmware](#Firmware)
   - [Layout customization](#Layout)
 
@@ -78,6 +79,58 @@ Installation steps:
 <p align="center">
 <img src="img/pcb-assembly3.jpg" alt="Diode installation detail" width="600"/>
 </p>
+
+#### RGB-Underglow
+
+Parts:
+- [ ] WS2812/WS2812A LED strip
+- [ ] 24 AWG (or smaller) stranded wire (white, red, black are good choices)
+
+Data connection:
+
+```
+Led strip Headers -> DIN -> DO -> TRRS pad -> (TRRS to other side) -> TRRS pad -> DIN
+```
+
+Installation steps:
+
+##### LEFT hand as master (usually plugged in to the PC)
+- On the LEFT hand:
+  1. Solder the LED Strip headers as seen in the figures below.
+  2. Solder the DO Pin of the RGB strip to the TRRS pad as seen in the figures below.
+- On the RIGHT hand:
+  3. Solder VCC and GND of the RGB strip to the LED Strip headers.
+  4. Solder the DIN Pin of the RGB strip to the TRRS pad as seen in the figures below.
+- Flash the firmware with the serial and RGB Backlight options on, specifying the number of LEDs installed (see instruction here).
+
+##### Left hand back side:
+<p align="center">
+<img src="img/rgb-underglow1.jpg" alt="RGB underglow left hand backside" width="300"/>
+<img src="img/rgb-underglow2.jpg" alt="RGB underglow left hand backside" width="300"/>
+</p>
+
+##### Right hand back side:
+
+<p align="center">
+<img src="img/rgb-underglow3.jpg" alt="RGB underglow left hand backside" width="300"/>
+</p>
+
+##### Backside
+<p align="center">
+<img src="img/rgb-underglow4.jpg" alt="RGB underglow left hand backside" width="600"/>
+</p>
+
+##### RIGHT hand as master.
+- On the RIGHT hand:
+  1. Solder the LED Strip headers to the RGB strip.
+  2. Solder the DO Pin of the RGB strip to the TRRS pad.
+- On the LEFT hand:
+  3. Solder VCC and GND of the RGB strip to the LED Strip headers.
+  4. Solder the DIN Pin of the RGB strip to the TRRS pad.
+
+**Notes**:
+- You don't need to solder the resistor since the I2C connection won't be used.
+- You can't use only one hand as master.
 
 #### Firmware
 
