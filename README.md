@@ -45,6 +45,7 @@ Hardware availability:
 |   1 | TRRS cable                                    |                                                     |
 |   1 | USB micro cable                               |                                                     |
 |  70 | Cherry MX compatible keycaps                  | 10x 1.25u keycaps, 6x 1.5u keycaps, 54x 1u keycaps, |
+|  14 | WS2812/WS2812B leds                           | Optional RGB-underglow                              |
 
 #### Assembly
 
@@ -58,8 +59,9 @@ Installation steps:
   1. Solder 1N4148 diodes.
   2. Solder PJ-320A connectors.
   3. Solder momentary switches.
-  4. Solder 4.7k Ohm resistors **on one half only**.
+  4. Solder 4.7k Ohm resistors **on one half only**. If you are going for the RGB-underglow ignore this step.
   5. Solder the Pro Micro header pins (**do not solder the Pro Micro controllers yet**).
+  6. Optional see [RGB-underglow instructions](#RGB-Underglow).
 - Flip the PCBs.
 - Solder switches to the PCB.
 - Flip the PCBs again.
@@ -83,7 +85,7 @@ Installation steps:
 #### RGB-Underglow
 
 Parts:
-- [ ] WS2812/WS2812A LED strip
+- [ ] WS2812/WS2812B LED strip
 - [ ] 24 AWG (or smaller) stranded wire (white, red, black are good choices)
 
 Data connection:
@@ -115,7 +117,7 @@ Installation steps:
 <img src="img/rgb-underglow3.jpg" alt="RGB underglow left hand backside" width="300"/>
 </p>
 
-##### Backside
+##### Full picture:
 <p align="center">
 <img src="img/rgb-underglow4.jpg" alt="RGB underglow left hand backside" width="600"/>
 </p>
@@ -129,8 +131,8 @@ Installation steps:
   4. Solder the DIN Pin of the RGB strip to the TRRS pad.
 
 **Notes**:
-- You don't need to solder the resistor since the I2C connection won't be used.
-- You can't use only one hand as master.
+- You don't need to solder the 4.7k resistors since the I2C connection won't be used.
+- You can use only one hand as master.
 
 #### Firmware
 
