@@ -101,8 +101,8 @@ Installation steps:
   1. Solder the LED Strip headers as seen in the figures below.
   2. Solder the DO Pin of the RGB strip to the TRRS pad as seen in the figures below.
 - On the RIGHT hand:
-  3. Solder VCC and GND of the RGB strip to the LED Strip headers.
-  4. Solder the DIN Pin of the RGB strip to the TRRS pad as seen in the figures below.
+  1. Solder VCC and GND of the RGB strip to the LED Strip headers.
+  2. Solder the DIN Pin of the RGB strip to the TRRS pad as seen in the figures below.
 - Flash the firmware with the serial and RGB Backlight options on, specifying the number of LEDs installed (see instruction here).
 
 ##### Left hand back side:
@@ -127,8 +127,8 @@ Installation steps:
   1. Solder the LED Strip headers to the RGB strip.
   2. Solder the DO Pin of the RGB strip to the TRRS pad.
 - On the LEFT hand:
-  3. Solder VCC and GND of the RGB strip to the LED Strip headers.
-  4. Solder the DIN Pin of the RGB strip to the TRRS pad.
+  1. Solder VCC and GND of the RGB strip to the LED Strip headers.
+  2. Solder the DIN Pin of the RGB strip to the TRRS pad.
 
 **Notes**:
 - You don't need to solder the 4.7k resistors since the I2C connection won't be used.
