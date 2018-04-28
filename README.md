@@ -56,11 +56,11 @@ Hardware availability:
 Installation steps:
 
 - Solder components:
-  1. Solder 1N4148 diodes.
+  1. Solder 1N4148 diodes. Keep the diode legs for the right hand controller installation.
   2. Solder PJ-320A connectors.
   3. Solder momentary switches.
   4. Solder 4.7k Ohm resistors **on one half only**. If you are going for the RGB-underglow ignore this step.
-  5. Solder the Pro Micro header pins (**do not solder the Pro Micro controllers yet**).
+  5. Solder the Pro Micro header pins (**do not solder the Pro Micro controllers yet**). For the right hand use the diodes legs as this will make the controller's USB port much lower, this is needed for the 3D printed case. See [right hand controller installation detail](#right-hand-controller-installation-detail)
   6. Optional see [RGB-underglow instructions](#rgb-underglow).
 - Flip the PCBs.
 - Solder switches to the PCB.
@@ -80,6 +80,20 @@ Installation steps:
 ##### Diode installation detail:
 <p align="center">
 <img src="img/pcb-assembly3.jpg" alt="Diode installation detail" width="600"/>
+</p>
+
+##### Right-hand-controller-installation-detail:
+
+1. Use a breadboard to keep the diode's legs from falling.
+2. Solder the diode's legs in place.
+3. Cut the excess.
+4. Apply some electrical tape under the controller to prevent shorts.
+5. Install your preferred switches.
+6. Solder the controllers in place.
+
+<p align="center">
+<img src="img/right-hand-controller-detail1.jpg" alt="Right hand controller installation detail" width="300"/>
+<img src="img/right-hand-controller-detail2.jpg" alt="Right hand controller installation detail" width="300"/>
 </p>
 
 #### RGB-Underglow
@@ -107,19 +121,13 @@ Installation steps:
 
 ##### Left hand back side:
 <p align="center">
-<img src="img/rgb-underglow1.jpg" alt="RGB underglow left hand backside" width="300"/>
-<img src="img/rgb-underglow2.jpg" alt="RGB underglow left hand backside" width="300"/>
+<img src="img/rgb-underglow1.jpg" alt="RGB underglow left hand backside" width="600"/>
 </p>
 
 ##### Right hand back side:
 
 <p align="center">
-<img src="img/rgb-underglow3.jpg" alt="RGB underglow left hand backside" width="300"/>
-</p>
-
-##### Full picture:
-<p align="center">
-<img src="img/rgb-underglow4.jpg" alt="RGB underglow left hand backside" width="600"/>
+<img src="img/rgb-underglow2.jpg" alt="RGB underglow left hand backside" width="600"/>
 </p>
 
 ##### RIGHT hand as master.
