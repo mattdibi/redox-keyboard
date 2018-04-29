@@ -97,12 +97,14 @@ Installation steps:
 
 #### Firmware
 
-Follow the QMK installation instructions [here](https://docs.qmk.fm/install-build-tools), then compile and burn the firmware as follows:
+The Redox uses QMK for its firmware, follow the QMK installation instructions [here](https://docs.qmk.fm/install-build-tools), then compile and burn the firmware as follows:
 
 ```sh
 $ cd path/to/qmk_firmware
 $ make redox/rev1:default:avrdude
 ```
+
+You can find the code for the Redox here: [QMK - Redox keyboard](https://github.com/qmk/qmk_firmware/tree/master/keyboards/redox).
 
 #### RGB-Underglow
 
