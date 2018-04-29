@@ -27,9 +27,8 @@ Hardware availability:
 
   - [Bill of materials](#bill-of-materials)
   - [Assembly](#assembly)
-  - [RGB Underglow](#rgb-underglow)
   - [Firmware](#firmware)
-  - [Layout customization](#layout)
+  - [RGB Underglow](#rgb-underglow)
 
 #### Bill-of-Materials
 
@@ -88,13 +87,22 @@ Installation steps:
 2. Solder the diode's legs in place.
 3. Cut the excess.
 4. Apply some electrical tape under the controller to prevent shorts.
-5. Install your preferred switches.
+5. Install your preferred switches (**remember: the controller installation is the last step**).
 6. Solder the controllers in place.
 
 <p align="center">
 <img src="img/right-hand-controller-detail1.jpg" alt="Right hand controller installation detail" width="300"/>
 <img src="img/right-hand-controller-detail2.jpg" alt="Right hand controller installation detail" width="300"/>
 </p>
+
+#### Firmware
+
+Follow the QMK installation instructions [here](https://docs.qmk.fm/install-build-tools), then compile and burn the firmware as follows:
+
+```sh
+$ cd path/to/qmk_firmware
+$ make redox/rev1:default:avrdude
+```
 
 #### RGB-Underglow
 
@@ -112,7 +120,7 @@ Installation steps:
 
 ##### LEFT hand as master (usually plugged in to the PC)
 - On the LEFT hand:
-  1. Solder the LED Strip headers as seen in the figures below.
+  1. Solder the LED Strip headers as seen in the pictures below.
   2. Solder the DO Pin of the RGB strip to the TRRS pad as seen in the figures below.
 - On the RIGHT hand:
   1. Solder VCC and GND of the RGB strip to the LED Strip headers.
@@ -142,9 +150,44 @@ Installation steps:
 - You don't need to solder the 4.7k resistors since the I2C connection won't be used.
 - You can use only one hand as master.
 
-#### Firmware
+##### RGB Underglow firmware
 
-WIP...
+To enable RGB backlighting you need to modify the default firmware as follows:
+- Use serial communication instead of I2C.
+- Set the master hand.
+- Set the number of LED you installed.
+
+To do this, modify `qmk_firmware/keyboards/redox/keymaps/default/config.h` as follows:
+
+```c++
+// ...
+
+/* You need to use the sarial communication since we 
+used a cable to carry the data signal for the LED strip */
+#define USE_SERIAL
+
+/* Select hand configuration: you need to use as master 
+the hand that drives the LED strip */
+#define MASTER_LEFT
+// #define MASTER_RIGHT
+
+/* Put the total number of led used here */
+#undef RGBLED_NUM
+#define RGBLIGHT_ANIMATIONS
+#define RGBLED_NUM 14
+#define RGBLIGHT_HUE_STEP 8
+#define RGBLIGHT_SAT_STEP 8
+#define RGBLIGHT_VAL_STEP 8
+
+// ...
+```
+
+Then compile and burn the firmware on both controllers:
+
+```sh
+$ cd path/to/qmk_firmware
+$ make redox/rev1:default:avrdude
+```
 
 #### Layout
 
@@ -153,5 +196,3 @@ WIP...
 </p>
 
 [KLE Layout permalink](http://www.keyboard-layout-editor.com/##@_name=Redox&author=Mattia%20Dal%20Ben&switchMount=cherry&plate:false&pcb:false%3B&@_x:3.5%3B&=%23%0A3&_x:10.5%3B&=*%0A8%3B&@_y:-0.875&x:2.5%3B&=%2F@%0A2&_x:1%3B&=$%0A4&_x:8.5%3B&=%2F&%0A7&_x:1%3B&=(%0A9%3B&@_y:-0.875&x:5.5%3B&=%25%0A5&_x:6.5%3B&=%5E%0A6%3B&@_y:-0.875&x:0.25&a:7&w:1.25%3B&=&_a:4%3B&=!%0A1&_x:14.5%3B&=)%0A0&_a:7&w:1.25%3B&=%3B&@_y:-0.625&x:6.5%3B&=&_x:4.5%3B&=%3B&@_y:-0.75&x:3.5&a:4%3B&=E&_x:10.5%3B&=I%3B&@_y:-0.875&x:2.5%3B&=W&_x:1%3B&=R&_x:8.5%3B&=U&_x:1%3B&=O%3B&@_y:-0.875&x:5.5%3B&=T&_x:6.5%3B&=Y%3B&@_y:-0.875&x:0.25&a:7&w:1.25%3B&=&_a:4%3B&=Q&_x:14.5%3B&=P&_a:7&w:1.25%3B&=%3B&@_y:-0.625&x:6.5&h:1.5%3B&=&_x:4.5&h:1.5%3B&=%3B&@_y:-0.75&x:3.5&a:4%3B&=D&_x:10.5%3B&=K%3B&@_y:-0.875&x:2.5%3B&=S&_x:1&n:true%3B&=F&_x:8.5&n:true%3B&=J&_x:1%3B&=L%3B&@_y:-0.875&x:5.5%3B&=G&_x:6.5%3B&=H%3B&@_y:-0.875&x:0.25&a:7&w:1.25%3B&=&_a:4%3B&=A&_x:14.5%3B&=%2F:%0A%2F%3B&_a:7&w:1.25%3B&=%3B&@_y:-0.375&x:3.5&a:4%3B&=C&_x:10.5%3B&=%3C%0A,%3B&@_y:-0.875&x:2.5%3B&=X&_x:1%3B&=V&_x:8.5%3B&=M&_x:1%3B&=%3E%0A.%3B&@_y:-0.875&x:5.5%3B&=B&_x:6.5%3B&=N%3B&@_y:-0.875&x:0.25&a:7&w:1.25%3B&=&_a:4%3B&=Z&_x:14.5%3B&=%3F%0A%2F%2F&_a:7&w:1.25%3B&=%3B&@_y:-0.375&x:3.5%3B&=&_x:10.5%3B&=%3B&@_y:-0.875&x:2.5%3B&=&_x:12.5%3B&=%3B&@_y:-0.75&x:0.5%3B&=&=&_x:14.5%3B&=&=%3B&@_r:15&y:-2.625&x:5.75&w:1.25%3B&=%3B&@_r:30&rx:6.5&ry:4.25&y:-1%3B&=&=%3B&@_h:1.5%3B&=&_h:1.5%3B&=%3B&@_r:-30&rx:13&y:-1&x:-2%3B&=&=%3B&@_x:-2&h:1.5%3B&=&_h:1.5%3B&=%3B&@_r:-15&rx:0&ry:0&y:7.75&x:11.75&w:1.25%3B&=)
-
-WIP...
