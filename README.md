@@ -2,12 +2,12 @@
 
 <p align="center">
 <img src="img/redox-logo.png" alt="Redox logo" width="600"/>
+<img src="img/qmk-badge-dark.png" alt="QMK" width="145"/>
 </p>
 
 The Redox project is an open-source, [QMK (Quantum Mechanical Keyboard Firmware)](https://github.com/qmk/qmk_firmware) powered, ergonomic split mechanical keyboard. This repository will be used to share information about the project and instruction on how to use and assembly the Redox keyboard.
 
 **Designer's bio**: [Mattia Dal Ben (aka u/TiaMaT102)](mailto:matthewdibi@gmail.com) obtained a master's degree in Engineering Electronics with a specialization in Computer Science at the University of Udine. Currently works as a Software Engineer in R&D department for a big IoT and Embedded Computers company. Mechanical keyboard enthusiast and maker, the Redox keyboard is the result of all of his passions.
-
 
 ## Related projects
 
