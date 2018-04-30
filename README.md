@@ -11,10 +11,11 @@ The Redox project is an open-source, [QMK (Quantum Mechanical Keyboard Firmware)
 
 ## Related projects
 
-- Redox prototype
-  - [Redox prototype](https://www.thingiverse.com/thing:2704567): handwired 3D printed Redox prototype. Freely available.
-  - [Tilted Redox case](https://www.thingiverse.com/thing:2767216): tilted case for the Redox prototype.
-  - [couscous-kbd](https://github.com/CoenSchalkwijk/couscous-kbd): Redox inspired parametric OpenSCAD keyboard design.
+- Redox handwire
+  - [Redox handwire](https://www.thingiverse.com/thing:2704567): handwired 3D printed Redox prototype. Freely available.
+  - [Tilted Redox case](https://www.thingiverse.com/thing:2767216): tilted case for the Redox prototype by jschloer.
+  - [couscous-kbd](https://github.com/CoenSchalkwijk/couscous-kbd): Redox-inspired parametric OpenSCAD keyboard design.
+  - [Redox tenting kit](https://www.thingiverse.com/make:484843): modified base to support tenting, mini-USB for the interconnect, and a hole for microswitch for reset needed when uploading new firmware by [Lenbok](https://github.com/Lenbok).
 
 ## Redox rev.1
 
