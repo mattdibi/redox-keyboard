@@ -192,7 +192,17 @@ $ cd path/to/qmk_firmware
 $ make redox/rev1:default:avrdude
 ```
 
-#### Layout
+### 3D-printed case
+
+To lower the build costs I designed a 3D printable case which you can find in this repository or on [thingiverse](), feel free to modify it to best suit your needs.
+
+<p align="center">
+<img src="img/3d-printed-case.jpg" alt="3D printed case" width=600 />
+</p>
+
+**Note**: I discourage the use of the rev.1's 3D printable case for a handwire, the plate is too thin and flexes too much as it's designed to be used with the PCB. Use the [Redox handwire case](https://www.thingiverse.com/thing:2704567) instead.
+
+### Layout
 
 <p align="center">
 <img src="img/redox-layout.png" alt="Redox layout"/>
