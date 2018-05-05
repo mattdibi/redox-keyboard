@@ -216,6 +216,7 @@ This layout was designed to reduce the amount of 1.25 keycaps needed for the key
 - 8x 1.25u keycaps
 - 6x 1.5u keycaps
 - 56x 1u keycaps
+
 This layout is only available for the [Redox handwire version](https://www.thingiverse.com/thing:2704567) ... for now.
 
 <p align="center">
