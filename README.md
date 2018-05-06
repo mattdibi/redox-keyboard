@@ -107,6 +107,42 @@ $ make redox/rev1:default:avrdude
 
 You can find the code for the Redox here: [QMK - Redox keyboard](https://github.com/qmk/qmk_firmware/tree/master/keyboards/redox).
 
+##### Setting EE_hands to use either hands as master
+If you define `EE_HANDS` in your `config.h`, you will need to set the EEPROM for the left and right halves.
+
+The EEPROM is used to store whether the half is left handed or right handed. This makes it so that the same firmware file will run on both hands instead of having to flash left and right handed versions of the firmware to each half. To flash the EEPROM file for the left half run:
+```
+$ cd path/to/qmk/folder
+$ avrdude -p atmega32u4 -P $(COM_PORT) -c avr109 -U eeprom:w:keyboards/lets_split/eeprom-lefthand.eep
+
+```
+and similarly for right half
+```
+$ avrdude -p atmega32u4 -P $(COM_PORT) -c avr109 -U eeprom:w:keyboards/lets_split/eeprom-righthand.eep
+```
+
+**Note**: replace `$(COM_PORT)` with the port of your device (e.g. `/dev/ttyACM0`)
+
+After you have flashed the EEPROM, you then need to set `EE_HANDS` in `keyboard/redox/keymaps/default/config.h` like so:
+
+```c++
+// ...
+/* Use I2C or Serial, not both */
+
+// #define USE_SERIAL
+#define USE_I2C
+
+/* Select hand configuration */
+
+// #define MASTER_LEFT
+// #define MASTER_RIGHT
+#define EE_HANDS
+
+#undef RGBLED_NUM
+#define RGBLIGHT_ANIMATIONS
+// ...
+```
+
 #### RGB-Underglow
 
 Parts:
