@@ -230,7 +230,7 @@ $ make redox/rev1:default:avrdude
 
 ### 3D-printed case
 
-To lower the build costs I designed a 3D printable case which you can find in this repository or on [thingiverse](), feel free to modify it to best suit your needs.
+To lower the build costs I designed a 3D printable case which you can find in this repository or on [thingiverse](https://www.thingiverse.com/thing:2886662), feel free to modify it to best suit your needs.
 
 <p align="center">
 <img src="img/3d-printed-case.jpg" alt="3D printed case" width=600 />
