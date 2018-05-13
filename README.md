@@ -16,6 +16,11 @@ The Redox project is an open-source, [QMK (Quantum Mechanical Keyboard Firmware)
   - [Tilted Redox case](https://www.thingiverse.com/thing:2767216): tilted case for the Redox prototype by jschloer.
   - [couscous-kbd](https://github.com/CoenSchalkwijk/couscous-kbd): Redox-inspired parametric OpenSCAD keyboard design.
   - [Redox tenting kit](https://www.thingiverse.com/make:484843): modified base to support tenting, mini-USB for the interconnect, and a hole for microswitch for reset needed when uploading new firmware by [Lenbok](https://github.com/Lenbok).
+- Redox rev1.0
+	- [3D printed case](https://www.thingiverse.com/thing:2886662), freely available.
+	- Rev1.0 PCBs: available at [Falbatech's store](https://falba.tech/product/redox-pcb-electrical-boards-set-of-2/)
+	- Commercially available cases:
+		- [Falbatech's bamboo cases with tilt kit](https://falba.tech/product/redox-standard-lift-bamboo-wood-case-with-oil-finish/)
 
 ## Redox rev.1
 
@@ -36,7 +41,7 @@ Hardware availability:
 | Qty | Item                                          | Notes                                               |
 |----:|-----------------------------------------------|-----------------------------------------------------|
 |  70 | Cherry MX compatible switches                 |                                                     |
-|   2 | Redox PCBs                                    |                                                     |
+|   2 | Redox PCBs                                    | [Availalble here](https://falba.tech/product/redox-pcb-electrical-boards-set-of-2/)|
 |  70 | 1N4148 diodes                                 | SMD diodes can also be used                         |
 |   2 | PJ-320A 4 poles 3.5 mm TRRS connectors        |                                                     |
 |   2 | 4.7 kOhm resistors                            | Need to be soldered on one half only                |
