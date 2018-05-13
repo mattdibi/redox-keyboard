@@ -112,6 +112,8 @@ $ make redox/rev1:default:avrdude
 
 You can find the code for the Redox here: [QMK - Redox keyboard](https://github.com/qmk/qmk_firmware/tree/master/keyboards/redox).
 
+In the [firmware/](https://github.com/mattdibi/redox-keyboard/tree/master/firmware) folder I added some pre-built hex files with the default keymap for testing purpose.
+
 ##### Setting EE_hands to use either hands as master
 If you define `EE_HANDS` in your `config.h`, you will need to set the EEPROM for the left and right halves.
 
