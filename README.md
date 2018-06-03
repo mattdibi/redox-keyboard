@@ -65,7 +65,9 @@ Installation steps:
   2. Solder PJ-320A connectors.
   3. Solder momentary switches.
   4. Solder 4.7k Ohm resistors **on one half only**. If you are going for the RGB-underglow ignore this step.
-  5. Solder the Pro Micro header pins (**do not solder the Pro Micro controllers yet**). For the right hand use the diodes legs as this will make the controller's USB port much lower, this is needed for the 3D printed case. See [right hand controller installation detail](#right-hand-controller-installation-detail)
+  5. Solder the Pro Micro header pins (**do not solder the Pro Micro controllers yet**). This step may differ depending on which case your're using. Refer to the following:
+    * See 3D-Printed case [right hand controller installation detail](#right-hand-controller-installation-detail).
+    * See Falbatech's bamboo case.
   6. Optional see [RGB-underglow instructions](#rgb-underglow).
 - Flip the PCBs.
 - Solder switches to the PCB.
@@ -87,7 +89,9 @@ Installation steps:
 <img src="img/pcb-assembly3.jpg" alt="Diode installation detail" width="600"/>
 </p>
 
-##### Right-hand-controller-installation-detail:
+#### 3D Printed case assembly
+
+For the Pro Micro installation on the right hand use the diodes legs leftover from previous steps as this will make the controller's USB port much lower, this is needed for the 3D printed case. If you're using Falbatech's bamboo case this is not needed and you can use standard header pins. Right-hand-controller-installation-detail:
 
 1. Use a breadboard to keep the diode's legs from falling.
 2. Solder the diode's legs in place.
@@ -99,6 +103,14 @@ Installation steps:
 <p align="center">
 <img src="img/right-hand-controller-detail1.jpg" alt="Right hand controller installation detail" width="300"/>
 <img src="img/right-hand-controller-detail2.jpg" alt="Right hand controller installation detail" width="300"/>
+</p>
+
+#### Falbetech's bamboo case assembly
+
+If you're using Falbatech's bamboo case the use of the diode's legs is not needed and you can use standard header pins
+
+<p align="center">
+<img src="img/falbatech-case-assembly.jpg" alt="Right hand controller installation detail" width="600"/>
 </p>
 
 #### Firmware
