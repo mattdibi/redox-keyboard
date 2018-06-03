@@ -110,7 +110,7 @@ For the Pro Micro installation on the right hand use the diodes legs leftover fr
 If you're using Falbatech's bamboo case the use of the diode's legs is not needed and you can use standard header pins
 
 <p align="center">
-<img src="img/falbatech-case-assembly.jpg" alt="Right hand controller installation detail" width="600"/>
+<img src="img/falbatech-case-assembly.jpg" alt="Falbatech's case assembly" width="600"/>
 </p>
 
 #### Firmware
@@ -278,4 +278,12 @@ This layout is only available for the [Redox handwire version](https://www.thing
 
 <p align="center">
 <img src="img/redox-layout-1.1.png" alt="Redox rev1.1 layout"/>
+</p>
+
+### Donations
+
+If you've read this far and found something useful, please consider donating to help me maintain and further develop this project.
+
+<p align="center">
+<a href="https://www.paypal.me/MattiaDalBen"><img src="img/donate-button.jpeg" alt="Donate button" width=300/></a>
 </p>
