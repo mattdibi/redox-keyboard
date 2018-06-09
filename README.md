@@ -9,6 +9,22 @@ The Redox project is an open-source, [QMK (Quantum Mechanical Keyboard Firmware)
 
 **Designer's bio**: [Mattia Dal Ben (aka u/TiaMaT102)](mailto:matthewdibi@gmail.com) obtained a master's degree in Engineering Electronics with a specialization in Computer Science at the University of Udine. Currently works as a Software Engineer in R&D department for a big IoT and Embedded Computers company. Mechanical keyboard enthusiast and maker, the Redox keyboard is the result of all of his passions.
 
+## Rationale
+
+The Redox is a keyboard project designed with ergonomics in mind. It uses Cherry MX style mechanical switches laid out in a 7x5 columnar stagger layout with components that can easily be sourced. 
+
+The design was heavily inspired by the [Ergodox keyboard](https://www.ergodox.io/), and its main goal is to reduce the size without sacrificing too many keys, hence the name **Re**duced Ergo**dox**. 
+
+As an Ergodox user I couldn't ignore the few flaws of the original design and in a moment of arrogance I tried to fix them, thus the Redox features:
+- Easier to reach thumb cluster.
+- Additional easy-to-reach rotated 1.25u thumb key.
+- Reduced size.
+- Reduced costs (the Redox uses Arduino Pro Micro instead of the Teensy 2.0).
+- Either half can be plugged in to the PC since each half can act as the master.
+- Either half can work as a standalone keyboard to be used as a macropad/gaming keyboard.
+- RGB backlighting support.
+- 3D-printer friendly case.
+
 ## Related projects
 
 - Redox handwire
