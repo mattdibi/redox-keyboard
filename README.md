@@ -112,10 +112,10 @@ Installation steps:
 
 #### 3D-Printed-case-assembly
 
-For the Pro Micro installation on the right hand use the diodes legs leftover from previous steps as this will make the controller's USB port much lower, this is needed for the 3D printed case. If you're using Falbatech's bamboo case this is not needed and you can use standard header pins. Right-hand-controller-installation-detail:
+For the Pro Micro installation on the right hand use the diodes legs leftover from previous steps as this will make the controller's USB port much closer to the PCB, this is needed for the USB connector to fit in the 3D printed case. If you're using Falbatech's bamboo case this is not needed and you can use standard header pins. Right-hand-controller-installation-detail:
 
 1. Use a breadboard to keep the diode's legs from falling.
-2. Solder the diode's legs in place.
+2. Solder the diode's legs in place. You want to have the Pro Micro as close to the Redox's PCB as possible.
 3. Cut the excess.
 4. Apply some electrical tape under the controller to prevent shorts.
 5. Install your preferred switches (**remember: the controller installation is the last step**).
@@ -124,6 +124,12 @@ For the Pro Micro installation on the right hand use the diodes legs leftover fr
 <p align="center">
 <img src="img/right-hand-controller-detail1.jpg" alt="Right hand controller installation detail" width="300"/>
 <img src="img/right-hand-controller-detail2.jpg" alt="Right hand controller installation detail" width="300"/>
+</p>
+
+Here's some measurements of the Pro Micro installation:
+
+<p align="center">
+<img src="img/right-hand-controller-detail3.jpg" alt="Right hand controller installation detail" width="400"/>
 </p>
 
 #### Falbatech's-bamboo-case-assembly
