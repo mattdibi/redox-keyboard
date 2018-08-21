@@ -42,6 +42,8 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
 	- Rev1.0 PCBs: available at [Falbatech's store](https://falba.tech/product/redox-pcb-electrical-boards-set-of-2/)
 	- Commercially available cases:
 		- [Falbatech's bamboo cases with tilt kit](https://falba.tech/product/redox-standard-lift-bamboo-wood-case-with-oil-finish/)
+		- [Falbatech's fullhand bamboo cases](https://falba.tech/product/redox-fullhand-bamboo-wood-case-with-oil-finish-ver-2/)
+		- [Falbatech's PVC cases](https://falba.tech/product/redox-standard-pvc-white-case/)
 
 ## Redox rev.1
 
