@@ -44,6 +44,9 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
 		- [Falbatech's bamboo cases with tilt kit](https://falba.tech/product/redox-standard-lift-bamboo-wood-case-with-oil-finish/)
 		- [Falbatech's fullhand bamboo cases](https://falba.tech/product/redox-fullhand-bamboo-wood-case-with-oil-finish-ver-2/)
 		- [Falbatech's PVC cases](https://falba.tech/product/redox-standard-pvc-white-case/)
+- Redox codename Ultron (WIP)
+    - [Project log 1](https://hackaday.io/project/160610/log/151325-redox-codename-ultron-pt1)
+    - [Project log 2](https://hackaday.io/project/160610/log/151460-redox-codename-ultron-pt2)
 
 ## Redox rev.1
 
