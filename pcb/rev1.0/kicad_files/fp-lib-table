@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name keebs)(type KiCad)(uri C:/Users/TiaMaT/Desktop/Redox_rev2/Librerie/keebs.pretty-master)(options "")(descr ""))
+  (lib (name keyboard_parts)(type KiCad)(uri C:/Users/TiaMaT/Desktop/Redox_rev2/Librerie/keyboard_parts.pretty-master)(options "")(descr ""))
+  (lib (name promicro)(type KiCad)(uri C:/Users/TiaMaT/Desktop/Redox_rev2/Librerie/ProMicroKiCad-master/promicro.pretty)(options "")(descr ""))
+  (lib (name myparts)(type KiCad)(uri /home/mattia/Scrivania/Redox_rev2/Librerie/myparts.pretty)(options "")(descr ""))
+)
