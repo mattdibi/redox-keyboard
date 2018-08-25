@@ -47,6 +47,8 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
 - Redox codename Ultron (WIP)
     - [Project log 1](https://hackaday.io/project/160610/log/151325-redox-codename-ultron-pt1)
     - [Project log 2](https://hackaday.io/project/160610/log/151460-redox-codename-ultron-pt2)
+    - [QMK firmware for Redox wireless](https://github.com/mattdibi/qmk_firmware/tree/redox_wireless)
+    - [Nordic MCUs firmware for Redox wireless](https://github.com/mattdibi/redox-w-firmware)
 
 ## Redox rev.1
 
