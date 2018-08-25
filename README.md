@@ -45,8 +45,10 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
 		- [Falbatech's fullhand bamboo cases](https://falba.tech/product/redox-fullhand-bamboo-wood-case-with-oil-finish-ver-2/)
 		- [Falbatech's PVC cases](https://falba.tech/product/redox-standard-pvc-white-case/)
 - Redox codename Ultron (WIP)
-    - [Project log 1](https://hackaday.io/project/160610/log/151325-redox-codename-ultron-pt1)
-    - [Project log 2](https://hackaday.io/project/160610/log/151460-redox-codename-ultron-pt2)
+    - Build logs:
+        - [Project log 1](https://hackaday.io/project/160610/log/151325-redox-codename-ultron-pt1)
+        - [Project log 2](https://hackaday.io/project/160610/log/151460-redox-codename-ultron-pt2)
+        - [Project log 3](https://hackaday.io/project/160610-redox-keyboard/log/151621-redox-codename-ultron-pt3)
     - [QMK firmware for Redox wireless](https://github.com/mattdibi/qmk_firmware/tree/redox_wireless)
     - [Nordic MCUs firmware for Redox wireless](https://github.com/mattdibi/redox-w-firmware)
 
