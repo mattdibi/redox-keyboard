@@ -151,7 +151,7 @@ If you're using Falbatech's bamboo case the use of the diode's legs is not neede
 
 #### Firmware
 
-The Redox uses QMK for its firmware, follow the QMK installation instructions [here](https://docs.qmk.fm/install-build-tools), then compile and burn the firmware as follows:
+The Redox uses QMK for its firmware, follow the QMK installation instructions [here](https://docs.qmk.fm/#/getting_started_build_tools), then compile and burn the firmware as follows:
 
 ```sh
 $ cd path/to/qmk_firmware
