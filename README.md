@@ -154,6 +154,10 @@ If you're using Falbatech's bamboo case the use of the diode's legs is not neede
 
 #### Firmware
 
+<aside class="notice">
+If you have a Redox with RGB backlight installed you MUST use the serial connection. For details see <a href="https://github.com/mattdibi/redox-keyboard#rgb-underglow-firmware">the RGB underglow firmare instructions.</a>
+</aside>
+
 The Redox uses QMK for its firmware, follow the QMK installation instructions [here](https://docs.qmk.fm/#/getting_started_build_tools), then compile and burn the firmware as follows:
 
 ```sh
