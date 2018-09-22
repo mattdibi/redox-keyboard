@@ -37,5 +37,32 @@ You can refer directly to the [Mitosis-hardware repository](https://github.com/r
 |   1 | Right angle 0.1" header (1x4pin)              |                                                     |
 |   2 | Straight 0.1" header (1x6pin)                 |                                                     |
 
-#### Assembly
+#### Transmitters Assembly
+
+WIP
+
+#### Firmware
+
+This keyboard uses two types of MCUs so it needs two different firmwares. For flashing the firmware use the following order:
+
+1. Receiver
+2. Pro Micro
+3. Transmitters
+
+##### Nordic MCUs Firmware
+
+Follow the instruction in the [Redox Wireless Keyboard firmware repository](https://github.com/mattdibi/redox-w-firmware). You'll need only to flash the pre-built `.hex` files to the corresponding MCUs, for this you'll need an STLinkV2 debugger.
+
+##### Arduino Pro Micro Firmware
+
+The Redox uses QMK for its firmware, follow the QMK installation instructions [here](https://docs.qmk.fm/#/getting_started_build_tools), then compile and burn the firmware as follows:
+
+```sh
+$ cd path/to/qmk_firmware
+$ make redox-w/rev1:default:avrdude
+```
+
+You can find the code for the Redox here: [QMK - Redox Wireless keyboard](https://github.com/mattdibi/qmk_firmware/tree/redox_wireless/keyboards/redox_w).
+
+In the [Redox Wireless Keyboard firmware repository](https://github.com/mattdibi/redox-w-firmware) I added some pre-built hex files with the default keymap for testing purpose.
 
