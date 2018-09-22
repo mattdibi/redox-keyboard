@@ -59,7 +59,7 @@ The Redox uses QMK for its firmware, follow the QMK installation instructions [h
 
 ```sh
 $ cd path/to/qmk_firmware
-$ make redox-w/rev1:default:avrdude
+$ make redox_w/rev1:default:avrdude
 ```
 
 You can find the code for the Redox here: [QMK - Redox Wireless keyboard](https://github.com/mattdibi/qmk_firmware/tree/redox_wireless/keyboards/redox_w).
