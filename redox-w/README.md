@@ -5,7 +5,8 @@ The Redox Wireless is the wireless version of the Redox keyboard.
 ### Summary
 
   - [Bill of materials](#bill-of-materials)
-  - [Assembly](#assembly)
+  - [Transmitter Assembly](#transmitter-assembly)
+  - [Firmware](#firmware)
 
 #### Bill of materials
 
