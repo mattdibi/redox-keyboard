@@ -5,7 +5,7 @@ The Redox Wireless is the wireless version of the Redox keyboard.
 ### Summary
 
   - [Bill of materials](#bill-of-materials)
-  - [Transmitter Assembly](#transmitter-assembly)
+  - [Transmitters Assembly](#transmitters-assembly)
   - [Firmware](#firmware)
 
 #### Bill of materials
@@ -65,5 +65,5 @@ $ make redox_w/rev1:default:avrdude
 
 You can find the code for the Redox here: [QMK - Redox Wireless keyboard](https://github.com/mattdibi/qmk_firmware/tree/redox_wireless/keyboards/redox_w).
 
-In the [Redox Wireless Keyboard firmware repository](https://github.com/mattdibi/redox-w-firmware) I added some pre-built hex files with the default keymap for testing purpose.
+In the [Redox Wireless Keyboard firmware repository](https://github.com/mattdibi/redox-w-firmware/tree/master/precompiled) I added some pre-built hex files with the default keymap for testing purpose.
 
