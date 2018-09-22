@@ -4,6 +4,9 @@ The Redox Wireless is the wireless version of the Redox keyboard.
 
 ### Summary
 
+  - [Bill of materials](#bill-of-materials)
+  - [Assembly](#assembly)
+
 #### Bill of materials
 
 ##### Transmitters
@@ -33,3 +36,6 @@ You can refer directly to the [Mitosis-hardware repository](https://github.com/r
 |   2 | SMD tactile button                            | [digikey](https://www.digikey.com/product-detail/en/c-k/PTS525SM15SMTR2-LFS/CKN9104CT-ND/1146923)|
 |   1 | Right angle 0.1" header (1x4pin)              |                                                     |
 |   2 | Straight 0.1" header (1x6pin)                 |                                                     |
+
+#### Assembly
+
