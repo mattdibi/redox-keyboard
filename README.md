@@ -44,7 +44,7 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
 		- [Falbatech's bamboo cases with tilt kit](https://falba.tech/product/redox-standard-lift-bamboo-wood-case-with-oil-finish/)
 		- [Falbatech's fullhand bamboo cases](https://falba.tech/product/redox-fullhand-bamboo-wood-case-with-oil-finish-ver-2/)
 		- [Falbatech's PVC cases](https://falba.tech/product/redox-standard-pvc-white-case/)
-- [**Redox Wireless (a.k.a. codename Ultron)**]() (WIP)
+- [**Redox Wireless (a.k.a. codename Ultron)**]()
     - Build logs:
         - [Project log 1](https://hackaday.io/project/160610-redox-keyboard/log/151325-redox-codename-ultron-pt1)
         - [Project log 2](https://hackaday.io/project/160610-redox-keyboard/log/151460-redox-codename-ultron-pt2)
@@ -54,6 +54,7 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
         - [Project log 6](https://hackaday.io/project/160610-redox-keyboard/log/152873-redox-codename-ultron-pt6)
         - [Project log 7](https://hackaday.io/project/160610-redox-keyboard/log/153064-redox-codename-ultron-pt7)
         - [Project log 8](https://hackaday.io/project/160610-redox-keyboard/log/153208-redox-codename-ultron-pt8)
+        - [Project log 9](https://hackaday.io/project/160610-redox-keyboard/log/153459-redox-codename-ultron-pt9)
     - [QMK firmware for Redox wireless](https://github.com/mattdibi/qmk_firmware/tree/redox_wireless)
     - [Nordic MCUs firmware for Redox wireless](https://github.com/mattdibi/redox-w-firmware)
 
