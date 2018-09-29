@@ -110,7 +110,7 @@ This keyboard uses two types of MCUs so it needs two different firmwares. For fl
 Follow the instruction in the [Redox Wireless Keyboard firmware repository](https://github.com/mattdibi/redox-w-firmware). You'll need only to flash the pre-built `.hex` files to the corresponding MCUs, for this you'll need an STLinkV2 debugger.
 
 <p align="center">
-<img src="../img/st-link-v2-programmer.jpg" alt="Left and right hand completed assembly" width="600"/>
+<img src="../img/st-link-v2-programmer.jpg" alt="Left and right hand completed assembly" width="300"/>
 </p>
 
 ##### Arduino Pro Micro Firmware
