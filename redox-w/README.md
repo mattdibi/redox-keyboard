@@ -61,12 +61,6 @@ Assemply steps:
 - Program the MCUs.
 - Close the case.
 
-##### Assembled PCB:
-
-<p align="center">
-<img src="../img/pcb-w-assembly1.jpg" alt="Wireless Redox assembled PCB" width="600"/>
-</p>
-
 ##### Programming headers detail:
 
 <p align="center">
@@ -102,6 +96,12 @@ Assemply steps:
 
 <p align="center">
 <img src="../img/pcb-w-assembly6.jpg" alt="Left and right hand completed assembly" width="600"/>
+</p>
+
+##### Assembled PCB:
+
+<p align="center">
+<img src="../img/pcb-w-assembly1.jpg" alt="Wireless Redox assembled PCB" width="600"/>
 </p>
 
 #### Firmware
