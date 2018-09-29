@@ -46,7 +46,7 @@ You can refer directly to the [Mitosis-hardware repository](https://github.com/r
 <img src="../img/redox-w-pcb1.jpg" alt="Wireless redox PCBs" width="600"/>
 </p>
 
-Assemply steps:
+Assembly steps:
 
 - Solder components to PCBs (you can proceed in no particular order):
   1. Solder the YJ-14015.
