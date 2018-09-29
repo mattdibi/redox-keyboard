@@ -59,30 +59,40 @@ Assemply steps:
 - Program the MCUs.
 - Close the case.
 
-##### Assembled PCB
+##### Assembled PCB:
 
 <p align="center">
 <img src="../img/pcb-w-assembly1.jpg" alt="Wireless Redox assembled PCB" width="600"/>
 </p>
 
-<p align="center">
-<img src="../img/pcb-w-assembly2.jpg" alt="Wireless Redox assembled PCB" width="600"/>
-</p>
+##### Programming headers detail:
 
 <p align="center">
-<img src="../img/pcb-w-assembly3.jpg" alt="Wireless Redox assembled PCB" width="600"/>
+<img src="../img/pcb-w-assembly2.jpg" alt="Programming headers detail" width="600"/>
 </p>
 
-<p align="center">
-<img src="../img/pcb-w-assembly4.jpg" alt="Wireless Redox assembled PCB" width="600"/>
-</p>
+##### MCUs detail:
 
 <p align="center">
-<img src="../img/pcb-w-assembly5.jpg" alt="Wireless Redox assembled PCB" width="600"/>
+<img src="../img/pcb-w-assembly3.jpg" alt="MCUs detail" width="600"/>
 </p>
 
+##### Slider switch detail:
+
 <p align="center">
-<img src="../img/pcb-w-assembly6.jpg" alt="Wireless Redox assembled PCB" width="600"/>
+<img src="../img/pcb-w-assembly4.jpg" alt="Slider switch detail" width="600"/>
+</p>
+
+##### Diodes installation detail:
+
+<p align="center">
+<img src="../img/pcb-w-assembly5.jpg" alt="Diode installation detail" width="600"/>
+</p>
+
+##### Left and right hand completed assembly:
+
+<p align="center">
+<img src="../img/pcb-w-assembly6.jpg" alt="Left and right hand completed assembly" width="600"/>
 </p>
 
 #### Firmware
