@@ -82,7 +82,7 @@ Assemply steps:
 </p>
 
 <p align="center">
-<img src="../img/pcb-w-assembly5.jpg" alt="Wireless Redox assembled PCB" width="600"/>
+<img src="../img/pcb-w-assembly6.jpg" alt="Wireless Redox assembled PCB" width="600"/>
 </p>
 
 #### Firmware
