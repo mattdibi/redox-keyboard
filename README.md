@@ -28,11 +28,11 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
 - Either half can work as a standalone keyboard to be used as a macropad/gaming keyboard.
 - RGB backlighting support.
 - 3D-printer friendly case.
+- Wireless
 
 ## Related projects
 
-- **Redox handwire**
-  - [Redox handwire](https://www.thingiverse.com/thing:2704567): handwired 3D printed Redox prototype. Freely available.
+- [**Redox handwire**](https://www.thingiverse.com/thing:2704567)
   - [Tilted Redox case](https://www.thingiverse.com/thing:2767216): tilted case for the Redox prototype by jschloer.
   - [couscous-kbd](https://github.com/CoenSchalkwijk/couscous-kbd): Redox-inspired parametric OpenSCAD keyboard design.
   - [Redox tenting kit](https://www.thingiverse.com/make:484843): modified base to support tenting, mini-USB for the interconnect, and a hole for microswitch for reset needed when uploading new firmware by [Lenbok](https://github.com/Lenbok).
