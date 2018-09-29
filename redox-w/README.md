@@ -38,7 +38,7 @@ You can refer directly to the [Mitosis-hardware repository](https://github.com/r
 |   1 | Right angle 0.1" header (1x4pin)              |                                                     |
 |   2 | Straight 0.1" header (1x6pin)                 |                                                     |
 
-> :warning: To program the YJ-14015 MCUs you need an ST-Link v2 programmer, these can be found on eBay or Aliexpress for as little as 2$ shipped. See [picture below](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w#nordic-mcus-firmware).
+> :warning: To program the YJ-14015 MCUs you need an ST-Link v2 programmer, these can be found on eBay or Aliexpress for as little as 2$ shipped. See [picture below](#nordic-mcus-firmware).
 
 #### Transmitters Assembly
 
@@ -52,7 +52,7 @@ Assemply steps:
   1. Solder the YJ-14015.
   2. Solder 1N4148 diodes.
   3. Solder slider switches.
-  4. Solder the battery holders. *Note*: Some solder is needed on the ground pad to contact properly with the battery. See [picture below]().
+  4. Solder the battery holders. *Note*: Some solder is needed on the ground pad to contact properly with the battery. See [picture below](#battery-holder-installation-detail).
   5. Solder the programming headers.
 - Fit the PCBs inside their cases.
 - Add the switches to the plate.
