@@ -37,14 +37,14 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
   - [couscous-kbd](https://github.com/CoenSchalkwijk/couscous-kbd): Redox-inspired parametric OpenSCAD keyboard design.
   - [Redox tenting kit](https://www.thingiverse.com/make:484843): modified base to support tenting, mini-USB for the interconnect, and a hole for microswitch for reset needed when uploading new firmware by [Lenbok](https://github.com/Lenbok).
   - [Iris-inspired Redox case](https://github.com/Lenbok/scad-redox-case): a case inspired both by the Redox rev1.0 and the Iris designed with OpenSCAD by [Lenbok](https://github.com/Lenbok).
-- [**Redox rev1.0**]()
+- [**Redox rev1.0**](https://github.com/mattdibi/redox-keyboard/tree/master/redox)
 	- [3D printed case](https://www.thingiverse.com/thing:2886662), freely available.
 	- Rev1.0 PCBs: available at [Falbatech's store](https://falba.tech/product/redox-pcb-electrical-boards-set-of-2/)
 	- Commercially available cases:
 		- [Falbatech's bamboo cases with tilt kit](https://falba.tech/product/redox-standard-lift-bamboo-wood-case-with-oil-finish/)
 		- [Falbatech's fullhand bamboo cases](https://falba.tech/product/redox-fullhand-bamboo-wood-case-with-oil-finish-ver-2/)
 		- [Falbatech's PVC cases](https://falba.tech/product/redox-standard-pvc-white-case/)
-- [**Redox Wireless (a.k.a. codename Ultron)**]()
+- [**Redox Wireless (a.k.a. codename Ultron)**](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w)
     - Build logs:
         - [Project log 1](https://hackaday.io/project/160610-redox-keyboard/log/151325-redox-codename-ultron-pt1)
         - [Project log 2](https://hackaday.io/project/160610-redox-keyboard/log/151460-redox-codename-ultron-pt2)
