@@ -40,7 +40,50 @@ You can refer directly to the [Mitosis-hardware repository](https://github.com/r
 
 #### Transmitters Assembly
 
-WIP
+<p align="center">
+<img src="../img/redox-w-pcb1.jpg" alt="Wireless redox PCBs" width="600"/>
+</p>
+
+Assemply steps:
+
+- Solder components to PCBs (you can proceed in no particular order):
+  1. Solder the YJ-14015.
+  2. Solder 1N4148 diodes.
+  3. Solder slider switches.
+  4. Solder the battery holders.
+  5. Solder the programming headers.
+- Fit the PCBs inside their cases.
+- Add the switches to the plate.
+- Solder switches to the PCB.
+- Add the CR2032 batteries.
+- Program the MCUs.
+- Close the case.
+
+##### Assembled PCB
+
+<p align="center">
+<img src="../img/pcb-w-assembly1.jpg" alt="Wireless Redox assembled PCB" width="600"/>
+</p>
+
+<p align="center">
+<img src="../img/pcb-w-assembly2.jpg" alt="Wireless Redox assembled PCB" width="600"/>
+</p>
+
+<p align="center">
+<img src="../img/pcb-w-assembly3.jpg" alt="Wireless Redox assembled PCB" width="600"/>
+</p>
+
+<p align="center">
+<img src="../img/pcb-w-assembly4.jpg" alt="Wireless Redox assembled PCB" width="600"/>
+</p>
+
+<p align="center">
+<img src="../img/pcb-w-assembly5.jpg" alt="Wireless Redox assembled PCB" width="600"/>
+</p>
+
+<p align="center">
+<img src="../img/pcb-w-assembly5.jpg" alt="Wireless Redox assembled PCB" width="600"/>
+</p>
 
 #### Firmware
 
