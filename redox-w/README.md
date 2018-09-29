@@ -38,6 +38,8 @@ You can refer directly to the [Mitosis-hardware repository](https://github.com/r
 |   1 | Right angle 0.1" header (1x4pin)              |                                                     |
 |   2 | Straight 0.1" header (1x6pin)                 |                                                     |
 
+> :warning: To program the YJ-14015 MCUs you need an ST-Link v2 programmer, these can be found on eBay or Aliexpress for as little as 2$ shipped. See picture below.
+
 #### Transmitters Assembly
 
 <p align="center">
@@ -106,6 +108,10 @@ This keyboard uses two types of MCUs so it needs two different firmwares. For fl
 ##### Nordic MCUs Firmware
 
 Follow the instruction in the [Redox Wireless Keyboard firmware repository](https://github.com/mattdibi/redox-w-firmware). You'll need only to flash the pre-built `.hex` files to the corresponding MCUs, for this you'll need an STLinkV2 debugger.
+
+<p align="center">
+<img src="../img/st-link-v2-programmer.jpg" alt="Left and right hand completed assembly" width="600"/>
+</p>
 
 ##### Arduino Pro Micro Firmware
 
