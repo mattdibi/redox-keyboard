@@ -38,7 +38,7 @@ You can refer directly to the [Mitosis-hardware repository](https://github.com/r
 |   1 | Right angle 0.1" header (1x4pin)              |                                                     |
 |   2 | Straight 0.1" header (1x6pin)                 |                                                     |
 
-> :warning: To program the YJ-14015 MCUs you need an ST-Link v2 programmer, these can be found on eBay or Aliexpress for as little as 2$ shipped. See picture below.
+> :warning: To program the YJ-14015 MCUs you need an ST-Link v2 programmer, these can be found on eBay or Aliexpress for as little as 2$ shipped. See [picture below](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w#nordic-mcus-firmware).
 
 #### Transmitters Assembly
 
