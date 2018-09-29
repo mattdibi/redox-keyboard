@@ -52,7 +52,7 @@ Assemply steps:
   1. Solder the YJ-14015.
   2. Solder 1N4148 diodes.
   3. Solder slider switches.
-  4. Solder the battery holders.
+  4. Solder the battery holders. *Note*: Some solder is needed on the ground pad to contact properly with the battery. See [picture below]().
   5. Solder the programming headers.
 - Fit the PCBs inside their cases.
 - Add the switches to the plate.
@@ -89,6 +89,13 @@ Assemply steps:
 
 <p align="center">
 <img src="../img/pcb-w-assembly5.jpg" alt="Diode installation detail" width="600"/>
+</p>
+
+##### Battery holder installation detail:
+
+<p align="center">
+<img src="../img/battery-installation1.jpg" alt="Battery holder installation detail. Ground pad." width="300"/>
+<img src="../img/battery-installation2.jpg" alt="Battery holder installation detail. Assembled." width="300"/>
 </p>
 
 ##### Left and right hand completed assembly:
