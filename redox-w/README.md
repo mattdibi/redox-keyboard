@@ -114,15 +114,15 @@ The assembly is streightforward, I suggest you to follow the following order:
 > :warning: Notice the orientation of the RGB LED (Cree CLVBA-FKA). Here I highlighted the dot on the PCB which must match with the notch on the LED packaging.
 
 <p align="center">
-<img src="../img/redox-w-assembly-1.jpg" alt="Mitosis receiver PCB LED installation detail." width="300"/>
-<img src="../img/redox-w-assembly-2.jpg" alt="RGB LED detail" width="300"/>
+<img src="../img/redox-w-receiver-assembly-1.jpg" alt="Mitosis receiver PCB LED installation detail." width="300"/>
+<img src="../img/redox-w-receiver-assembly-2.jpg" alt="RGB LED detail" width="300"/>
 </p>
 
 ##### Assembled receiver PCB:
 
 <p align="center">
-<img src="../img/redox-w-assembly-3.jpg" alt="Receiver PCB assembly front." width="300"/>
-<img src="../img/redox-w-assembly-4.jpg" alt="Receiver PCB assembly back." width="300"/>
+<img src="../img/redox-w-receiver-assembly-3.jpg" alt="Receiver PCB assembly front." width="300"/>
+<img src="../img/redox-w-receiver-assembly-4.jpg" alt="Receiver PCB assembly back." width="300"/>
 </p>
 
 *Note*: You might notice that I didn't soldered the second push button, this is because it's not used in the receiver firmware.
@@ -130,7 +130,7 @@ The assembly is streightforward, I suggest you to follow the following order:
 ##### Assembled receiver:
 
 <p align="center">
-<img src="../img/redox-w-assembly-5.jpg" alt="Receiver PCB assembly front." width="600"/>
+<img src="../img/redox-w-receiver-assembly-5.jpg" alt="Receiver PCB assembly front." width="600"/>
 </p>
 
 #### Firmware
