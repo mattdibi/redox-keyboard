@@ -6,6 +6,7 @@ The Redox Wireless is the wireless version of the Redox keyboard.
 
   - [Bill of materials](#bill-of-materials)
   - [Transmitters Assembly](#transmitters-assembly)
+  - [Receiver Assembly](#receiver-assembly)
   - [Firmware](#firmware)
 
 #### Bill of materials
@@ -125,7 +126,11 @@ The assembly is streightforward, I suggest you to follow the following order:
 <img src="../img/redox-w-receiver-assembly-4.jpg" alt="Receiver PCB assembly back." width="300"/>
 </p>
 
-*Note*: You might notice that I didn't soldered the second push button, this is because it's not used in the receiver firmware.
+*Notes*: 
+- You might notice that I didn't soldered the second push button, this is because it's not used in the receiver firmware.
+- I also didn't solder all the MCUs pins because not all are used and it was hard to solder.
+- I used a YJ-14015 instead of a Core51822B module because I happen to have that one laying around. Using an actual Core51822B module makes the soldering much easier.
+- Here I used female header pins to connect the Arduino to the receiver PCB, if you want a more compact solution solder the Arduino directly to the receiver.
 
 ##### Assembled receiver:
 
