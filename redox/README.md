@@ -67,7 +67,15 @@ Installation steps:
 
 #### 3D-Printed-case-assembly
 
-For the Pro Micro installation on the right hand use the diodes legs leftover from previous steps as this will make the controller's USB port much closer to the PCB, this is needed for the USB connector to fit in the 3D printed case. If you're using Falbatech's bamboo case this is not needed and you can use standard header pins. Right-hand-controller-installation-detail:
+| Qty | Item                                          | Notes                                               |
+|----:|-----------------------------------------------|-----------------------------------------------------|
+|   1 | Left top plate                                | [RedoxRev1TopLeft.STL](https://github.com/mattdibi/redox-keyboard/blob/master/redox/case/RedoxRev1TopLeft.STL)|
+|   1 | Left bottom                                   | [RedoxRev1BottomLeft.STL](https://github.com/mattdibi/redox-keyboard/blob/master/redox/case/RedoxRev1BottomLeft.STL)|
+|   1 | Right top plate                               | [RedoxRev1TopRight.STL](https://github.com/mattdibi/redox-keyboard/blob/master/redox/case/RedoxRev1TopRight.STL)|
+|   1 | Right bottom                                  | [RedoxRev1BottomRight.STL](https://github.com/mattdibi/redox-keyboard/blob/master/redox/case/RedoxRev1BottomRight.STL)|
+|  10 | M3 x 8mm (or 5mm) screws                      |                                                     |
+
+For the Pro Micro installation on the right hand use the diodes legs leftover from previous steps as this will make the controller's USB port much closer to the PCB, this is needed for the USB connector to fit in the 3D printed case. If you're using Falbatech's bamboo case this is not needed and you can use standard header pins. Right hand controller installation detail:
 
 1. Use a breadboard to keep the diode's legs from falling.
 2. Solder the diode's legs in place. You want to have the Pro Micro as close to the Redox's PCB as possible.
