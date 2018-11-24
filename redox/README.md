@@ -113,7 +113,7 @@ External links to some other guides to building the Redox keyboard:
 
 #### Firmware
 
-> :warning: If you have a Redox with RGB backlight installed you MUST use the serial connection. For details see [the RGB underglow firmare instructions.](https://github.com/mattdibi/redox-keyboard#rgb-underglow-firmware)
+> :warning: If you have a Redox with RGB backlight installed you MUST use the serial connection. For details see [the RGB underglow firmare instructions.](#rgb-underglow)
 
 The Redox uses QMK for its firmware, follow the QMK installation instructions [here](https://docs.qmk.fm/#/getting_started_build_tools), then compile and burn the firmware as follows:
 
