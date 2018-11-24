@@ -255,8 +255,6 @@ To lower the build costs I designed a 3D printable case which you can find in th
 <img src="../img/3d-printed-case.jpg" alt="3D printed case" width=600 />
 </p>
 
-**Note**: I discourage the use of the rev.1's 3D printable case for a handwire, the plate is too thin and flexes too much as it's designed to be used with the PCB. Use the [Redox handwire case](https://www.thingiverse.com/thing:2704567) instead.
-
 ### Layout
 
 #### Rev 1.0 layout
