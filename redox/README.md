@@ -8,8 +8,8 @@ Hardware availability:
 ### Summary
 
   - [Bill of materials](#bill-of-materials)
-  - [Assembly guide](#assembly-guide)
   - [Other assembly guides](#other-assembly-guides)
+  - [Assembly guide](#assembly-guide)
   - [Firmware](#firmware)
   - [RGB Underglow](#rgb-underglow)
 
@@ -29,7 +29,14 @@ Hardware availability:
 |  70 | Cherry MX compatible keycaps                  | 10x 1.25u keycaps, 6x 1.5u keycaps, 54x 1u keycaps  |
 |  14 | WS2812/WS2812B leds                           | Optional RGB-underglow                              |
 
-#### Assembly Guide
+#### Other assembly guides
+
+External links to some other guides to building the Redox keyboard:
+
+- ["*Build your own keyboard*"](https://medium.com/@costask/build-your-own-keyboard-5df65cb68839) by @costask.
+- [Imgur build log](https://imgur.com/a/a6ck2Nc) (3D printed case).
+
+#### Assembly guide
 
 <p align="center">
 <img src="../img/redox-pcb2.jpg" alt="Redox PCBs" width="600"/>
@@ -103,13 +110,6 @@ If you're using Falbatech's bamboo case the use of the diode's legs is not neede
 <p align="center">
 <img src="../img/falbatech-case-assembly.jpg" alt="Falbatech's case assembly" width="600"/>
 </p>
-
-#### Other assembly guides
-
-External links to some other guides to building the Redox keyboard:
-
-- ["*Build your own keyboard*"](https://medium.com/@costask/build-your-own-keyboard-5df65cb68839) by @costask.
-- [Imgur build log](https://imgur.com/a/a6ck2Nc) (3D printed case).
 
 #### Firmware
 
