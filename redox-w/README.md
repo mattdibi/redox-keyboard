@@ -25,19 +25,23 @@ The Redox Wireless is the wireless version of the Redox keyboard.
 
 ##### Receiver
 
-You can refer directly to the [Mitosis-hardware repository](https://github.com/reversebias/mitosis-hardware/blob/master/bom/README.md) since the recevier is exactly the same, or you can build a receiver on your own.
-
 | Qty | Item                                          | Notes                                               |
 |----:|-----------------------------------------------|-----------------------------------------------------|
-|   1 | Receiver Interface PCB                        | [files](https://github.com/reversebias/mitosis-hardware/tree/master/gerbers)                                           |
-|   1 | Core51822(B) or YJ-14015 modules              | [direct](http://www.waveshare.com/core51822-b.htm), [aliexpress](https://www.aliexpress.com/w/wholesale-core51822-b.html?initiative_id=SB_20170426175446&site=glo&groupsort=1&SortType=price_asc&g=y&SearchText=core51822+b)                          |
+|   1 | Redox receiver PCB                            |                                                     |
+|   1 | YJ-14015 module (Core51822B clone)            | [direct](http://www.waveshare.com/core51822-b.htm), [aliexpress](https://www.aliexpress.com/w/wholesale-core51822-b.html?initiative_id=SB_20170426175446&site=glo&groupsort=1&SortType=price_asc&g=y&SearchText=core51822+b)                          |
 |   1 | Arduino Pro Micro compatible microcontroller  |                                                     |
-|   1 | Cree CLVBA-FKA                                | [digikey](https://www.digikey.com/product-detail/en/cree-inc/CLVBA-FKA-CAEDH8BBB7A363/CLVBA-FKA-CAEDH8BBB7A363CT-ND/2650500)|
 |   1 | 1117 3.3v regulator in SOT223                 | [digikey](https://www.digikey.com/product-detail/en/diodes-incorporated/AZ1117IH-3.3TRG1/AZ1117IH-3.3TRG1DICT-ND/5699682)|
-|   2 | 1206 4.7k resistor array                      | [digikey](https://www.digikey.com/product-detail/en/stackpole-electronics-inc/RAVF164DJT4K70/RAVF164DJT4K70CT-ND/2425255)|
-|   2 | SMD tactile button                            | [digikey](https://www.digikey.com/product-detail/en/c-k/PTS525SM15SMTR2-LFS/CKN9104CT-ND/1146923)|
+|   7 | 0805(2012 metric) SMD resistors               | Values depends on usage, see below                  |
+|   4 | 0805(2012 metric) SMD standard LEDs           |                                                     |
+|   1 | Through hole momentary switch                 | Dimensions 6mm x 6mm x 4.3mm                        |
 |   1 | Right angle 0.1" header (1x4pin)              |                                                     |
 |   2 | Straight 0.1" header (1x6pin)                 |                                                     |
+
+###### Resistor values
+
+WIP
+
+> :information_source: You can also use the [Mitosis receiver](https://github.com/reversebias/mitosis-hardware/blob/master/bom/README.md) since it's almost identical, or you can build a receiver on your own. 
 
 > :warning: To program the YJ-14015 MCUs you need an ST-Link v2 programmer, these can be found on eBay or Aliexpress for as little as 2$ shipped. See [picture below](#nordic-mcus-firmware).
 
