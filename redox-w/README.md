@@ -111,36 +111,7 @@ Assembly steps:
 
 #### Receiver Assembly
 
-The assembly is streightforward, I suggest you to follow the following order:
-
-1. Solder all the Mitosis receiver components on the PCB. Leave the programming header for last.
-2. Solder the Arduino Pro Micro to the Mitosis receiver PCB.
-
-> :warning: Notice the orientation of the RGB LED (Cree CLVBA-FKA). Here I highlighted the dot on the PCB which must match with the notch on the LED packaging.
-
-<p align="center">
-<img src="../img/redox-w-receiver-assembly-1.jpg" alt="Mitosis receiver PCB LED installation detail." width="300"/>
-<img src="../img/redox-w-receiver-assembly-2.jpg" alt="RGB LED detail" width="300"/>
-</p>
-
-##### Assembled receiver PCB:
-
-<p align="center">
-<img src="../img/redox-w-receiver-assembly-3.jpg" alt="Receiver PCB assembly front." width="300"/>
-<img src="../img/redox-w-receiver-assembly-4.jpg" alt="Receiver PCB assembly back." width="300"/>
-</p>
-
-*Notes*: 
-- You might notice that I didn't soldered the second push button, this is because it's not used in the receiver firmware.
-- I also didn't solder all the MCUs pins because not all are used and it was hard to solder.
-- I used a YJ-14015 instead of a Core51822B module because I happen to have that one laying around. Using an actual Core51822B module makes the soldering much easier.
-- Here I used female header pins to connect the Arduino to the receiver PCB, if you want a more compact solution solder the Arduino directly to the receiver.
-
-##### Assembled receiver:
-
-<p align="center">
-<img src="../img/redox-w-receiver-assembly-5.jpg" alt="Receiver PCB assembly front." width="600"/>
-</p>
+WIP
 
 #### Firmware
 
