@@ -31,19 +31,57 @@ The Redox Wireless is the wireless version of the Redox keyboard.
 |   1 | YJ-14015 module (Core51822B clone)            | [direct](http://www.waveshare.com/core51822-b.htm), [aliexpress](https://www.aliexpress.com/w/wholesale-core51822-b.html?initiative_id=SB_20170426175446&site=glo&groupsort=1&SortType=price_asc&g=y&SearchText=core51822+b)                          |
 |   1 | Arduino Pro Micro compatible microcontroller  |                                                     |
 |   1 | 1117 3.3v regulator in SOT223                 | [digikey](https://www.digikey.com/product-detail/en/diodes-incorporated/AZ1117IH-3.3TRG1/AZ1117IH-3.3TRG1DICT-ND/5699682)|
-|   7 | 0805(2012 metric) SMD resistors               | Values depends on usage, see below                  |
-|   4 | 0805(2012 metric) SMD standard LEDs           |                                                     |
+|   2 | 330 Ohm 0805(2012 metric) SMD resistors       | Default configuration. Values depends on LED color, see [below](#resistor-values)|
+|   2 | 220 Ohm 0805(2012 metric) SMD resistors       | Default configuration. Values depends on LED color, see [below](#resistor-values)|
+|   3 | 1.5k Ohm 0805(2012 metric) SMD resistors      | Default configuration. See [below](#resistor-values)|
+|   1 | Red 0805(2012 metric) SMD standard LED        | Default configuration.                              |
+|   1 | Blue 0805(2012 metric) SMD standard LED       | Default configuration.                              |
+|   1 | Green 0805(2012 metric) SMD standard LED      | Default configuration.                              |
+|   1 | White 0805(2012 metric) SMD standard LED      | Default configuration.                              |
 |   1 | Through hole momentary switch                 | Dimensions 6mm x 6mm x 4.3mm                        |
 |   1 | Right angle 0.1" header (1x4pin)              |                                                     |
 |   2 | Straight 0.1" header (1x6pin)                 |                                                     |
 
-###### Resistor values
-
-WIP
-
 > :information_source: You can also use the [Mitosis receiver](https://github.com/reversebias/mitosis-hardware/blob/master/bom/README.md) since it's almost identical, or you can build a receiver on your own. 
 
 > :warning: To program the YJ-14015 MCUs you need an ST-Link v2 programmer, these can be found on eBay or Aliexpress for as little as 2$ shipped. See [picture below](#nordic-mcus-firmware).
+
+###### Resistor values
+
+If you want to customize your LEDs color or save a few bucks by ordering the LED all the same color you can refer to this section for choosing the correct resistor values. Otherwise you can refer to the [default configuration](#default-configuration).
+
+There are two sets of resistor that you need for the receiver.
+
+- The voltage divider resistors (`R1`, `R2` and `R3`): anything between 1.5k Ohm and 4.7k Ohm is good.
+- The LEDs resistors (`R4`,`R6`,`R7` and `R8`): see the following table.
+
+| LED color | Vf   | Suggested resistor value |
+|-----------|------|--------------------------|
+| Red       | 1.7V | 330 Ohm                  |
+| Yellow    | 2.1V | 330 Ohm                  |
+| Blue      | 3.2V | 220 Ohm                  |
+| Green     | 2.2V | 330 Ohm                  |
+| White     | 3.6V | 220 Ohm                  |
+
+Depending on the color you choose to use you should use the resistor listed above.
+
+###### Default configuration
+
+Here you can find the default configuration for the receiver assembly.
+
+| Label | Component         |
+|-------|-------------------|
+| D1    | Red LED           |
+| D2    | Blue LED          |
+| D3    | Green LED         |
+| D4    | White LED         |
+| R4    |  330 Ohm resistor |
+| R6    |  220 Ohm resistor |
+| R7    |  330 Ohm resistor |
+| R8    |  220 Ohm resistor |
+| R1    | 1.5k Ohm resistor |
+| R2    | 1.5k Ohm resistor |
+| R3    | 1.5k Ohm resistor |
 
 #### Transmitters Assembly
 
