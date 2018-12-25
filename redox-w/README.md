@@ -151,7 +151,7 @@ Assembly steps:
 
 <p align="center">
 <img src="../img/receiver-assembly-1.jpg" alt="Redox-w receiver PCB, front." width="300"/>
-<img src="../img/receiver-assembly-2.jpg" alt="Redox-w receiver PCB, bottom." width="300"/>
+<img src="../img/receiver-assembly-2.jpg" alt="Redox-w receiver PCB, bottom." width="150"/>
 </p>
 
 WIP
