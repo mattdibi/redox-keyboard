@@ -73,7 +73,7 @@ Installation steps:
 <img src="../img/pcb-assembly3.jpg" alt="Diode installation detail" width="600"/>
 </p>
 
-#### 3D-Printed-case-assembly
+#### 3D Printed case assembly
 
 | Qty | Item                                          | Notes                                               |
 |----:|-----------------------------------------------|-----------------------------------------------------|
@@ -113,18 +113,24 @@ If you're using Falbatech's bamboo case the use of the diode's legs is not neede
 
 #### Firmware
 
-> :warning: If you have a Redox with RGB backlight installed you MUST use the serial connection. For details see [the RGB underglow firmare instructions.](#rgb-underglow)
+> :warning: If you have a Redox with RGB backlight installed you **MUST** use the serial connection. For details see [the RGB underglow firmare instructions.](#rgb-underglow)
 
-The Redox uses QMK for its firmware, follow the QMK installation instructions [here](https://docs.qmk.fm/#/getting_started_build_tools), then compile and burn the firmware as follows:
+The Redox uses QMK for its firmware, follow the QMK installation instructions [here](https://docs.qmk.fm/#/getting_started_build_tools), then compile and burn the firmware on both halves as follows:
 
 ```sh
 $ cd path/to/qmk_firmware
 $ make redox/rev1:default:avrdude
 ```
 
+> :warning: You always need to burn the firmware on **BOTH** halves of the keyboard.
+
 You can find the code for the Redox here: [QMK - Redox keyboard](https://github.com/qmk/qmk_firmware/tree/master/keyboards/redox).
 
-In the [firmware/](https://github.com/mattdibi/redox-keyboard/tree/master/firmware) folder I added some pre-built hex files with the default keymap for testing purpose.
+In the [firmware/](https://github.com/mattdibi/redox-keyboard/tree/master/redox/firmware) folder I added some pre-built hex files with the default keymap for testing purpose. You can upload the firmware binaries directly using the command below:
+
+```sh
+avrdude -p atmega32u4 -P $(COM_PORT) -c avr109 -U flash:w:redox_rev1_default.hex
+```
 
 ##### Setting EE_hands to use either hands as master
 If you define `EE_HANDS` in your `config.h`, you will need to set the EEPROM for the left and right halves.
@@ -183,7 +189,7 @@ Installation steps:
 - On the RIGHT hand:
   1. Solder VCC and GND of the RGB strip to the LED Strip headers.
   2. Solder the DIN Pin of the RGB strip to the TRRS pad as seen in the figures below.
-- Flash the firmware with the serial and RGB Backlight options on, specifying the number of LEDs installed (see instruction here).
+- Flash the firmware with the serial and RGB Backlight options on, specifying the number of LEDs installed (see instruction [here](#rgb-underglow-firmware)).
 
 ##### Left hand back side:
 <p align="center">
