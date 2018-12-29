@@ -158,13 +158,15 @@ WIP
 
 #### Firmware
 
-This keyboard uses two types of MCUs so it needs two different firmwares. For flashing the firmware use the following order:
+You'll need to upload the firmware to the corresponding MCUs as per the following diagram:
 
-1. Receiver
-2. Pro Micro
-3. Transmitters
+<p align="center">
+<img src="../img/redox-w-firmware-1.png" alt="Redox-W firmware diagram." width="600"/>
+</p>
 
-##### Nordic MCUs Firmware
+Note that you'll need to upload the firmware for the YJ-14015 only once. Everything related to the keymap is handled by the Arduino Pro Micro and QMK Firmware, that's what you will need to modify to update the keymap.
+
+##### Nordic MCUs Firmware upload
 
 Follow the instruction in the [Redox Wireless Keyboard firmware repository](https://github.com/mattdibi/redox-w-firmware). You'll need only to flash the pre-built `.hex` files to the corresponding MCUs, for this you'll need an STLinkV2 debugger.
 
@@ -172,7 +174,7 @@ Follow the instruction in the [Redox Wireless Keyboard firmware repository](http
 <img src="../img/st-link-v2-programmer.jpg" alt="ST-Link v2 programmer" width="300"/>
 </p>
 
-##### Arduino Pro Micro Firmware
+##### Arduino Pro Micro Firmware upload
 
 The Redox uses QMK for its firmware, follow the QMK installation instructions [here](https://docs.qmk.fm/#/getting_started_build_tools), then compile and burn the firmware as follows:
 
