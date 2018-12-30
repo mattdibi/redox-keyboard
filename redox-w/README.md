@@ -193,7 +193,7 @@ In the [Redox Wireless Keyboard firmware repository](https://github.com/mattdibi
 I got the current consumption for the transmitters using a shunt resistor (10 Ohm) and an oscilloscope during transmission.
 
 <p align="center">
-<img src="../img/redow-w-battery-usage.jpg" alt="Current draw for Redox-W transmitters" width="600"/>
+<img src="../img/redox-w-battery-usage.jpg" alt="Current draw for Redox-W transmitters" width="600"/>
 </p>
 
 Data:
