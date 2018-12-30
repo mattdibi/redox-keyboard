@@ -8,6 +8,7 @@ The Redox Wireless is the wireless version of the Redox keyboard.
   - [Transmitters Assembly](#transmitters-assembly)
   - [Receiver Assembly](#receiver-assembly)
   - [Firmware](#firmware)
+  - [Battery usage](#battery-usage)
 
 #### Bill of materials
 
@@ -187,3 +188,24 @@ You can find the code for the Redox here: [QMK - Redox Wireless keyboard](https:
 
 In the [Redox Wireless Keyboard firmware repository](https://github.com/mattdibi/redox-w-firmware/tree/master/precompiled) I added some pre-built hex files with the default keymap for testing purpose.
 
+#### Battery usage
+
+I got the current consumption for the transmitters using a shunt resistor (10 Ohm) and an oscilloscope during transmission.
+
+<p align="center">
+<img src="../img/redow-w-battery-usage.jpg" alt="Current draw for Redox-W transmitters" width="600"/>
+</p>
+
+Data:
+- Current peak of 5mA (I<sub>run</sub>) and 50us duration (t<sub>run</sub>)
+- Idle consumption of 2.7uA (I<sub>idle</sub>) between peaks, that is 950us duration (t<sub>idle</sub>).
+
+We can then calculate the average current consumption during typing (I<sub>avg</sub>) using the following:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=I_{avg}&space;=&space;\frac{I_{run}t_{run}&plus;&space;I_{idle}t_{idle}}{t_{run}&plus;t_{idle}}&space;=&space;\frac{5{mA}*50{\mu&space;A}&plus;2.7{\mu&space;A}*950{\mu&space;s}}{1ms}&space;\simeq&space;250&space;\mu&space;A" target="_blank"><img src="https://latex.codecogs.com/gif.latex?I_{avg}&space;=&space;\frac{I_{run}t_{run}&plus;&space;I_{idle}t_{idle}}{t_{run}&plus;t_{idle}}&space;=&space;\frac{5{mA}*50{\mu&space;A}&plus;2.7{\mu&space;A}*950{\mu&space;s}}{1ms}&space;\simeq&space;250&space;\mu&space;A" title="I_{avg} = \frac{I_{run}t_{run}+ I_{idle}t_{idle}}{t_{run}+t_{idle}} = \frac{5{mA}*50{\mu A}+2.7{\mu A}*950{\mu s}}{1ms} \simeq 250 \mu A" /></a>
+
+Knowing that the CR2032 battery is rated for 220mAh we get:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=t_{batt}&space;=&space;\frac{C_{batt}}{I_{avg}}&space;=&space;\frac{220{mAh}}{250{\mu&space;A}}&space;\simeq&space;880h" target="_blank"><img src="https://latex.codecogs.com/gif.latex?t_{batt}&space;=&space;\frac{C_{batt}}{I_{avg}}&space;=&space;\frac{220{mAh}}{250{\mu&space;A}}&space;\simeq&space;880h" title="t_{batt} = \frac{C_{batt}}{I_{avg}} = \frac{220{mAh}}{250{\mu A}} \simeq 880h" /></a>
+
+**TLDR**: We can expect **at least 880 hours** of continuous typing on the keyboard before needing to change the batteries. Keep in mind that when you're not typing (500ms without key presses is the time interval needed for the keyboard) the transmitters go into deep sleep mode and draw only 2.7uA. So for an everyday use (4 hours a day of continuous typing) you can expect a battery life of at least a year. Obviously your milage may vary.
