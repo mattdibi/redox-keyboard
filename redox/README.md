@@ -146,7 +146,7 @@ and similarly for right half
 $ avrdude -p atmega32u4 -P $(COM_PORT) -c avr109 -U eeprom:w:keyboards/lets_split/eeprom-righthand.eep
 ```
 
-**Note**: replace `$(COM_PORT)` with the port of your device (e.g. `/dev/ttyACM0`)
+> :warning: Replace `$(COM_PORT)` with the port of your device (e.g. `/dev/ttyACM0`)
 
 After you have flashed the EEPROM, you then need to set `EE_HANDS` in `keyboard/redox/keymaps/default/config.h` like so:
 
@@ -170,6 +170,10 @@ After you have flashed the EEPROM, you then need to set `EE_HANDS` in `keyboard/
 
 ## RGB Underglow
 
+> :warning: With this configuration:
+> - You don't need to solder the 4.7k resistors since the I2C connection won't be used.
+> - You can use only one hand as master.
+
 Parts:
 - [ ] WS2812/WS2812B LED strip
 - [ ] 24 AWG (or smaller) stranded wire (white, red, black are good choices)
@@ -180,9 +184,7 @@ Data connection:
 Led strip Headers -> DIN -> DO -> TRRS pad -> (TRRS to other side) -> TRRS pad -> DIN
 ```
 
-Installation steps:
-
-### LEFT hand as master (usually plugged in to the PC)
+### Assembly: LEFT hand as master (usually plugged in to the PC)
 - On the LEFT hand:
   1. Solder the LED Strip headers as seen in the pictures below.
   2. Solder the DO Pin of the RGB strip to the TRRS pad as seen in the figures below.
@@ -202,17 +204,13 @@ Installation steps:
 <img src="../img/rgb-underglow2.jpg" alt="RGB underglow left hand backside" width="600"/>
 </p>
 
-### RIGHT hand as master.
+### Assembly: RIGHT hand as master
 - On the RIGHT hand:
   1. Solder the LED Strip headers to the RGB strip.
   2. Solder the DO Pin of the RGB strip to the TRRS pad.
 - On the LEFT hand:
   1. Solder VCC and GND of the RGB strip to the LED Strip headers.
   2. Solder the DIN Pin of the RGB strip to the TRRS pad.
-
-**Notes**:
-- You don't need to solder the 4.7k resistors since the I2C connection won't be used.
-- You can use only one hand as master.
 
 ### RGB Underglow firmware
 
