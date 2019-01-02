@@ -8,6 +8,7 @@ The Redox Wireless is the wireless version of the Redox keyboard.
   - [Transmitters Assembly](#transmitters-assembly)
   - [Receiver Assembly](#receiver-assembly)
   - [Firmware](#firmware)
+  - [Battery usage](#battery-usage)
 
 #### Bill of materials
 
@@ -25,21 +26,63 @@ The Redox Wireless is the wireless version of the Redox keyboard.
 
 ##### Receiver
 
-You can refer directly to the [Mitosis-hardware repository](https://github.com/reversebias/mitosis-hardware/blob/master/bom/README.md) since the recevier is exactly the same, or you can build a receiver on your own.
-
 | Qty | Item                                          | Notes                                               |
 |----:|-----------------------------------------------|-----------------------------------------------------|
-|   1 | Receiver Interface PCB                        | [files](https://github.com/reversebias/mitosis-hardware/tree/master/gerbers)                                           |
-|   1 | Core51822(B) or YJ-14015 modules              | [direct](http://www.waveshare.com/core51822-b.htm), [aliexpress](https://www.aliexpress.com/w/wholesale-core51822-b.html?initiative_id=SB_20170426175446&site=glo&groupsort=1&SortType=price_asc&g=y&SearchText=core51822+b)                          |
+|   1 | Redox receiver PCB                            |                                                     |
+|   1 | YJ-14015 module (Core51822B clone)            | [direct](http://www.waveshare.com/core51822-b.htm), [aliexpress](https://www.aliexpress.com/w/wholesale-core51822-b.html?initiative_id=SB_20170426175446&site=glo&groupsort=1&SortType=price_asc&g=y&SearchText=core51822+b)                          |
 |   1 | Arduino Pro Micro compatible microcontroller  |                                                     |
-|   1 | Cree CLVBA-FKA                                | [digikey](https://www.digikey.com/product-detail/en/cree-inc/CLVBA-FKA-CAEDH8BBB7A363/CLVBA-FKA-CAEDH8BBB7A363CT-ND/2650500)|
 |   1 | 1117 3.3v regulator in SOT223                 | [digikey](https://www.digikey.com/product-detail/en/diodes-incorporated/AZ1117IH-3.3TRG1/AZ1117IH-3.3TRG1DICT-ND/5699682)|
-|   2 | 1206 4.7k resistor array                      | [digikey](https://www.digikey.com/product-detail/en/stackpole-electronics-inc/RAVF164DJT4K70/RAVF164DJT4K70CT-ND/2425255)|
-|   2 | SMD tactile button                            | [digikey](https://www.digikey.com/product-detail/en/c-k/PTS525SM15SMTR2-LFS/CKN9104CT-ND/1146923)|
+|   2 | 330 Ohm 0805(2012 metric) SMD resistors       | Default configuration. Values depends on LED color, see [below](#resistor-values)|
+|   2 | 220 Ohm 0805(2012 metric) SMD resistors       | Default configuration. Values depends on LED color, see [below](#resistor-values)|
+|   3 | 1.5k Ohm 0805(2012 metric) SMD resistors      | Default configuration. See [below](#resistor-values)|
+|   1 | Red 0805(2012 metric) SMD standard LED        | Default configuration.                              |
+|   1 | Blue 0805(2012 metric) SMD standard LED       | Default configuration.                              |
+|   1 | Green 0805(2012 metric) SMD standard LED      | Default configuration.                              |
+|   1 | White 0805(2012 metric) SMD standard LED      | Default configuration.                              |
+|   1 | Through hole momentary switch                 | Dimensions 6mm x 6mm x 4.3mm                        |
 |   1 | Right angle 0.1" header (1x4pin)              |                                                     |
 |   2 | Straight 0.1" header (1x6pin)                 |                                                     |
 
+> :information_source: You can also use the [Mitosis receiver](https://github.com/reversebias/mitosis-hardware/blob/master/bom/README.md) since it's almost identical, or you can build a receiver on your own. 
+
 > :warning: To program the YJ-14015 MCUs you need an ST-Link v2 programmer, these can be found on eBay or Aliexpress for as little as 2$ shipped. See [picture below](#nordic-mcus-firmware).
+
+###### Resistor values
+
+If you want to customize your LEDs color or save a few bucks by ordering the LED all the same color you can refer to this section for choosing the correct resistor values. Otherwise you can refer to the [default configuration](#default-configuration).
+
+There are two sets of resistor that you need for the receiver.
+
+- The voltage divider resistors (`R1`, `R2` and `R3`): anything between 1.5k Ohm and 4.7k Ohm is good.
+- The LEDs resistors (`R4`,`R6`,`R7` and `R8`): see the following table.
+
+| LED color | Vf   | Suggested resistor value |
+|-----------|------|--------------------------|
+| Red       | 1.7V | 330 Ohm                  |
+| Yellow    | 2.1V | 330 Ohm                  |
+| Blue      | 3.2V | 220 Ohm                  |
+| Green     | 2.2V | 330 Ohm                  |
+| White     | 3.6V | 220 Ohm                  |
+
+Depending on the color you choose to use you should use the resistor listed above.
+
+###### Default configuration
+
+Here you can find the default configuration for the receiver assembly.
+
+| Label | Component         |
+|-------|-------------------|
+| D1    | Red LED           |
+| D2    | Blue LED          |
+| D3    | Green LED         |
+| D4    | White LED         |
+| R4    |  330 Ohm resistor |
+| R6    |  220 Ohm resistor |
+| R7    |  330 Ohm resistor |
+| R8    |  220 Ohm resistor |
+| R1    | 1.5k Ohm resistor |
+| R2    | 1.5k Ohm resistor |
+| R3    | 1.5k Ohm resistor |
 
 #### Transmitters Assembly
 
@@ -107,46 +150,48 @@ Assembly steps:
 
 #### Receiver Assembly
 
-The assembly is streightforward, I suggest you to follow the following order:
+The receiver assembly is pretty straightforward, you can install the components in any order you like with the exception of the YJ-14015: it should be installed **after** the right angled header (PROGR_HEADER1). Suggested assembly order:
 
-1. Solder all the Mitosis receiver components on the PCB. Leave the programming header for last.
-2. Solder the Arduino Pro Micro to the Mitosis receiver PCB.
+1. Solder D1, D2, D3 and D4 LEDs. See image for orientation.
+2. Solder R4, R6, R7 and R8 resistors.
+3. Solder R1, R2 and R3 resistors.
+4. Solder the AMS1117.
+5. Solder the Arduino Pro Micro headers.
+6. Solder the programming headers. I suggest you to cut the excess of the header **before** soldering the headers. You should stay as flush to the PCB surface as possible since the controller will be soldered above the headers. Use some masking tape to help you keep the header in place while soldering.
+7. Solder the YJ-14015. I suggest you to glue it in place or use some masking tape to help you during soldering.
+8. Upload the firmware and you're done.
 
-> :warning: Notice the orientation of the RGB LED (Cree CLVBA-FKA). Here I highlighted the dot on the PCB which must match with the notch on the LED packaging.
-
-<p align="center">
-<img src="../img/redox-w-receiver-assembly-1.jpg" alt="Mitosis receiver PCB LED installation detail." width="300"/>
-<img src="../img/redox-w-receiver-assembly-2.jpg" alt="RGB LED detail" width="300"/>
-</p>
-
-##### Assembled receiver PCB:
-
-<p align="center">
-<img src="../img/redox-w-receiver-assembly-3.jpg" alt="Receiver PCB assembly front." width="300"/>
-<img src="../img/redox-w-receiver-assembly-4.jpg" alt="Receiver PCB assembly back." width="300"/>
-</p>
-
-*Notes*: 
-- You might notice that I didn't soldered the second push button, this is because it's not used in the receiver firmware.
-- I also didn't solder all the MCUs pins because not all are used and it was hard to solder.
-- I used a YJ-14015 instead of a Core51822B module because I happen to have that one laying around. Using an actual Core51822B module makes the soldering much easier.
-- Here I used female header pins to connect the Arduino to the receiver PCB, if you want a more compact solution solder the Arduino directly to the receiver.
-
-##### Assembled receiver:
+##### Assembled PCB, front:
 
 <p align="center">
-<img src="../img/redox-w-receiver-assembly-5.jpg" alt="Receiver PCB assembly front." width="600"/>
+<img src="../img/redox-w-receiver-assembly-1.jpg" alt="Assembled receiver PCB, front." width="600"/>
 </p>
+
+##### Assembled PCB, back:
+
+<p align="center">
+<img src="../img/redox-w-receiver-assembly-2.jpg" alt="Assembled receiver PCB, back." width="600"/>
+</p>
+
+##### LEDs installation detail:
+
+<p align="center">
+<img src="../img/redox-w-receiver-assembly-3.jpg" alt="Assembled receiver PCB, LEDs installation detail." width="600"/>
+</p>
+
+> :information_source: Please note that here I used 220 Ohm resistors because I used only blue and white LEDs since I only had those laying around. You should use the resistor values suggested [here](#default-configuration).
 
 #### Firmware
 
-This keyboard uses two types of MCUs so it needs two different firmwares. For flashing the firmware use the following order:
+You'll need to upload the firmware to the corresponding MCUs as per the following diagram:
 
-1. Receiver
-2. Pro Micro
-3. Transmitters
+<p align="center">
+<img src="../img/redox-w-firmware-1.png" alt="Redox-W firmware diagram." width="600"/>
+</p>
 
-##### Nordic MCUs Firmware
+Note that you'll need to upload the firmware for the YJ-14015 only once. Everything related to the keymap is handled by the Arduino Pro Micro and QMK Firmware, that's what you will need to modify to update the keymap.
+
+##### Nordic MCUs Firmware upload
 
 Follow the instruction in the [Redox Wireless Keyboard firmware repository](https://github.com/mattdibi/redox-w-firmware). You'll need only to flash the pre-built `.hex` files to the corresponding MCUs, for this you'll need an STLinkV2 debugger.
 
@@ -154,16 +199,37 @@ Follow the instruction in the [Redox Wireless Keyboard firmware repository](http
 <img src="../img/st-link-v2-programmer.jpg" alt="ST-Link v2 programmer" width="300"/>
 </p>
 
-##### Arduino Pro Micro Firmware
+##### Arduino Pro Micro Firmware upload
 
 The Redox uses QMK for its firmware, follow the QMK installation instructions [here](https://docs.qmk.fm/#/getting_started_build_tools), then compile and burn the firmware as follows:
 
 ```sh
 $ cd path/to/qmk_firmware
-$ make redox_w/rev1:default:avrdude
+$ make redox_w:default:avrdude
 ```
 
 You can find the code for the Redox here: [QMK - Redox Wireless keyboard](https://github.com/mattdibi/qmk_firmware/tree/redox_wireless/keyboards/redox_w).
 
 In the [Redox Wireless Keyboard firmware repository](https://github.com/mattdibi/redox-w-firmware/tree/master/precompiled) I added some pre-built hex files with the default keymap for testing purpose.
 
+#### Battery usage
+
+I got the current consumption for the transmitters using a shunt resistor (10 Ohm) and an oscilloscope during transmission.
+
+<p align="center">
+<img src="../img/redox-w-battery-usage.jpg" alt="Current draw for Redox-W transmitters" width="600"/>
+</p>
+
+Data:
+- Current peak of 5mA (I<sub>run</sub>) and 50us duration (t<sub>run</sub>)
+- Idle consumption of 2.7uA (I<sub>idle</sub>) between peaks, that is 950us duration (t<sub>idle</sub>).
+
+We can then calculate the average current consumption during typing (I<sub>avg</sub>) using the following:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=I_{avg}&space;=&space;\frac{I_{run}t_{run}&plus;&space;I_{idle}t_{idle}}{t_{run}&plus;t_{idle}}&space;=&space;\frac{5{mA}*50{\mu&space;A}&plus;2.7{\mu&space;A}*950{\mu&space;s}}{1ms}&space;\simeq&space;250&space;\mu&space;A" target="_blank"><img src="https://latex.codecogs.com/gif.latex?I_{avg}&space;=&space;\frac{I_{run}t_{run}&plus;&space;I_{idle}t_{idle}}{t_{run}&plus;t_{idle}}&space;=&space;\frac{5{mA}*50{\mu&space;A}&plus;2.7{\mu&space;A}*950{\mu&space;s}}{1ms}&space;\simeq&space;250&space;\mu&space;A" title="I_{avg} = \frac{I_{run}t_{run}+ I_{idle}t_{idle}}{t_{run}+t_{idle}} = \frac{5{mA}*50{\mu A}+2.7{\mu A}*950{\mu s}}{1ms} \simeq 250 \mu A" /></a>
+
+Knowing that the CR2032 battery is rated for 220mAh we get:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=t_{batt}&space;=&space;\frac{C_{batt}}{I_{avg}}&space;=&space;\frac{220{mAh}}{250{\mu&space;A}}&space;\simeq&space;880h" target="_blank"><img src="https://latex.codecogs.com/gif.latex?t_{batt}&space;=&space;\frac{C_{batt}}{I_{avg}}&space;=&space;\frac{220{mAh}}{250{\mu&space;A}}&space;\simeq&space;880h" title="t_{batt} = \frac{C_{batt}}{I_{avg}} = \frac{220{mAh}}{250{\mu A}} \simeq 880h" /></a>
+
+**TLDR**: We can expect **at least 880 hours** of continuous typing on the keyboard before needing to change the batteries. Keep in mind that when you're not typing (500ms without key presses is the time interval needed for the keyboard) the transmitters go into deep sleep mode and draw only 2.7uA. So for an everyday use (4 hours a day of continuous typing) you can expect a battery life of at least a year. Obviously your mileage may vary.
