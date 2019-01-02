@@ -2,7 +2,7 @@
 
 The Redox Wireless is the wireless version of the Redox keyboard.
 
-### Summary
+## Summary
 
   - [Bill of materials](#bill-of-materials)
   - [Transmitters Assembly](#transmitters-assembly)
@@ -10,9 +10,9 @@ The Redox Wireless is the wireless version of the Redox keyboard.
   - [Firmware](#firmware)
   - [Battery usage](#battery-usage)
 
-#### Bill of materials
+## Bill of materials
 
-##### Transmitters
+#### Transmitters
 
 | Qty | Item                                          | Notes                                               |
 |----:|-----------------------------------------------|-----------------------------------------------------|
@@ -24,7 +24,7 @@ The Redox Wireless is the wireless version of the Redox keyboard.
 |   2 | JS102011SAQN SMT slide switch                 | [digikey](https://www.digikey.com/product-detail/en/c-k/JS102011SAQN/401-1999-1-ND/1640114)|
 |   2 | Right angle 0.1" header (1x4pin)              |                                                     |
 
-##### Receiver
+#### Receiver
 
 | Qty | Item                                          | Notes                                               |
 |----:|-----------------------------------------------|-----------------------------------------------------|
@@ -47,7 +47,7 @@ The Redox Wireless is the wireless version of the Redox keyboard.
 
 > :warning: To program the YJ-14015 MCUs you need an ST-Link v2 programmer, these can be found on eBay or Aliexpress for as little as 2$ shipped. See [picture below](#nordic-mcus-firmware).
 
-###### Resistor values
+##### Resistor values
 
 If you want to customize your LEDs color or save a few bucks by ordering the LED all the same color you can refer to this section for choosing the correct resistor values. Otherwise you can refer to the [default configuration](#default-configuration).
 
@@ -66,7 +66,7 @@ There are two sets of resistor that you need for the receiver.
 
 Depending on the color you choose to use you should use the resistor listed above.
 
-###### Default configuration
+#### Default configuration
 
 Here you can find the default configuration for the receiver assembly.
 
@@ -84,7 +84,7 @@ Here you can find the default configuration for the receiver assembly.
 | R2    | 1.5k Ohm resistor |
 | R3    | 1.5k Ohm resistor |
 
-#### Transmitters Assembly
+## Transmitters Assembly
 
 <p align="center">
 <img src="../img/redox-w-pcb1.jpg" alt="Wireless redox PCBs" width="600"/>
@@ -148,7 +148,7 @@ Assembly steps:
 <img src="../img/pcb-w-assembly1.jpg" alt="Wireless Redox assembled PCB" width="600"/>
 </p>
 
-#### Receiver Assembly
+## Receiver Assembly
 
 The receiver assembly is pretty straightforward, you can install the components in any order you like with the exception of the YJ-14015: it should be installed **after** the right angled header (PROGR_HEADER1). Suggested assembly order:
 
@@ -181,7 +181,7 @@ The receiver assembly is pretty straightforward, you can install the components 
 
 > :information_source: Please note that here I used 220 Ohm resistors because I used only blue and white LEDs since I only had those laying around. You should use the resistor values suggested [here](#default-configuration).
 
-#### Firmware
+## Firmware
 
 You'll need to upload the firmware to the corresponding MCUs as per the following diagram:
 
@@ -191,7 +191,7 @@ You'll need to upload the firmware to the corresponding MCUs as per the followin
 
 Note that you'll need to upload the firmware for the YJ-14015 only once. Everything related to the keymap is handled by the Arduino Pro Micro and QMK Firmware, that's what you will need to modify to update the keymap.
 
-##### Nordic MCUs Firmware upload
+#### Nordic MCUs Firmware upload
 
 Follow the instruction in the [Redox Wireless Keyboard firmware repository](https://github.com/mattdibi/redox-w-firmware). You'll need only to flash the pre-built `.hex` files to the corresponding MCUs, for this you'll need an STLinkV2 debugger.
 
@@ -199,7 +199,7 @@ Follow the instruction in the [Redox Wireless Keyboard firmware repository](http
 <img src="../img/st-link-v2-programmer.jpg" alt="ST-Link v2 programmer" width="300"/>
 </p>
 
-##### Arduino Pro Micro Firmware upload
+#### Arduino Pro Micro Firmware upload
 
 The Redox uses QMK for its firmware, follow the QMK installation instructions [here](https://docs.qmk.fm/#/getting_started_build_tools), then compile and burn the firmware as follows:
 
@@ -212,7 +212,7 @@ You can find the code for the Redox here: [QMK - Redox Wireless keyboard](https:
 
 In the [Redox Wireless Keyboard firmware repository](https://github.com/mattdibi/redox-w-firmware/tree/master/precompiled) I added some pre-built hex files with the default keymap for testing purpose.
 
-#### Battery usage
+## Battery usage
 
 I got the current consumption for the transmitters using a shunt resistor (10 Ohm) and an oscilloscope during transmission.
 

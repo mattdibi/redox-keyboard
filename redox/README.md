@@ -1,11 +1,11 @@
-## Redox rev.1
+# Redox rev.1
 
 The Redox rev.1 is the first commercially available version of the Redox keyboard.
 
 Hardware availability:
   - [Falbatech](https://falba.tech/)
 
-### Summary
+## Summary
 
   - [Bill of materials](#bill-of-materials)
   - [Other assembly guides](#other-assembly-guides)
@@ -13,7 +13,7 @@ Hardware availability:
   - [Firmware](#firmware)
   - [RGB Underglow](#rgb-underglow)
 
-#### Bill of materials
+## Bill of materials
 
 | Qty | Item                                          | Notes                                               |
 |----:|-----------------------------------------------|-----------------------------------------------------|
@@ -29,14 +29,14 @@ Hardware availability:
 |  70 | Cherry MX compatible keycaps                  | 10x 1.25u keycaps, 6x 1.5u keycaps, 54x 1u keycaps  |
 |  14 | WS2812/WS2812B leds                           | Optional RGB-underglow                              |
 
-#### Other assembly guides
+## Other assembly guides
 
 External links to some other guides to building the Redox keyboard:
 
 - ["*Build your own keyboard*"](https://medium.com/@costask/build-your-own-keyboard-5df65cb68839) by @costask.
 - [Imgur build log](https://imgur.com/a/a6ck2Nc) (3D printed case).
 
-#### Assembly guide
+## Assembly guide
 
 <p align="center">
 <img src="../img/redox-pcb2.jpg" alt="Redox PCBs" width="600"/>
@@ -73,7 +73,7 @@ Installation steps:
 <img src="../img/pcb-assembly3.jpg" alt="Diode installation detail" width="600"/>
 </p>
 
-#### 3D Printed case assembly
+### 3D Printed case assembly
 
 | Qty | Item                                          | Notes                                               |
 |----:|-----------------------------------------------|-----------------------------------------------------|
@@ -103,7 +103,7 @@ Here's some measurements of the Pro Micro installation:
 <img src="../img/right-hand-controller-detail3.jpg" alt="Right hand controller installation detail" width="400"/>
 </p>
 
-#### Falbatech's-bamboo-case-assembly
+### Falbatech's bamboo case assembly
 
 If you're using Falbatech's bamboo case the use of the diode's legs is not needed and you can use standard header pins
 
@@ -111,7 +111,7 @@ If you're using Falbatech's bamboo case the use of the diode's legs is not neede
 <img src="../img/falbatech-case-assembly.jpg" alt="Falbatech's case assembly" width="600"/>
 </p>
 
-#### Firmware
+## Firmware
 
 > :warning: If you have a Redox with RGB backlight installed you **MUST** use the serial connection. For details see [the RGB underglow firmare instructions.](#rgb-underglow)
 
@@ -132,7 +132,7 @@ In the [firmware/](https://github.com/mattdibi/redox-keyboard/tree/master/redox/
 avrdude -p atmega32u4 -P $(COM_PORT) -c avr109 -U flash:w:redox_rev1_default.hex
 ```
 
-##### Setting EE_hands to use either hands as master
+### Setting EE_hands to use either hands as master
 If you define `EE_HANDS` in your `config.h`, you will need to set the EEPROM for the left and right halves.
 
 The EEPROM is used to store whether the half is left handed or right handed. This makes it so that the same firmware file will run on both hands instead of having to flash left and right handed versions of the firmware to each half. To flash the EEPROM file for the left half run:
@@ -168,7 +168,7 @@ After you have flashed the EEPROM, you then need to set `EE_HANDS` in `keyboard/
 // ...
 ```
 
-#### RGB Underglow
+## RGB Underglow
 
 Parts:
 - [ ] WS2812/WS2812B LED strip
@@ -182,7 +182,7 @@ Led strip Headers -> DIN -> DO -> TRRS pad -> (TRRS to other side) -> TRRS pad -
 
 Installation steps:
 
-##### LEFT hand as master (usually plugged in to the PC)
+### LEFT hand as master (usually plugged in to the PC)
 - On the LEFT hand:
   1. Solder the LED Strip headers as seen in the pictures below.
   2. Solder the DO Pin of the RGB strip to the TRRS pad as seen in the figures below.
@@ -202,7 +202,7 @@ Installation steps:
 <img src="../img/rgb-underglow2.jpg" alt="RGB underglow left hand backside" width="600"/>
 </p>
 
-##### RIGHT hand as master.
+### RIGHT hand as master.
 - On the RIGHT hand:
   1. Solder the LED Strip headers to the RGB strip.
   2. Solder the DO Pin of the RGB strip to the TRRS pad.
@@ -214,7 +214,7 @@ Installation steps:
 - You don't need to solder the 4.7k resistors since the I2C connection won't be used.
 - You can use only one hand as master.
 
-##### RGB Underglow firmware
+### RGB Underglow firmware
 
 To enable RGB backlighting you need to modify the default firmware as follows:
 - Use serial communication instead of I2C.
@@ -253,7 +253,7 @@ $ cd path/to/qmk_firmware
 $ make redox/rev1:default:avrdude
 ```
 
-### 3D-printed case
+## 3D-printed case
 
 To lower the build costs I designed a 3D printable case which you can find in this repository or on [thingiverse](https://www.thingiverse.com/thing:2886662), feel free to modify it to best suit your needs.
 
@@ -261,25 +261,10 @@ To lower the build costs I designed a 3D printable case which you can find in th
 <img src="../img/3d-printed-case.jpg" alt="3D printed case" width=600 />
 </p>
 
-### Layout
-
-#### Rev 1.0 layout
+## Layout
 
 <p align="center">
 <img src="../img/redox-layout.png" alt="Redox rev1.0 layout"/>
 </p>
 
 [KLE Layout permalink](http://www.keyboard-layout-editor.com/##@_name=Redox&author=Mattia%20Dal%20Ben&switchMount=cherry&plate:false&pcb:false%3B&@_x:3.5%3B&=%23%0A3&_x:10.5%3B&=*%0A8%3B&@_y:-0.875&x:2.5%3B&=%2F@%0A2&_x:1%3B&=$%0A4&_x:8.5%3B&=%2F&%0A7&_x:1%3B&=(%0A9%3B&@_y:-0.875&x:5.5%3B&=%25%0A5&_x:6.5%3B&=%5E%0A6%3B&@_y:-0.875&x:0.25&a:5&w:1.25%3B&=%60%0A%0A%0A%0A%0A%0ALayer%202&_a:4%3B&=!%0A1&_x:14.5%3B&=)%0A0&_a:5&w:1.25%3B&=-%0A%0A%0A%0A%0A%0ALayer%202%3B&@_y:-0.625&x:6.5%3B&=Layer%201&_x:4.5%3B&=Layer%201%3B&@_y:-0.75&x:3.5&a:4%3B&=E&_x:10.5%3B&=I%3B&@_y:-0.875&x:2.5%3B&=W&_x:1%3B&=R&_x:8.5%3B&=U&_x:1%3B&=O%3B&@_y:-0.875&x:5.5%3B&=T&_x:6.5%3B&=Y%3B&@_y:-0.875&x:0.25&a:5&w:1.25%3B&=TAB&_a:4%3B&=Q&_x:14.5%3B&=P&_a:5&w:1.25%3B&=%2F=%3B&@_y:-0.625&x:6.5&a:7&h:1.5%3B&=%5B&_x:4.5&h:1.5%3B&=%5D%3B&@_y:-0.75&x:3.5&a:4%3B&=D&_x:10.5%3B&=K%3B&@_y:-0.875&x:2.5%3B&=S&_x:1&n:true%3B&=F&_x:8.5&n:true%3B&=J&_x:1%3B&=L%3B&@_y:-0.875&x:5.5%3B&=G&_x:6.5%3B&=H%3B&@_y:-0.875&x:0.25&a:5&w:1.25%3B&=ESC&_a:4%3B&=A&_x:14.5%3B&=%2F:%0A%2F%3B&_a:5&w:1.25%3B&='%3B&@_y:-0.375&x:3.5&a:4%3B&=C&_x:10.5%3B&=%3C%0A,%3B&@_y:-0.875&x:2.5%3B&=X&_x:1%3B&=V&_x:8.5%3B&=M&_x:1%3B&=%3E%0A.%3B&@_y:-0.875&x:5.5%3B&=B&_x:6.5%3B&=N%3B&@_y:-0.875&x:0.25&a:5&w:1.25%3B&=SHIFT&_a:4%3B&=Z&_x:14.5%3B&=%3F%0A%2F%2F&_a:5&w:1.25%3B&=SHIFT%3B&@_y:-0.375&x:3.5%3B&=*%0A%0A%0A%0A%0A%0AALT&_x:10.5%3B&=Left%3B&@_y:-0.875&x:2.5%3B&=-&_x:12.5%3B&=Down%3B&@_y:-0.75&x:0.5%3B&=GUI&=+&_x:14.5%3B&=Up&=Right%3B&@_r:15&y:-2.625&x:5.75&w:1.25%3B&=%2F%2F%0A%0A%0A%0A%0A%0ACTRL%3B&@_r:30&rx:6.5&ry:4.25&y:-1%3B&=PgUp&=PgDn%3B&@_h:1.5%3B&=Back%0A%0A%0A%0A%0A%0Aspace&_h:1.5%3B&=Del%3B&@_r:-30&rx:13&y:-1&x:-2%3B&=Home&=End%3B&@_x:-2&h:1.5%3B&=Enter&_h:1.5%3B&=Space%3B&@_r:-15&rx:0&ry:0&y:7.75&x:11.75&w:1.25%3B&=ALT)
-
-#### Rev 1.1 layout
-
-This layout was designed to reduce the amount of 1.25 keycaps needed for the keyboard. Keycaps needed:
-- 8x 1.25u keycaps
-- 6x 1.5u keycaps
-- 56x 1u keycaps
-
-This layout is only available for the [Redox handwire version](https://www.thingiverse.com/thing:2704567) ... for now.
-
-<p align="center">
-<img src="../img/redox-layout-1.1.png" alt="Redox rev1.1 layout"/>
-</p>
