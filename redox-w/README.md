@@ -150,12 +150,34 @@ Assembly steps:
 
 #### Receiver Assembly
 
+The receiver assembly is pretty straightforward, you can install the components in any order you like with the exception of the YJ-14015: it should be installed **after** the right angled header (PROGR_HEADER1). Suggested assembly order:
+
+1. Solder D1, D2, D3 and D4 LEDs. See image for orientation.
+2. Solder R4, R6, R7 and R8 resistors.
+3. Solder R1, R2 and R3 resistors.
+4. Solder the AMS1117.
+5. Solder the Arduino Pro Micro headers.
+6. Solder the programming headers. I suggest you to cut the excess of the header **before** soldering the headers. You should stay as flush to the PCB surface as possible since the controller will be soldered above the headers. Use some masking tape to help you keep the header in place while soldering.
+7. Solder the YJ-14015. I suggest you to glue it in place or use some masking tape to help you during soldering.
+8. Upload the firmware and you're done.
+
+##### Assembled PCB, back:
+
 <p align="center">
-<img src="../img/receiver-assembly-1.jpg" alt="Redox-w receiver PCB, front." width="300"/>
-<img src="../img/receiver-assembly-2.jpg" alt="Redox-w receiver PCB, bottom." width="150"/>
+<img src="../img/redox-w-receiver-assembly-1.jpg" alt="Assembled receiver PCB, back." width="600"/>
 </p>
 
-WIP
+##### Assembled PCB, front:
+
+<p align="center">
+<img src="../img/redox-w-receiver-assembly-2.jpg" alt="Assembled receiver PCB, front." width="600"/>
+</p>
+
+##### LEDs installation detail:
+
+<p align="center">
+<img src="../img/redox-w-receiver-assembly-3.jpg" alt="Assembled receiver PCB, LEDs installation detail." width="600"/>
+</p>
 
 #### Firmware
 
