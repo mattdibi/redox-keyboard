@@ -75,6 +75,14 @@ Installation steps:
 
 ### 3D Printed case assembly
 
+To lower the build costs I designed a 3D printable case which you can find in this repository or on [thingiverse](https://www.thingiverse.com/thing:2886662), feel free to modify it to best suit your needs.
+
+<p align="center">
+<img src="../img/3d-printed-case.jpg" alt="3D printed case" width=600 />
+</p>
+
+Parts:
+
 | Qty | Item                                          | Notes                                               |
 |----:|-----------------------------------------------|-----------------------------------------------------|
 |   1 | Left top plate                                | [RedoxRev1TopLeft.STL](https://github.com/mattdibi/redox-keyboard/blob/master/redox/case/RedoxRev1TopLeft.STL)|
@@ -250,14 +258,6 @@ Then compile and burn the firmware on both controllers:
 $ cd path/to/qmk_firmware
 $ make redox/rev1:default:avrdude
 ```
-
-## 3D-printed case
-
-To lower the build costs I designed a 3D printable case which you can find in this repository or on [thingiverse](https://www.thingiverse.com/thing:2886662), feel free to modify it to best suit your needs.
-
-<p align="center">
-<img src="../img/3d-printed-case.jpg" alt="3D printed case" width=600 />
-</p>
 
 ## Layout
 
