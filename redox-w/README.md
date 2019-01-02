@@ -152,7 +152,7 @@ Assembly steps:
 
 The receiver assembly is pretty straightforward, you can install the components in any order you like with the exception of the YJ-14015: it should be installed **after** the right angled header (PROGR_HEADER1). Suggested assembly order:
 
-1. Solder D1, D2, D3 and D4 LEDs. See image for orientation.
+1. Solder D1, D2, D3 and D4 LEDs. See [image](#leds-installation-detail) for orientation.
 2. Solder R4, R6, R7 and R8 resistors.
 3. Solder R1, R2 and R3 resistors.
 4. Solder the AMS1117.
@@ -179,7 +179,7 @@ The receiver assembly is pretty straightforward, you can install the components 
 <img src="../img/redox-w-receiver-assembly-3.jpg" alt="Assembled receiver PCB, LEDs installation detail." width="600"/>
 </p>
 
-> :information_source: Please note that here I used 220 Ohm resistors because I used only blue and white LEDs since I only had those laying around. You should use the resistor values suggested [here](#default-configuration).
+> :information_source: Please note that here I installed 220 Ohm resistors because I used only blue and white LEDs as I only had those laying around. You should use the resistor values suggested [here](#resistor-values) or follow the [default configuration](#default-configuration).
 
 ## Firmware
 
