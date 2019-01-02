@@ -161,16 +161,16 @@ The receiver assembly is pretty straightforward, you can install the components 
 7. Solder the YJ-14015. I suggest you to glue it in place or use some masking tape to help you during soldering.
 8. Upload the firmware and you're done.
 
-##### Assembled PCB, back:
-
-<p align="center">
-<img src="../img/redox-w-receiver-assembly-1.jpg" alt="Assembled receiver PCB, back." width="600"/>
-</p>
-
 ##### Assembled PCB, front:
 
 <p align="center">
-<img src="../img/redox-w-receiver-assembly-2.jpg" alt="Assembled receiver PCB, front." width="600"/>
+<img src="../img/redox-w-receiver-assembly-1.jpg" alt="Assembled receiver PCB, front." width="600"/>
+</p>
+
+##### Assembled PCB, back:
+
+<p align="center">
+<img src="../img/redox-w-receiver-assembly-2.jpg" alt="Assembled receiver PCB, back." width="600"/>
 </p>
 
 ##### LEDs installation detail:
@@ -178,6 +178,8 @@ The receiver assembly is pretty straightforward, you can install the components 
 <p align="center">
 <img src="../img/redox-w-receiver-assembly-3.jpg" alt="Assembled receiver PCB, LEDs installation detail." width="600"/>
 </p>
+
+> :information_source: Please note that here I used 220 Ohm resistors because I used only blue and white LEDs since I only had those laying around. You should use the resistor values suggested [here](#default-configuration).
 
 #### Firmware
 
