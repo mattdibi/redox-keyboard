@@ -191,17 +191,11 @@ You'll need to upload the firmware to the corresponding MCUs as per the followin
 
 Note that you'll need to upload the firmware for the YJ-14015 only once. Everything related to the keymap is handled by the Arduino Pro Micro and QMK Firmware, that's what you will need to modify to update the keymap.
 
-#### Nordic MCUs Firmware upload
-
-Follow the instruction in the [Redox Wireless Keyboard firmware repository](https://github.com/mattdibi/redox-w-firmware). You'll need only to flash the pre-built `.hex` files to the corresponding MCUs, for this you'll need an STLinkV2 debugger.
-
-<p align="center">
-<img src="../img/st-link-v2-programmer.jpg" alt="ST-Link v2 programmer" width="300"/>
-</p>
+### Step-by-step firmware upload guide
 
 #### Arduino Pro Micro Firmware upload
 
-The Redox uses QMK for its firmware, follow the QMK installation instructions [here](https://docs.qmk.fm/#/getting_started_build_tools), then compile and burn the firmware as follows:
+Let's start by uploading the QMK firmware on the Arduino, this will help us in diagnosing problems early on. The Redox uses QMK for its firmware, follow the QMK installation instructions [here](https://docs.qmk.fm/#/getting_started_build_tools), then compile and burn the firmware as follows:
 
 ```sh
 $ cd path/to/qmk_firmware
@@ -211,6 +205,170 @@ $ make redox_w:default:avrdude
 You can find the code for the Redox here: [QMK - Redox Wireless keyboard](https://github.com/mattdibi/qmk_firmware/tree/redox_wireless/keyboards/redox_w).
 
 In the [Redox Wireless Keyboard firmware repository](https://github.com/mattdibi/redox-w-firmware/tree/master/precompiled) I added some pre-built hex files with the default keymap for testing purpose.
+
+#### Nordic MCUs Firmware upload
+
+You'll need only to flash the pre-built `.hex` files to the corresponding MCUs, for this you'll need an STLinkV2 debugger.
+
+<p align="center">
+<img src="../img/st-link-v2-programmer.jpg" alt="ST-Link v2 programmer" width="300"/>
+</p>
+
+*Note*: Tested on Ubuntu 16.04 and 18.04 but you should be able to find alternatives on all distros.
+
+##### Setup
+
+###### Install OpenOCD (Open On-Chip Debugger)
+
+```sh
+sudo apt install openocd
+```
+
+###### Download the repository
+
+Open a terminal and download this repository wherever you want. We'll need the `redox-w/firmware` folder content.
+
+```sh
+git clone https://github.com/mattdibi/redox-keyboard.git
+```
+
+or
+
+```sh
+wget https://github.com/mattdibi/redox-keyboard/archive/master.zip
+```
+
+###### Install the udev rules
+
+```sh
+cd path/to/repository/redox-keyboard/redox-w/firmware/
+sudo cp 49-stlinkv2.rules /etc/udev/rules.d/
+```
+
+##### Programming the receiver
+
+###### Hook up the receiver
+
+Hook up the ST-Link debugger to the receiver board you assembled without the Arduino. You need to connect only the `VCC`, `GND`, `SWDIO` and `SWCLK` pins of the receiver board like this:
+
+| ST-Link Debugger | Receiver board |
+|------------------|----------------|
+|       3.3V       |       VCC      |
+|        GND       |       GND      |
+|       SWCLK      |      SWCLK     |
+|       SWDIO      |      SWDIO     |
+
+<p align="center">
+<img src="../img/redox-w-firmware-5.jpg" alt="ST-Link debugger wiring." width="600"/>
+</p>
+
+Then plug in the ST-Link debugger into your PC.
+
+###### Launch a OpenOCD server session
+
+In a new terminal window launch an OpenOCD server session by issuing the following command:
+
+```sh
+openocd -s /usr/local/Cellar/open-ocd/0.8.0/share/openocd/scripts/ -f interface/stlink-v2.cfg -f target/nrf51.cfg
+```
+
+This should give the following output:
+
+```sh
+Info : nrf51.cpu: hardware has 4 breakpoints, 2 watchpoints
+```
+
+Leave this terminal window open.
+
+###### Receiver firmware flashing
+
+We can now issue the flashing commands. Open a terminal in the redox-w firmware folder.
+
+```sh
+cd path/to/repository/redox-keyboard/redox-w/firmware/
+```
+
+From the factory, these chips need to be erased:
+
+```sh
+echo reset halt | telnet localhost 4444
+echo nrf51 mass_erase | telnet localhost 4444
+```
+
+You should be seeing some movement in the OpenOCD terminal window, and you desktop should be looking somewhat like this:
+
+<p align="center">
+<img src="../img/redox-w-firmware-2.png" alt="Receiver firmware flashing." width="900"/>
+</p>
+
+Now we can upload the receiver firmware onto the MCU.
+
+```sh
+echo reset halt | telnet localhost 4444
+echo flash write_image `readlink -f precompiled-basic-receiver.hex` | telnet localhost 4444
+echo reset | telnet localhost 4444
+```
+
+You should be looking at something like this:
+
+<p align="center">
+<img src="../img/redox-w-firmware-4.png" alt="Receiver firmware flashing." width="900"/>
+</p>
+
+
+Now close the OpenOCD session (use `Ctrl-C`) and you're done with the receiver. Repeat these steps for the two halves of the keyboard and you should be set.
+
+##### Programming the two halves
+
+###### Hook up the transmitter
+
+Hook up the ST-Link programmer with the transmitters using the programming pins, and plug the debugger in you PC.
+
+<p align="center">
+<img src="../img/redox-w-firmware-3.jpg" alt="Transmitters programming pins." width="600"/>
+</p>
+
+Start a OpenOCD session as seen above and start flashing the firmware.
+
+###### Left hand firmware flashing
+
+From another terminal window issue the following commands. Again from the factory, these chips need to be erased:
+
+```sh
+echo reset halt | telnet localhost 4444
+echo nrf51 mass_erase | telnet localhost 4444
+```
+
+Upload the left hand firmware.
+
+```sh
+cd path/to/repository/redox-keyboard/redox-w/firmware/
+echo reset halt | telnet localhost 4444
+echo flash write_image `readlink -f precompiled-basic-left.hex` | telnet localhost 4444
+echo reset | telnet localhost 4444
+```
+
+###### Right hand firmware flashing
+
+After having hooked up the right hand to the ST-Link debugger and started a new OpenOCD session we can upload the right hand firmware.
+
+Again from the factory, these chips need to be erased:
+
+```sh
+echo reset halt | telnet localhost 4444
+echo nrf51 mass_erase | telnet localhost 4444
+```
+
+Upload the right hand firmware.
+
+```sh
+cd path/to/repository/redox-keyboard/redox-w/firmware/
+echo reset halt | telnet localhost 4444
+echo flash write_image `readlink -f precompiled-basic-right.hex` | telnet localhost 4444
+echo reset | telnet localhost 4444
+```
+
+Congratulations! You flashed the Redox-W firmware.
 
 ## Battery usage
 
