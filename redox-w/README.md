@@ -249,7 +249,7 @@ sudo cp 49-stlinkv2.rules /etc/udev/rules.d/
 
 ###### Hook up the receiver
 
-Hook up the ST-Link debugger to the receiver board you assembled. You need to connect only the `VCC`, `GND`, `SWDIO` and `SWCLK` pins of the receiver board like this:
+Hook up the ST-Link debugger to the receiver board you assembled without the Arduino. You need to connect only the `VCC`, `GND`, `SWDIO` and `SWCLK` pins of the receiver board like this:
 
 | ST-Link Debugger | Receiver board |
 |------------------|----------------|
@@ -257,6 +257,10 @@ Hook up the ST-Link debugger to the receiver board you assembled. You need to co
 |        GND       |       GND      |
 |       SWCLK      |      SWCLK     |
 |       SWDIO      |      SWDIO     |
+
+<p align="center">
+<img src="../img/redox-w-firmware-5.jpg" alt="ST-Link debugger wiring." width="600"/>
+</p>
 
 Then plug in the ST-Link debugger into your PC.
 
@@ -363,6 +367,8 @@ echo reset halt | telnet localhost 4444
 echo flash write_image `readlink -f precompiled-basic-right.hex` | telnet localhost 4444
 echo reset | telnet localhost 4444
 ```
+
+Congratulations! You flashed the Redox-W firmware.
 
 ## Battery usage
 
