@@ -294,7 +294,7 @@ echo nrf51 mass_erase | telnet localhost 4444
 You should be seeing some movement in the OpenOCD terminal window, and you desktop should be looking somewhat like this:
 
 <p align="center">
-<img src="../img/redox-w-firmware-2.png" alt="Receiver firmware flashing." width="600"/>
+<img src="../img/redox-w-firmware-2.png" alt="Receiver firmware flashing." width="900"/>
 </p>
 
 Now we can upload the receiver firmware onto the MCU.
@@ -304,6 +304,13 @@ echo reset halt | telnet localhost 4444
 echo flash write_image `readlink -f precompiled-basic-receiver.hex` | telnet localhost 4444
 echo reset | telnet localhost 4444
 ```
+
+You should be looking at something like this:
+
+<p align="center">
+<img src="../img/redox-w-firmware-4.png" alt="Receiver firmware flashing." width="900"/>
+</p>
+
 
 Now close the OpenOCD session (use `Ctrl-C`) and you're done with the receiver. Repeat these steps for the two halves of the keyboard and you should be set.
 
