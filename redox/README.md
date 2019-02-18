@@ -11,6 +11,7 @@ Hardware availability:
   - [Other assembly guides](#other-assembly-guides)
   - [Assembly guide](#assembly-guide)
   - [Firmware](#firmware)
+  - [Hot swappable mod](#hot-swappable-mod)
   - [RGB Underglow](#rgb-underglow)
 
 ## Bill of materials
@@ -52,9 +53,12 @@ Installation steps:
   5. Solder the Pro Micro header pins (**do not solder the Pro Micro controllers yet**). This step may differ depending on which case your're using. Refer to the following:
     * See 3D-Printed case [right hand controller installation detail](#3d-printed-case-assembly).
     * See Falbatech's [bamboo case](#falbatechs-bamboo-case-assembly).
+    * See [socketed Pro Micro installation guide](#pro-micro-sockets).
   6. Optional see [RGB-underglow instructions](#rgb-underglow).
 - Flip the PCBs.
 - Solder switches to the PCB.
+  * If you want hot swappable switches, see
+    [the hot swappable switch instructions](#hot-swappable-switches).
 - Flip the PCBs again.
 - Solder Pro Micros to the header pins following the PCB labelling.
 
@@ -175,6 +179,144 @@ After you have flashed the EEPROM, you then need to set `EE_HANDS` in `keyboard/
 #define RGBLIGHT_ANIMATIONS
 // ...
 ```
+
+## Hot swappable mod
+
+With a few modifications to the original design, it is possible to make a
+Redox with hot swappable switches and socketed Pro Micros. This was tested
+with Falbatech's PCBs and PVC cases. The switch hotswap mod should work with
+any case with a top plate that the switches snap into, with about a millimeter
+of extra clearance between the top plate and the PCB, and another extra half
+millimeter or so between the PCB and case bottom. If your (non-Falba) PCBs
+have particularly small diameter thru-holes for switch pins, check the
+Mill-Max 7305 spec sheet to ensure the receptacles will fit.
+
+### Extended bill of materials
+
+| Qty | Item                                          | Notes                                               |
+|----:|-----------------------------------------------|-----------------------------------------------------|
+|   1 | Peel-A-Way Sockets (82 pin strip)             | Available from [keeb.io](https://keeb.io/collections/frontpage/products/peel-a-way-sockets-for-pro-micros?variant=12972145344606)|
+| 140 | Mill-Max 7305 Pin Receptacles                 | Available from [Digi-Key](https://www.digikey.com/product-detail/en/mill-max-manufacturing-corp/7305-0-15-15-47-27-10-0/ED1039-ND/1765737) or [Mouser](https://www.mouser.com/ProductDetail/Mill-Max/7305-0-15-15-47-27-10-0?qs=sGAEpiMZZMtzcnMBgC2bs4r8MywUouWab4lhjKyTlYM%3D)|
+|   1 | Roll of Kapton tape                           |                                                     |
+
+Some extra Mill-Max receptacles may come in handy, in case of soldering
+mistakes or manufacturing defects.
+
+### Pro Micro Sockets
+
+<p align="center">
+<img src="../img/hs-mod-peelaway-socket.jpg" alt="Pro Micro Peel-A-Way socket top detail" width="300"/>
+<img src="../img/hs-mod-peelaway-solder.jpg" alt="Pro Micro Peel-A-Way socket solder detail" width="300"/>
+</p>
+
+Socketing your microcontrollers will allow you to swap out broken Pro Micros,
+or swap any Pro Micro pin-compatible microcontroller (with, for example, USB-C)
+into a finished build. Before you begin, you'll want to follow the
+[standard assembly guide steps](#assembly-guide)
+for soldering 1N4148 diodes, PJ-320A connectors,
+momentary switches, and any resistors you'll be using. Remember to 
+**trim the legs off your diodes and keep them**, as we'll be using the legs to
+make pins for each Pro Micro.
+
+Installation steps, after initial soldering:
+
+1. Using scissors or flush cutters, cut out two 12-pin strips of Peel-A-Way
+   sockets.
+2. With the bottom side of the PCB (the side with the diodes, momentary
+   switch, and TRRS connector visible) facing up, place the cut Peel-A-Way
+   socket strips into the thru-holes where the Pro Micro headers would
+   usually go.
+3. Temporarily fasten the Peel-A-Way sockets to the PCB with Kapton tape.
+4. Flip over the PCB.
+5. Solder the sockets into the thru-holes.
+6. Install your switches. This step differs depending on whether you plan
+   on making your switches hotswappable:
+   * For fixed, non-hotswap switches, follow [the standard assembly guide](#assembly-guide).
+   * Hotswap switch builds should follow [the hot swappable switch install guide](#hot-swappable-switches).
+7. Flip and orient your Pro Micro so that its labels match the labels on your
+   PCB, then cover the bottom of the Pro Micro in electrical or Kapton tape
+   to prevent shorts.
+8. Thread the least bent of your trimmed diode legs through the thru-holes
+   in your Pro Micro and into the corresponding sockets on the PCB. 
+9. Keeping the Pro Micro as level as possible, solder the diode legs to the
+   Pro Micro. It may help to keep a USB cable attached to the Pro Micro, to
+   help ensure the port ends up in a usable orientation.
+10. Trim the excess length of the diode legs off of the top of the Pro Micro.
+11. Repeat these steps for the other half of your Redox.
+
+### Hot Swappble Switches
+
+> :warning: A few things to keep in mind:
+> - Some switch pins (so far, Kailh Box Royals) may be slighly too wide to
+>   fit the Mill-Max recepticle. When in doubt, try it with spare recepticles.
+> - The only thing keeping the PCB attached to the top plate is the switches;
+>   if you remove too many (more than half per side), the PCB will detach and
+>   fall into the case. Try to swap only a few switches at once.
+
+<p align="center">
+<img src="../img/hs-mod-finished.jpg" alt="Finished Redox with hotswap switches" width=600 />
+</p>
+
+To build a Redox with hot swappable switches, follow these steps instead of
+the switch installation instructions in the standard build guide. Soldering
+Mill-Max recepticles is trickier than soldering bare switch pins; a small
+iron tip, small diameter solder, and relatively low temperatures are
+recommended.
+
+1. Take each of your switches and push a Mill-Max recepticle fully onto each
+   pin. One end of the recepticle has a small ring around it that makes it
+   wider than the other end; the recepticle should be oriented so that the
+   wide end is touching the switch housing (and will end up on the top,
+   plate-facing side of the PCB in the assembled keyboard).
+2. Snap switches into each of the four corners of your top plate, and two
+   more into the mounting holes that will be directly above the Pro Micro
+   in the assembled keyboard.
+3. Flip over the top plate and install the PCB.
+   - The recepticles might be a tight fit for the PCB thru-holes; if so,
+     press the PCB into the switches to make sure the PCB is fully mounted
+     and level.
+4. Install the rest of the switches, starting from the outside edges of the
+   plate and moving inward.
+   - Initially, installing switches will likely shift the surrounding switches
+     and the PCB out of position, so pinch any jostled switches and the PCB
+     back together as you go.
+   - Be careful not to apply too much pressure to the stem of the switch, as
+     this could damage it.
+5. Solder your switches, starting from the corners then going from the outside
+   edges to the inner switches in roughly the same order as the previous step.
+   - Before soldering each switch, apply pressure to the top of the switch
+     and the bottom of the PCB a final time to ensure the switch, plate, and
+     PCB are all properly seated.
+   - Apply heat to the pin recepticle and pad, then melt your solder onto
+     the pad. You will want a "volcano" shaped solder joint which fully
+     encircles the bottom of the recepticle, but doesn't fill its inner
+     surface.
+   - If you need to test that you haven't accidentally soldered a pin
+     permanently into its recepticle by allowing solder to spill into the
+     inner surface of the recepticle, you can try and temporarily remove
+     the switch as you would during a hot swap. Use a switch puller to depress
+     the tabs on the top and bottom of the switch (or the left and right for
+     the flipped 1.5u key switches), and gently pull up on the switch until
+     it is free of the keyboard. Note that if the switch and recepticles are
+     still hot, it might take some extra effort to pull out the switch.
+     Next, snap the switch back into its socket, and fix any unsoldered
+     switches that were knocked out of place during this process.
+6. Repeat these steps for the other side of the keyboard.
+
+##### Installing Mill-Max recepticles onto switch pins:
+<p align="center">
+<img src="../img/hs-mod-millmax.jpg" alt="Mill-Max recepticle installation" width="600"/>
+</p>
+
+##### Pins, recepticles, and PCB in proper alignment:
+<p align="center">
+<img src="../img/hs-mod-pre-solder.jpg" alt="Proper alignment of recepticles, pins, and PCB" width="600"/>
+</p>
+
+##### Soldered hot swap recepticles:
+<p align="center">
+<img src="../img/hs-mod-soldered.jpg" alt="Soldered hot swap recepticles" width="600"/>
+</p>
 
 ## RGB Underglow
 
