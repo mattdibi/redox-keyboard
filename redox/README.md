@@ -244,11 +244,11 @@ Installation steps, after initial soldering:
 10. Trim the excess length of the diode legs off of the top of the Pro Micro.
 11. Repeat these steps for the other half of your Redox.
 
-### Hot Swappble Switches
+### Hot Swappable Switches
 
 > :warning: A few things to keep in mind:
 > - Some switch pins (so far, Kailh Box Royals) may be slighly too wide to
->   fit the Mill-Max recepticle. When in doubt, try it with spare recepticles.
+>   fit the Mill-Max receptacle. When in doubt, try it with spare receptacles.
 > - The only thing keeping the PCB attached to the top plate is the switches;
 >   if you remove too many (more than half per side), the PCB will detach and
 >   fall into the case. Try to swap only a few switches at once.
@@ -259,27 +259,27 @@ Installation steps, after initial soldering:
 
 To build a Redox with hot swappable switches, follow these steps instead of
 the switch installation instructions in the standard build guide. Soldering
-Mill-Max recepticles is trickier than soldering bare switch pins; a small
+Mill-Max receptacles is trickier than soldering bare switch pins; a small
 iron tip, small diameter solder, and relatively low temperatures are
 recommended.
 
-1. Take each of your switches and push a Mill-Max recepticle fully onto each
-   pin. One end of the recepticle has a small ring around it that makes it
-   wider than the other end; the recepticle should be oriented so that the
+1. Take each of your switches and push a Mill-Max receptacle fully onto each
+   pin. One end of the receptacle has a small ring around it that makes it
+   wider than the other end; the receptacle should be oriented so that the
    wide end is touching the switch housing (and will end up on the top,
    plate-facing side of the PCB in the assembled keyboard).
 2. Snap switches into each of the four corners of your top plate, and two
    more into the mounting holes that will be directly above the Pro Micro
    in the assembled keyboard.
 3. Flip over the top plate and install the PCB.
-   - The recepticles might be a tight fit for the PCB thru-holes; if so,
+   - The receptacles might be a tight fit for the PCB thru-holes; if so,
      press the PCB into the switches to make sure the PCB is fully mounted
      and level.
 4. Install the rest of the switches, starting from the outside edges of the
    plate and moving inward.
-   - Initially, installing switches will likely shift the surrounding switches
-     and the PCB out of position, so pinch any jostled switches and the PCB
-     back together as you go.
+   - Initially, installing switches will likely shift the surrounding unsoldered
+     switches and the PCB out of position, so pinch any jostled switches and
+     the PCB back together as you go.
    - Be careful not to apply too much pressure to the stem of the switch, as
      this could damage it.
 5. Solder your switches, starting from the corners then going from the outside
@@ -287,35 +287,35 @@ recommended.
    - Before soldering each switch, apply pressure to the top of the switch
      and the bottom of the PCB a final time to ensure the switch, plate, and
      PCB are all properly seated.
-   - Apply heat to the pin recepticle and pad, then melt your solder onto
+   - Apply heat to the pin receptacle and pad, then melt your solder onto
      the pad. You will want a "volcano" shaped solder joint which fully
-     encircles the bottom of the recepticle, but doesn't fill its inner
+     encircles the bottom of the receptacle, but doesn't fill its inner
      surface.
    - If you need to test that you haven't accidentally soldered a pin
-     permanently into its recepticle by allowing solder to spill into the
-     inner surface of the recepticle, you can try and temporarily remove
+     permanently into its receptacle by allowing solder to spill into the
+     inner surface of the receptacle, you can try and temporarily remove
      the switch as you would during a hot swap. Use a switch puller to depress
      the tabs on the top and bottom of the switch (or the left and right for
      the flipped 1.5u key switches), and gently pull up on the switch until
-     it is free of the keyboard. Note that if the switch and recepticles are
+     it is free of the keyboard. Note that if the switch and receptacles are
      still hot, it might take some extra effort to pull out the switch.
      Next, snap the switch back into its socket, and fix any unsoldered
      switches that were knocked out of place during this process.
 6. Repeat these steps for the other side of the keyboard.
 
-##### Installing Mill-Max recepticles onto switch pins:
+##### Installing Mill-Max receptacles onto switch pins:
 <p align="center">
-<img src="../img/hs-mod-millmax.jpg" alt="Mill-Max recepticle installation" width="600"/>
+<img src="../img/hs-mod-millmax.jpg" alt="Mill-Max receptacle installation" width="600"/>
 </p>
 
-##### Pins, recepticles, and PCB in proper alignment:
+##### Pins, receptacles, and PCB in proper alignment:
 <p align="center">
-<img src="../img/hs-mod-pre-solder.jpg" alt="Proper alignment of recepticles, pins, and PCB" width="600"/>
+<img src="../img/hs-mod-pre-solder.jpg" alt="Proper alignment of receptacles, pins, and PCB" width="600"/>
 </p>
 
-##### Soldered hot swap recepticles:
+##### Soldered hot swap receptacles:
 <p align="center">
-<img src="../img/hs-mod-soldered.jpg" alt="Soldered hot swap recepticles" width="600"/>
+<img src="../img/hs-mod-soldered.jpg" alt="Soldered hot swap receptacles" width="600"/>
 </p>
 
 ## RGB Underglow
