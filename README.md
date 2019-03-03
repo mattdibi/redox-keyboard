@@ -49,6 +49,10 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
     - [Hackaday project build logs](https://hackaday.io/project/160610/logs)
     - [QMK firmware for Redox wireless](https://github.com/mattdibi/qmk_firmware/tree/redox_wireless)
     - [Nordic MCUs firmware for Redox wireless](https://github.com/mattdibi/redox-w-firmware)
+    - [3D printed case](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w/case), freely available.
+    - Rev1.0W PCBs: available at [Falbatech's store](https://falba.tech/product/redox-wireless-pcb-electrical-boards-set-of-2/)
+    - Commercially available cases:
+        - [Falbatech's bamboo and aliminium cases](https://falba.tech/product/redox-wireless-standard-lift-bamboo-wood-case-with-oil-finish/)
 
 ### Donations
 

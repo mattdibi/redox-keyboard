@@ -2,6 +2,9 @@
 
 The Redox Wireless is the wireless version of the Redox keyboard.
 
+Hardware availability:
+  - [Falbatech](https://falba.tech/)
+
 ## Summary
 
   - [Bill of materials](#bill-of-materials)
