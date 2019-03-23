@@ -186,6 +186,8 @@ The receiver assembly is pretty straightforward, you can install the components 
 
 ## Firmware
 
+Firmware sources available here: [https://github.com/mattdibi/redox-w-firmware](https://github.com/mattdibi/redox-w-firmware).
+
 You'll need to upload the firmware to the corresponding MCUs as per the following diagram:
 
 <p align="center">
