@@ -226,6 +226,7 @@ You'll need only to flash the pre-built `.hex` files to the corresponding MCUs, 
 ###### Install OpenOCD (Open On-Chip Debugger)
 
 ```sh
+sudo apt update
 sudo apt install openocd
 ```
 
