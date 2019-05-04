@@ -45,8 +45,10 @@ External links to some other guides to building the Redox keyboard:
 
 Two great video guides by [インケンch](https://www.youtube.com/channel/UCXJZdip7JmW74HQHCtfYzFw) (Japanese only).
 
-[![Redox hardware assembly](http://img.youtube.com/vi/EVRlU_eR9j4/0.jpg)](http://www.youtube.com/watch?v=EVRlU_eR9j4 "Redox hardware assembly")
-[![Redox firmware](http://img.youtube.com/vi/jRIRdfIIa1Q/0.jpg)](http://www.youtube.com/watch?v=jRIRdfIIa1Q "Redox firwmare")
+<p align="center">
+<a href="http://www.youtube.com/watch?v=EVRlU_eR9j4"><img src="http://img.youtube.com/vi/EVRlU_eR9j4/0.jpg" alt="Redox hardware assembly" width="300"/></a>
+<a href="http://www.youtube.com/watch?v=jRIRdfIIa1Q"><img src="http://img.youtube.com/vi/jRIRdfIIa1Q/0.jpg" alt="Redox firmware" width="300"/></a>
+</p>
 
 ## Assembly guide
 
