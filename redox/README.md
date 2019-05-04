@@ -31,7 +31,7 @@ Hardware availability:
 |  14 | WS2812/WS2812B leds                           | Optional RGB-underglow                              |
 
 
-> :warning: Pay attention to the Pro Micro you use in this project. Online you can find the infamous **Green Pro Micros** which have the same pinout of the normal Pro Micro but use a different power circuitry. Being the Redox a split keyboard that relies on detecting which side is directly powered to find which side is the master, these clones are not suited for the task. A more detailed explaination [here](http://www.40percent.club/2017/09/green-pro-micro.html)
+> :warning: Pay attention to the Pro Micro you use in this project. Online you can find the infamous **Green Pro Micros** which have the same pinout of the normal Pro Micro but use a different power circuitry. Being the Redox a split keyboard that relies on detecting which side is directly powered to find which side is the master, these clones are not suited for the task. A more detailed explaination [here](http://www.40percent.club/2017/09/green-pro-micro.html). Please note that they can come in different colors, not necessarily green.
 
 ## Other assembly guides
 
