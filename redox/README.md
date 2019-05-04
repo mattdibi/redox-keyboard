@@ -39,6 +39,14 @@ External links to some other guides to building the Redox keyboard:
 
 - ["*Build your own keyboard*"](https://medium.com/@costask/build-your-own-keyboard-5df65cb68839) by @costask.
 - [Imgur build log](https://imgur.com/a/a6ck2Nc) (3D printed case).
+- ["*First Homebrew Keyboard -redox Build Log-*"](https://x1.inkenkun.com/archives/6007) by [インケンch](https://www.youtube.com/channel/UCXJZdip7JmW74HQHCtfYzFw) (Japanese only)
+
+### Video guides
+
+Two great video guides by [インケンch](https://www.youtube.com/channel/UCXJZdip7JmW74HQHCtfYzFw) (Japanese only).
+
+[![Redox hardware assembly](http://img.youtube.com/vi/EVRlU_eR9j4/0.jpg)](http://www.youtube.com/watch?v=EVRlU_eR9j4 "Redox hardware assembly")
+[![Redox firmware](http://img.youtube.com/vi/jRIRdfIIa1Q/0.jpg)](http://www.youtube.com/watch?v=jRIRdfIIa1Q "Redox firwmare")
 
 ## Assembly guide
 
