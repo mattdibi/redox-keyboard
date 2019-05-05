@@ -55,6 +55,8 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
     - Rev1.0W PCBs: available at [Falbatech's store](https://falba.tech/product/redox-wireless-pcb-electrical-boards-set-of-2/)
     - Commercially available cases:
         - [Falbatech's bamboo and aliminium cases](https://falba.tech/product/redox-wireless-standard-lift-bamboo-wood-case-with-oil-finish/)
+		- [Falbatech's fullhand bamboo cases](https://falba.tech/product/redox-wireless-standard-lift-bamboo-wood-case-with-oil-finish-ver-1/)
+		- [Falbatech's PVC cases](https://falba.tech/product/redox-wireless-standard-pvc-white-case/)
 
 ### Donations
 
