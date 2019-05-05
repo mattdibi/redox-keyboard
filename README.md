@@ -5,7 +5,7 @@
 <img src="img/qmk-badge-dark.png" alt="QMK" width="145"/>
 </p>
 
-The Redox project is an open-source, [QMK (Quantum Mechanical Keyboard Firmware)](https://github.com/qmk/qmk_firmware) powered, ergonomic split mechanical keyboard. This repository will be used to share information about the project and instruction on how to use and assembly the Redox keyboard.
+The Redox project is an open-source, [QMK (Quantum Mechanical Keyboard Firmware)](https://github.com/qmk/qmk_firmware) powered, ergonomic split mechanical keyboard. This repository will be used to share information about the project and instruction on how to use and assemble the Redox keyboard.
 
 <p align="center">
 <img src="img/redox-1.jpg" alt="Redox" width="600" style="border-radius:3%"/>
@@ -40,7 +40,8 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
   - [Redodactyl keyboard](https://www.reddit.com/r/MechanicalKeyboards/comments/9j5pw5/enter_the_redodactyl_first_build/): handwired 3D printed Dactyl-inspired Redox variant by u/darknao.
 - [**Redox Manuform**](https://www.thingiverse.com/thing:3503380): full rework of the Redox case inspired by the Dactyl Manuform. Designed by [Fosk\_LL](https://www.thingiverse.com/Fosk_LL/about). 
 - [**Redox rev1.0**](https://github.com/mattdibi/redox-keyboard/tree/master/redox)
-	- [3D printed case](https://www.thingiverse.com/thing:2886662), freely available.
+	- [3D printable case](https://www.thingiverse.com/thing:2886662), freely available.
+	- [Travel-friendly Redox Keyboard case](https://www.thingiverse.com/thing:3607303), by by [Fosk\_LL](https://www.thingiverse.com/Fosk_LL/about).
 	- Rev1.0 PCBs: available at [Falbatech's store](https://falba.tech/product/redox-pcb-electrical-boards-set-of-2/)
 	- Commercially available cases:
 		- [Falbatech's bamboo cases with tilt kit](https://falba.tech/product/redox-standard-lift-bamboo-wood-case-with-oil-finish/)
