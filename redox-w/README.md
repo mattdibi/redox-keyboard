@@ -186,6 +186,8 @@ The receiver assembly is pretty straightforward, you can install the components 
 
 ## Firmware
 
+**Basics**: The Redox keyboard works similarly to the Mitosis keyboard: we have two transmitters responsible for scanning the two matrices, which then transmit the matrix status through the [Gazel protocol](https://developer.nordicsemi.com/nRF5_SDK/nRF51_SDK_v5.x.x/doc/5.2.0/html/a00140.html) to the receiver. The receiver is another YJ-14015 which receives the two matrix scans and send it through serial to the Arduino Pro Micro. The Pro Micro is responsible for running QMK and converting the bytes received by the YJ-14015 into actual keystrokes.
+
 Firmware sources available here: [https://github.com/mattdibi/redox-w-firmware](https://github.com/mattdibi/redox-w-firmware).
 
 You'll need to upload the firmware to the corresponding MCUs as per the following diagram:
