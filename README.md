@@ -41,7 +41,8 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
 - [**Redox Manuform**](https://www.thingiverse.com/thing:3503380): full rework of the Redox case inspired by the Dactyl Manuform. Designed by [Fosk\_LL](https://www.thingiverse.com/Fosk_LL/about). 
 - [**Redox rev1.0**](https://github.com/mattdibi/redox-keyboard/tree/master/redox)
 	- [3D printable case](https://www.thingiverse.com/thing:2886662), freely available.
-	- [Travel-friendly Redox Keyboard case](https://www.thingiverse.com/thing:3607303), by by [Fosk\_LL](https://www.thingiverse.com/Fosk_LL/about).
+	- [Redox keyboard case (high profile)](https://www.thingiverse.com/thing:3825752), by [Michele Ferri](https://www.thingiverse.com/sako83/about).
+	- [Travel-friendly Redox Keyboard case](https://www.thingiverse.com/thing:3607303), by [Fosk\_LL](https://www.thingiverse.com/Fosk_LL/about).
 	- Rev1.0 PCBs: available at [Falbatech's store](https://falba.tech/product/redox-pcb-electrical-boards-set-of-2/)
 	- Commercially available cases:
 		- [Falbatech's bamboo cases with tilt kit](https://falba.tech/product/redox-standard-lift-bamboo-wood-case-with-oil-finish/)
