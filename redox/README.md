@@ -19,7 +19,7 @@ Hardware availability:
 | Qty | Item                                          | Notes                                               |
 |----:|-----------------------------------------------|-----------------------------------------------------|
 |  70 | Cherry MX compatible switches                 |                                                     |
-|   2 | Redox PCBs                                    | [Availalble here](https://falba.tech/product/redox-pcb-electrical-boards-set-of-2/)|
+|   2 | Redox PCBs                                    | [Available here](https://falba.tech/product/redox-pcb-electrical-boards-set-of-2/)|
 |  70 | 1N4148 diodes                                 | SMD diodes can also be used                         |
 |   2 | PJ-320A 4 poles 3.5 mm TRRS connectors        |                                                     |
 |   2 | 4.7 kOhm resistors                            | Need to be soldered on one half only                |
@@ -31,7 +31,7 @@ Hardware availability:
 |  14 | WS2812/WS2812B leds                           | Optional RGB-underglow                              |
 
 
-> :warning: Pay attention to the Pro Micro you use in this project. Online you can find the infamous **Green Pro Micros** which have the same pinout of the normal Pro Micro but use a different power circuitry. Being the Redox a split keyboard that relies on detecting which side is directly powered to find which side is the master, these clones are not suited for the task. A more detailed explaination [here](http://www.40percent.club/2017/09/green-pro-micro.html). Please note that they can come in different colors, not necessarily green.
+> :warning: Pay attention to the Pro Micro you use in this project. Online you can find the infamous **Green Pro Micros** which have the same pinout of the normal Pro Micro but use a different power circuitry. Being the Redox a split keyboard that relies on detecting which side is directly powered to find which side is the master, these clones are not suited for the task. A more detailed explanation [here](http://www.40percent.club/2017/09/green-pro-micro.html). Please note that they can come in different colors, not necessarily green.
 
 ## Other assembly guides
 
@@ -63,7 +63,7 @@ Installation steps:
   2. Solder PJ-320A connectors.
   3. Solder momentary switches.
   4. Solder 4.7k Ohm resistors **on one half only**. If you are going for the RGB-underglow ignore this step.
-  5. Solder the Pro Micro header pins (**do not solder the Pro Micro controllers yet**). This step may differ depending on which case your're using. Refer to the following:
+  5. Solder the Pro Micro header pins (**do not solder the Pro Micro controllers yet**). This step may differ depending on which case you're using. Refer to the following:
     * See 3D-Printed case [right hand controller installation detail](#3d-printed-case-assembly).
     * See Falbatech's [bamboo case](#falbatechs-bamboo-case-assembly).
     * See [socketed Pro Micro installation guide](#pro-micro-sockets).
@@ -73,7 +73,7 @@ Installation steps:
   * If you want hot swappable switches, see
     [the hot swappable switch instructions](#hot-swappable-switches).
 - Flip the PCBs again.
-- Solder Pro Micros to the header pins following the PCB labelling.
+- Solder Pro Micros to the header pins following the PCB labeling.
 
 ##### Right hand back side:
 <p align="center">
@@ -138,7 +138,7 @@ If you're using Falbatech's bamboo case the use of the diode's legs is not neede
 
 ## Firmware
 
-> :warning: If you have a Redox with RGB backlight installed you **MUST** use the serial connection. For details see [the RGB underglow firmare instructions.](#rgb-underglow)
+> :warning: If you have a Redox with RGB backlight installed you **MUST** use the serial connection. For details see [the RGB underglow firmware instructions.](#rgb-underglow)
 
 The Redox uses QMK for its firmware, follow the QMK installation instructions [here](https://docs.qmk.fm/#/getting_started_build_tools), then compile and burn the firmware on both halves as follows:
 
