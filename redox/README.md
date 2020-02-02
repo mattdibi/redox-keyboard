@@ -147,7 +147,21 @@ $ cd path/to/qmk_firmware
 $ make redox/rev1:default:avrdude
 ```
 
+After issuing this command you should see the following output:
+
+```sh
+Detecting USB port, reset your controller now.....
+```
+
+Now you should reset the Pro Micros using the reset button as seen in the following picture:
+
+<p align="center">
+<img src="../img/reset-mcu.jpg" alt="Reset button" width="300"/>
+</p>
+
 > :warning: You always need to burn the firmware on **BOTH** halves of the keyboard.
+
+> :warning: Failing to upload Redox Firmware on Linux. Please refer to [issue #8060](https://github.com/qmk/qmk_firmware/issues/8060) of QMK firmware.
 
 You can find the code for the Redox here: [QMK - Redox keyboard](https://github.com/qmk/qmk_firmware/tree/master/keyboards/redox).
 
