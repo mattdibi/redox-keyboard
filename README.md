@@ -1,9 +1,20 @@
-# The Redox project repository
-
 <p align="center">
 <img src="img/redox-logo.png" alt="Redox logo" width="600"/>
 <img src="img/qmk-badge-dark.png" alt="QMK" width="145"/>
 </p>
+
+<h3 align="center">The Redox project repository</h3>
+
+<div align="center">
+
+[![Status](https://img.shields.io/badge/status-active-success.svg)]() 
+[![GitHub Issues](https://img.shields.io/github/issues/mattdibi/redox-keyboard.svg)](https://github.com/mattdibi/redox-keyboard/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/mattdibi/redox-keyboard.svg)](https://github.com/mattdibi/redox-keyboard/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+
+</div>
+
+---
 
 The Redox project is an open-source, [QMK (Quantum Mechanical Keyboard Firmware)](https://github.com/qmk/qmk_firmware) powered, ergonomic split mechanical keyboard. This repository will be used to share information about the project and instruction on how to use and assemble the Redox keyboard.
 
