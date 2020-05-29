@@ -1,9 +1,9 @@
-# The Redox project repository
-
 <p align="center">
 <img src="img/redox-logo.png" alt="Redox logo" width="600"/>
 <img src="img/qmk-badge-dark.png" alt="QMK" width="145"/>
 </p>
+
+<h3 align="center">The Redox project repository</h3>
 
 <div align="center">
 
