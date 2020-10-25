@@ -53,7 +53,7 @@ Two great video guides by [インケンch](https://www.youtube.com/channel/UCXJZ
 Another great guide by [Antonio Raptors](https://www.youtube.com/channel/UCNYbiq6AH8AdYTKMokKaviQ) (Spanish only).
 
 <p align="center">
-<a href="https://www.youtube.com/watch?v=wRvfs1tUpZ4"><img src="http://img.youtube.com/vi/wRvfs1tUpZ4/0.jpg" alt="Como hacer un teclado mecánico para diseño / gaming - REDOX ESPAÑOL" width="450"/></a>
+<a href="https://www.youtube.com/watch?v=wRvfs1tUpZ4"><img src="http://img.youtube.com/vi/wRvfs1tUpZ4/0.jpg" alt="Como hacer un teclado mecánico para diseño / gaming - REDOX ESPAÑOL" width="300"/></a>
 </p>
 
 ## Assembly guide
