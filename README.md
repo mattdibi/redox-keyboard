@@ -40,6 +40,7 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
 - RGB backlighting support.
 - 3D-printer friendly case.
 - Wireless
+- [VIA](https://caniusevia.com/) compatible (thanks to [Harshit Goel](https://github.com/harshitgoel96))
 
 ## Related projects
 
