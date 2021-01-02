@@ -77,11 +77,19 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
 <img src="img/redox-layout.png" alt="Redox layout" width="600" style="border-radius:3%"/>
 </p>
 
-### Affiliations
+### Keycaps
+
+| Size  | Qty |                                     Notes                                    |
+|-------|:---:|:----------------------------------------------------------------------------:|
+| 1.5u  |   6 |                                                                              |
+| 1.25u |  10 | You can get away with 8 if you use two 1u keycaps for the 1.25u rotated keys |
+| 1u    |  54 |                                                                              |
+
+## Affiliations
 
 In partnership with Falbatech you can now use the code "**mattdibi05**" on Falbatech's store for a 5% OFF special discount.
 
-### Donations
+## Donations
 
 If you've read this far and found something useful, please consider donating to help me maintain and further develop this project.
 
