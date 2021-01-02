@@ -71,6 +71,12 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
 		- [Falbatech's fullhand bamboo cases](https://falba.tech/product/redox-wireless-standard-lift-bamboo-wood-case-with-oil-finish-ver-1/)
 		- [Falbatech's PVC cases](https://falba.tech/product/redox-wireless-standard-pvc-white-case/)
 
+## Layout
+
+<p align="center">
+<img src="img/redox-layout.png" alt="Redox layout" width="600" style="border-radius:3%"/>
+</p>
+
 ### Affiliations
 
 In partnership with Falbatech you can now use the code "**mattdibi05**" on Falbatech's store for a 5% OFF special discount.
