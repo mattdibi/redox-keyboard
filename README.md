@@ -80,5 +80,5 @@ In partnership with Falbatech you can now use the code "**mattdibi05**" on Falba
 If you've read this far and found something useful, please consider donating to help me maintain and further develop this project.
 
 <p align="center">
-<a href="https://www.paypal.me/MattiaDalBen"><img src="img/donate-button.jpeg" alt="Donate button" width=300/></a>
+<a href="https://www.paypal.me/MattiaDalBen"><img src="img/donate-button.png" alt="Donate button" width=300/></a>
 </p>
