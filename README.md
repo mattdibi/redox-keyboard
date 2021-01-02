@@ -85,6 +85,8 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
 | 1.25u |  10 | You can get away with 8 if you use two 1u keycaps for the 1.25u rotated keys |
 | 1u    |  54 |                                                                              |
 
+> :information_source: On [pimpmykeyboard.com](https://pimpmykeyboard.com/sa-1976-keyset-two-shot/) site you can find a SA 1976 keyset kit specifically made for the Redox keyboard: the "Ergo Redox kit (12 keys)".
+
 ## Affiliations
 
 In partnership with Falbatech you can now use the code "**mattdibi05**" on Falbatech's store for a 5% OFF special discount.
