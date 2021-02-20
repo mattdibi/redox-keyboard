@@ -1,6 +1,6 @@
-# Redox rev.1
+# Redox rev 1.0
 
-The Redox rev.1 is the first commercially available version of the Redox keyboard.
+The Redox rev 1.0 is the first commercially available version of the Redox keyboard.
 
 Hardware availability:
   - [Falbatech](https://falba.tech/)
@@ -252,7 +252,7 @@ or swap any Pro Micro pin-compatible microcontroller (with, for example, USB-C)
 into a finished build. Before you begin, you'll want to follow the
 [standard assembly guide steps](#assembly-guide)
 for soldering 1N4148 diodes, PJ-320A connectors,
-momentary switches, and any resistors you'll be using. Remember to 
+momentary switches, and any resistors you'll be using. Remember to
 **trim the legs off your diodes and keep them**, as we'll be using the legs to
 make pins for each Pro Micro.
 
@@ -275,7 +275,7 @@ Installation steps, after initial soldering:
    PCB, then cover the bottom of the Pro Micro in electrical or Kapton tape
    to prevent shorts.
 8. Thread the least bent of your trimmed diode legs through the thru-holes
-   in your Pro Micro and into the corresponding sockets on the PCB. 
+   in your Pro Micro and into the corresponding sockets on the PCB.
 9. Keeping the Pro Micro as level as possible, solder the diode legs to the
    Pro Micro. It may help to keep a USB cable attached to the Pro Micro, to
    help ensure the port ends up in a usable orientation.
@@ -412,11 +412,11 @@ To do this, modify `qmk_firmware/keyboards/redox/keymaps/default/config.h` as fo
 ```c++
 // ...
 
-/* You need to use the sarial communication since we 
+/* You need to use the sarial communication since we
 used a cable to carry the data signal for the LED strip */
 #define USE_SERIAL
 
-/* Select hand configuration: you need to use as master 
+/* Select hand configuration: you need to use as master
 the hand that drives the LED strip */
 #define MASTER_LEFT
 // #define MASTER_RIGHT
