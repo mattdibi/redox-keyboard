@@ -44,14 +44,14 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
 
 ## Related projects
 
-- [**Redox handwire**](https://www.thingiverse.com/thing:2704567)
+- [**Redox handwire**](https://www.thingiverse.com/thing:2704567): The first incarnation of the Redox keyboard. It consists of a 3D-printed case and a handwired matrix.
   - [Tilted Redox case](https://www.thingiverse.com/thing:2767216): tilted case for the Redox prototype by jschloer.
   - [couscous-kbd](https://gitlab.com/cschalkwijk/couscous-kbd): Redox-inspired parametric OpenSCAD keyboard design.
   - [Redox tenting kit](https://www.thingiverse.com/make:484843): modified base to support tenting, mini-USB for the interconnect, and a hole for microswitch for reset needed when uploading new firmware by [Lenbok](https://github.com/Lenbok).
   - [Iris-inspired Redox case](https://github.com/Lenbok/scad-redox-case): a case inspired both by the Redox rev1.0 and the Iris designed with OpenSCAD by [Lenbok](https://github.com/Lenbok).
   - [Redodactyl keyboard](https://www.reddit.com/r/MechanicalKeyboards/comments/9j5pw5/enter_the_redodactyl_first_build/): handwired 3D printed Dactyl-inspired Redox variant by u/darknao.
 - [**Redox Manuform**](https://www.thingiverse.com/thing:3503380): full rework of the Redox case inspired by the Dactyl Manuform. Designed by [Fosk\_LL](https://www.thingiverse.com/Fosk_LL/about).
-- [**Redox rev1.0**](https://github.com/mattdibi/redox-keyboard/tree/master/redox)
+- [**Redox rev1.0**](https://github.com/mattdibi/redox-keyboard/tree/master/redox): the Redox rev 1.0 is the first commercially available version of the Redox keyboard.
 	- Rev1.0 PCBs: available at [Falbatech's store](https://falba.tech/product/redox-pcb-electrical-boards-set-of-2/)
     - Firmware sources:
         - [QMK firmware for Redox](https://github.com/mattdibi/qmk_firmware/tree/master/keyboards/redox)
@@ -64,7 +64,7 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
 		- [Falbatech's bamboo cases with tilt kit](https://falba.tech/product/redox-standard-lift-bamboo-wood-case-with-oil-finish/)
 		- [Falbatech's fullhand bamboo cases](https://falba.tech/product/redox-fullhand-bamboo-wood-case-with-oil-finish-ver-2/)
 		- [Falbatech's PVC cases](https://falba.tech/product/redox-standard-pvc-white-case/)
-- [**Redox rev1.0W (Wireless)**](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w)
+- [**Redox rev1.0W (Wireless)**](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w): the Redox rev 1.0W is the wireless version of the Redox keyboard.
     - Rev1.0W PCBs: available at [Falbatech's store](https://falba.tech/product/redox-wireless-pcb-electrical-boards-set-of-2/)
     - Firmware sources:
         - [QMK firmware for Redox wireless](https://github.com/mattdibi/qmk_firmware/tree/master/keyboards/redox_w)
