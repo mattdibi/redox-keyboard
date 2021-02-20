@@ -1,6 +1,6 @@
-## Redox Wireless (a.k.a. codename Ultron)
+## Redox rev 1.0W (Wireless)
 
-The Redox Wireless is the wireless version of the Redox keyboard.
+The Redox rev 1.0W is the wireless version of the Redox keyboard.
 
 Hardware availability:
   - [Falbatech](https://falba.tech/)
@@ -46,7 +46,7 @@ Hardware availability:
 |   1 | Right angle 0.1" header (1x4pin)              |                                                     |
 |   2 | Straight 0.1" header (1x6pin)                 |                                                     |
 
-> :information_source: You can also use the [Mitosis receiver](https://github.com/reversebias/mitosis-hardware/blob/master/bom/README.md) since it's almost identical, or you can build a receiver on your own. 
+> :information_source: You can also use the [Mitosis receiver](https://github.com/reversebias/mitosis-hardware/blob/master/bom/README.md) since it's almost identical, or you can build a receiver on your own.
 
 > :warning: To program the YJ-14015 MCUs you need an ST-Link v2 programmer, these can be found on eBay or Aliexpress for as little as 2$ shipped. See [picture below](#nordic-mcus-firmware).
 
