@@ -236,6 +236,8 @@ Knowing that the CR2032 battery is rated for 220mAh we get:
 
 Revision 1.0W and 2.0WHS share a lot of similarities with the exception of a single mounting hole.
 
+<p align="center">
+<img src="../img/holes-case-compat.PNG" alt="Redox-W revisions compatibility." width="600"/>
+</p>
 
-
-The hole shouldn't compromise usability and fitment but take this into account if you want to fit a 2.0WHS PCB into a 1.0W case or vice-versa.
+As you can see from the above image, the mounting hole was moved a little lower in the rev 2.0WHS. This shouldn't compromise usability and fitment but take this into account if you want to fit a 2.0WHS PCB into a 1.0W case or vice-versa.
