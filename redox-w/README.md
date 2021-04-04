@@ -2,18 +2,19 @@
 
 The Redox-W is the wireless version of the Redox keyboard, it comes in two flavours:
 
-- [Rev 1.0W](): The first revision of the Redox Wireless.
-- [Rev 2.0WHS](): Hot-swappable version of the Redox Wireless. It comes with minimal range improvements and limited compatibility with Rev1.0W cases (more on that in the dedicated section).
+- **Rev 1.0W**: The first revision of the Redox Wireless.
+- **Rev 2.0WHS**: Hot-swappable version of the Redox Wireless. It comes with some range improvements and limited compatibility with Rev1.0W cases (more on that in the dedicated section).
 
 The two hardware revision share the firmware and the receiver dongle. In this page you'll find firmware instructions (which are the same for the two PCB versions) for the hardware assembly instructions follow the link below.
 
-- [Rev 1.0W transmitters assembly]()
-- [Rev 2.0WHS transmitters assembly]()
+- [Rev 1.0W assembly](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w/rev1.0W#transmitters-assembly)
+- [Rev 2.0WHS assembly](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w/rev2.0WHS#transmitters-assembly)
 
 ## Summary
 
   - [Firmware](#firmware)
   - [Battery usage](#battery-usage)
+  - [Case compatibility](#case-compatibility)
 
 ## Firmware
 
@@ -230,3 +231,11 @@ Knowing that the CR2032 battery is rated for 220mAh we get:
 <a href="https://www.codecogs.com/eqnedit.php?latex=t_{batt}&space;=&space;\frac{C_{batt}}{I_{avg}}&space;=&space;\frac{220{mAh}}{250{\mu&space;A}}&space;\simeq&space;880h" target="_blank"><img src="https://latex.codecogs.com/gif.latex?t_{batt}&space;=&space;\frac{C_{batt}}{I_{avg}}&space;=&space;\frac{220{mAh}}{250{\mu&space;A}}&space;\simeq&space;880h" title="t_{batt} = \frac{C_{batt}}{I_{avg}} = \frac{220{mAh}}{250{\mu A}} \simeq 880h" /></a>
 
 **TLDR**: We can expect **at least 880 hours** of continuous typing on the keyboard before needing to change the batteries. Keep in mind that when you're not typing (500ms without key presses is the time interval needed for the keyboard) the transmitters go into deep sleep mode and draw only 2.7uA. So for an everyday use (4 hours a day of continuous typing) you can expect a battery life of at least a year. Obviously your mileage may vary.
+
+## Case compatibility
+
+Revision 1.0W and 2.0WHS share a lot of similarities with the exception of a single mounting hole.
+
+
+
+The hole shouldn't compromise usability and fitment but take this into account if you want to fit a 2.0WHS PCB into a 1.0W case or vice-versa.
