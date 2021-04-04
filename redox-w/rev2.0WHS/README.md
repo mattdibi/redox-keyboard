@@ -93,7 +93,7 @@ Here you can find the default configuration for the receiver assembly.
 Suggested assembly order (there's no wrong way of doing this because all parts can be soldered in any order):
 1. Solder the YJ-14015.
 2. Solder the right angle 0.1" header. To test the solder job try uploading the firmware as described in the dedicated section.
-3. Solder the diodes taking into account the right orientation. You can now test if the PCB is working properly by connecting the STLinkV2 debugger for supplying power and using a pair of pliers to short the Kailh socket pins.
+3. Solder the diodes taking into account the right orientation. The cathode side (denoted by the vertical line on the packaging) should face the squared hole on the PCB. See the [pictures](#diodes-and-hot-swap-socket-detail) for reference. If you have already assembled the Redox receiver, you can now test if the PCB is working properly by connecting the STLinkV2 debugger for supplying power to the transmitter and using a pair of pliers to short the Kailh socket pins.
 4. Solder the Kailh hot-swap sockets.
 5. Solder the battery holders.
 6. Solder the slide switch.
@@ -157,7 +157,7 @@ The receiver assembly is pretty straightforward, you can install the components 
 <img src="../../img/redox-w-2.0-case-1.jpg" alt="3D printed case" width="600"/>
 </p>
 
-Here you can find the newly design minimal footprint case for the Redox 2.0 WHS. Features:
+Here you can find the newly designed case for the Redox 2.0 WHS. Features:
 - Easy to print
 - Sturdy feeling
 - Minimal footprint
