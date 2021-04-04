@@ -76,6 +76,13 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
         - [Falbatech's bamboo and aliminium cases](https://falba.tech/product/redox-wireless-standard-lift-bamboo-wood-case-with-oil-finish/)
 		- [Falbatech's fullhand bamboo cases](https://falba.tech/product/redox-wireless-standard-lift-bamboo-wood-case-with-oil-finish-ver-1/)
 		- [Falbatech's PVC cases](https://falba.tech/product/redox-wireless-standard-pvc-white-case/)
+- [**Redox rev2.0WHS**](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w): the Redox rev 2.0WHS is the wireless hot-swappable version of the Redox keyboard.
+    - Rev2.0WHS PCBs: gerber files available [here](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w/rev2.0WHS/pcb)
+    - Firmware sources:
+        - [QMK firmware for Redox wireless](https://github.com/mattdibi/qmk_firmware/tree/master/keyboards/redox_w)
+        - [Nordic MCUs firmware for Redox wireless](https://github.com/mattdibi/redox-w-firmware)
+	- 3D-printable case:
+        - [3D printed case](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w/rev2.0WHS/case), freely available.
 
 ## Layout
 
