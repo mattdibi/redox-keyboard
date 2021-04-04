@@ -88,7 +88,7 @@ Here you can find the default configuration for the receiver assembly.
 ## Transmitters Assembly
 
 <p align="center">
-<img src="../img/redox-w-pcb1.jpg" alt="Wireless redox PCBs" width="600"/>
+<img src="../../img/redox-w-pcb1.jpg" alt="Wireless redox PCBs" width="600"/>
 </p>
 
 Assembly steps:
@@ -109,44 +109,44 @@ Assembly steps:
 ##### Programming headers detail:
 
 <p align="center">
-<img src="../img/pcb-w-assembly2.jpg" alt="Programming headers detail" width="600"/>
+<img src="../../img/pcb-w-assembly2.jpg" alt="Programming headers detail" width="600"/>
 </p>
 
 ##### MCUs detail:
 
 <p align="center">
-<img src="../img/pcb-w-assembly3.jpg" alt="MCUs detail" width="600"/>
+<img src="../../img/pcb-w-assembly3.jpg" alt="MCUs detail" width="600"/>
 </p>
 
 ##### Slider switch detail:
 
 <p align="center">
-<img src="../img/pcb-w-assembly4.jpg" alt="Slider switch detail" width="600"/>
+<img src="../../img/pcb-w-assembly4.jpg" alt="Slider switch detail" width="600"/>
 </p>
 
 ##### Diodes installation detail:
 
 <p align="center">
-<img src="../img/pcb-w-assembly5.jpg" alt="Diode installation detail" width="600"/>
+<img src="../../img/pcb-w-assembly5.jpg" alt="Diode installation detail" width="600"/>
 </p>
 
 ##### Battery holder installation detail:
 
 <p align="center">
-<img src="../img/battery-installation1.jpg" alt="Battery holder installation detail. Ground pad." width="300"/>
-<img src="../img/battery-installation2.jpg" alt="Battery holder installation detail. Assembled." width="300"/>
+<img src="../../img/battery-installation1.jpg" alt="Battery holder installation detail. Ground pad." width="300"/>
+<img src="../../img/battery-installation2.jpg" alt="Battery holder installation detail. Assembled." width="300"/>
 </p>
 
 ##### Left and right hand completed assembly:
 
 <p align="center">
-<img src="../img/pcb-w-assembly6.jpg" alt="Left and right hand completed assembly" width="600"/>
+<img src="../../img/pcb-w-assembly6.jpg" alt="Left and right hand completed assembly" width="600"/>
 </p>
 
 ##### Assembled PCB:
 
 <p align="center">
-<img src="../img/pcb-w-assembly1.jpg" alt="Wireless Redox assembled PCB" width="600"/>
+<img src="../../img/pcb-w-assembly1.jpg" alt="Wireless Redox assembled PCB" width="600"/>
 </p>
 
 ## Receiver Assembly
@@ -165,19 +165,19 @@ The receiver assembly is pretty straightforward, you can install the components 
 ##### Assembled PCB, front:
 
 <p align="center">
-<img src="../img/redox-w-receiver-assembly-1.jpg" alt="Assembled receiver PCB, front." width="600"/>
+<img src="../../img/redox-w-receiver-assembly-1.jpg" alt="Assembled receiver PCB, front." width="600"/>
 </p>
 
 ##### Assembled PCB, back:
 
 <p align="center">
-<img src="../img/redox-w-receiver-assembly-2.jpg" alt="Assembled receiver PCB, back." width="600"/>
+<img src="../../img/redox-w-receiver-assembly-2.jpg" alt="Assembled receiver PCB, back." width="600"/>
 </p>
 
 ##### LEDs installation detail:
 
 <p align="center">
-<img src="../img/redox-w-receiver-assembly-3.jpg" alt="Assembled receiver PCB, LEDs installation detail." width="600"/>
+<img src="../../img/redox-w-receiver-assembly-3.jpg" alt="Assembled receiver PCB, LEDs installation detail." width="600"/>
 </p>
 
 > :information_source: Please note that here I installed 220 Ohm resistors because I used only blue and white LEDs as I only had those laying around. You should use the resistor values suggested [here](#resistor-values) or follow the [default configuration](#default-configuration).
