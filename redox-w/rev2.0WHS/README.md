@@ -105,19 +105,19 @@ The receiver assembly is pretty straightforward, you can install the components 
 ##### Assembled PCB, front:
 
 <p align="center">
-<img src="../img/redox-w-receiver-assembly-1.jpg" alt="Assembled receiver PCB, front." width="600"/>
+<img src="../../img/redox-w-receiver-assembly-1.jpg" alt="Assembled receiver PCB, front." width="600"/>
 </p>
 
 ##### Assembled PCB, back:
 
 <p align="center">
-<img src="../img/redox-w-receiver-assembly-2.jpg" alt="Assembled receiver PCB, back." width="600"/>
+<img src="../../img/redox-w-receiver-assembly-2.jpg" alt="Assembled receiver PCB, back." width="600"/>
 </p>
 
 ##### LEDs installation detail:
 
 <p align="center">
-<img src="../img/redox-w-receiver-assembly-3.jpg" alt="Assembled receiver PCB, LEDs installation detail." width="600"/>
+<img src="../../img/redox-w-receiver-assembly-3.jpg" alt="Assembled receiver PCB, LEDs installation detail." width="600"/>
 </p>
 
 > :information_source: Please note that here I installed 220 Ohm resistors because I used only blue and white LEDs as I only had those laying around. You should use the resistor values suggested [here](#resistor-values) or follow the [default configuration](#default-configuration).
