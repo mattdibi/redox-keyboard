@@ -16,10 +16,10 @@ The Redox rev 2.0WHS is the wireless hot-swappable version of the Redox keyboard
 | Qty | Item                                          | Notes                                               |
 |----:|-----------------------------------------------|-----------------------------------------------------|
 |  70 | Cherry MX compatible switches                 |                                                     |
-|  70 | Kailh Hot-swap sockets                        | Part: CPG151101S11                                  |
+|  70 | Kailh PCB sockets CPG151101S11                |                                                     |
 |   2 | Redox Wireless 2.0WHS PCBs                    |                                                     |
 |   2 | YJ-14015 modules (Core51822B clones)          | [aliexpress](https://www.aliexpress.com/item/NRF51822-Core51822-BLE-4-0-Bluetooth-2-4G-Wireless-Module-Antenna-Board-For-ULP-SPI-I2C/32842154172.html?spm=2114.search0104.3.8.663a616aYeRlVr&ws_ab_test=searchweb0_0,searchweb201602_1_10065_10068_10843_10059_10884_10887_10696_100031_10084_10083_10103_10618_10304_10307_10820_10821_10302,searchweb201603_60,ppcSwitch_5&algo_expid=1dded059-5054-4890-bcc4-6face1150a21-1&algo_pvid=1dded059-5054-4890-bcc4-6face1150a21&priceBeautifyAB=0)
-|  70 | 1N4148W SOD-123 diodes                        | 1N4148 THT diodes can also be used                  |
+|  70 | SOD-123 1N4148/1N4148W diodes                 | 1N4148 THT diodes can also be used                  |
 |   2 | Keystone 3034 SMT battery holders             | [digikey](https://www.digikey.com/product-detail/en/keystone-electronics/3034/36-3034-ND/4499289)|
 |   2 | JS102011SAQN SMT slide switch                 | [digikey](https://www.digikey.com/product-detail/en/c-k/JS102011SAQN/401-1999-1-ND/1640114)|
 |   2 | Right angle 0.1" header (1x4pin)              |                                                     |
@@ -101,13 +101,15 @@ Suggested assembly order (there's no wrong way of doing this because all parts c
 ##### MCUs detail:
 
 <p align="center">
-<img src="../../img/redox-w-2.0-transmitters-assembly-3.jpg" alt="MCUs detail" width="600"/>
+<img src="../../img/redox-w-2.0-transmitters-assembly-2.jpg" alt="MCUs detail 1" width="300"/>
+<img src="../../img/redox-w-2.0-transmitters-assembly-3.jpg" alt="MCUs detail 2" width="300"/>
 </p>
 
 ##### Diodes and hot-swap socket detail:
 
 <p align="center">
-<img src="../../img/redox-w-2.0-transmitters-assembly-5.jpg" alt="Diode and hot-swap socket detail" width="600"/>
+<img src="../../img/redox-w-2.0-transmitters-assembly-4.jpg" alt="Diode and hot-swap socket detail 1" width="300"/>
+<img src="../../img/redox-w-2.0-transmitters-assembly-5.jpg" alt="Diode and hot-swap socket detail 2" width="300"/>
 </p>
 
 ##### Assembled PCB:
