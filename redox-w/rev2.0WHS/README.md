@@ -86,7 +86,35 @@ Here you can find the default configuration for the receiver assembly.
 
 ## Transmitters Assembly
 
-WIP
+<p align="center">
+<img src="../../img/redox-w-2.0-transmitters-assembly-1.jpg" alt="Redox 2.0WHS PCBs, unassembled." width="600"/>
+</p>
+
+Suggested assembly order (there's no wrong way of doing this because all parts can be soldered in any order):
+1. Solder the YJ-14015.
+2. Solder the right angle 0.1" header. To test the solder job try uploading the firmware as described in the dedicated section.
+3. Solder the diodes taking into account the right orientation. You can now test if the PCB is working properly by connecting the STLinkV2 debugger for supplying power and using a pair of pliers to short the Kailh socket pins.
+4. Solder the Kailh hot-swap sockets.
+5. Solder the battery holders.
+6. Solder the slide switch.
+
+##### MCUs detail:
+
+<p align="center">
+<img src="../../img/redox-w-2.0-transmitters-assembly-3.jpg" alt="MCUs detail" width="600"/>
+</p>
+
+##### Diodes and hot-swap socket detail:
+
+<p align="center">
+<img src="../../img/redox-w-2.0-transmitters-assembly-5.jpg" alt="Diode and hot-swap socket detail" width="600"/>
+</p>
+
+##### Assembled PCB:
+
+<p align="center">
+<img src="../../img/redox-w-2.0-transmitters-assembly-7.jpg" alt="Wireless Redox assembled PCB" width="600"/>
+</p>
 
 ## Receiver Assembly
 
