@@ -7,8 +7,6 @@ The Redox rev 2.0WHS is the wireless hot-swappable version of the Redox keyboard
   - [Bill of materials](#bill-of-materials)
   - [Transmitters Assembly](#transmitters-assembly)
   - [Receiver Assembly](#receiver-assembly)
-  - [Firmware](#firmware)
-  - [Battery usage](#battery-usage)
 
 ## Bill of materials
 
