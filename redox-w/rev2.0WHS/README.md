@@ -7,6 +7,7 @@ The Redox rev 2.0WHS is the wireless hot-swappable version of the Redox keyboard
   - [Bill of materials](#bill-of-materials)
   - [Transmitters Assembly](#transmitters-assembly)
   - [Receiver Assembly](#receiver-assembly)
+  - [3D printed case](#3d-printed-case)
 
 ## Bill of materials
 
@@ -119,3 +120,26 @@ The receiver assembly is pretty straightforward, you can install the components 
 </p>
 
 > :information_source: Please note that here I installed 220 Ohm resistors because I used only blue and white LEDs as I only had those laying around. You should use the resistor values suggested [here](#resistor-values) or follow the [default configuration](#default-configuration).
+
+## 3D printed case
+
+<p align="center">
+<img src="../../img/redox-w-2.0-case-1.jpg" alt="3D printed case" width="600"/>
+</p>
+
+Here you can find the newly design minimal footprint case for the Redox 2.0 WHS. Features:
+- Easy to print
+- Sturdy feeling
+- Minimal footprint
+- Integrated sound dampening
+
+I printed it with my Prusa Mini with 0.2 mm layer height. The STLs are for the left hand keyboard only, you'll need to mirror them along the X axis in your slicer for the right hand keyboard.
+
+Hardware required for assembly:
+- 10x M3 10 mm screws
+- 10x M3 nuts
+
+> :warning: The 3D printed case requires the use of SMD diodes. Through hole diodes will interfer witht the front plate.
+
+> :warning: The closed back design (file: `BackplateL.stl`) was not tested at the time of this writing.
+
