@@ -136,7 +136,7 @@ Here you can find the newly design minimal footprint case for the Redox 2.0 WHS.
 I printed it with my Prusa Mini with 0.2 mm layer height. The STLs are for the left hand keyboard only, you'll need to mirror them along the X axis in your slicer for the right hand keyboard.
 
 Hardware required for assembly:
-- 10x M3 10 mm screws
+- 10x M3 8 mm screws
 - 10x M3 nuts
 
 > :warning: The 3D printed case requires the use of SMD diodes. Through hole diodes will interfer witht the front plate.
