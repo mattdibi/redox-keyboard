@@ -3,7 +3,7 @@
 The Redox-W is the wireless version of the Redox keyboard, it comes in two flavours:
 
 - **Rev 1.0W**: The first revision of the Redox Wireless.
-- **Rev 2.0WHS**: Hot-swappable version of the Redox Wireless. It comes with some range improvements and limited compatibility with Rev1.0W cases (more on that in the dedicated section).
+- **Rev 2.0WHS**: Hot-swappable version of the Redox Wireless. It comes with some range improvements and limited compatibility with Rev1.0W cases (more on that in the [dedicated section](#case-compatibility)).
 
 The two hardware revision share the firmware and the receiver dongle. In this page you'll find firmware instructions (which are the same for the two PCB versions) for the hardware assembly instructions follow the link below.
 
