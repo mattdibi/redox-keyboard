@@ -106,19 +106,19 @@ The receiver assembly is pretty straightforward, you can install the components 
 7. Solder the YJ-14015. I suggest you to glue it in place or use some masking tape to help you during soldering.
 8. Upload the firmware and you're done.
 
-##### Assembled PCB, front:
+##### Assembled PCB, front
 
 <p align="center">
 <img src="../img/redox-w-receiver-assembly-1.jpg" alt="Assembled receiver PCB, front." width="600"/>
 </p>
 
-##### Assembled PCB, back:
+##### Assembled PCB, back
 
 <p align="center">
 <img src="../img/redox-w-receiver-assembly-2.jpg" alt="Assembled receiver PCB, back." width="600"/>
 </p>
 
-##### LEDs installation detail:
+##### LEDs installation detail
 
 <p align="center">
 <img src="../img/redox-w-receiver-assembly-3.jpg" alt="Assembled receiver PCB, LEDs installation detail." width="600"/>
@@ -149,44 +149,44 @@ Assembly steps:
 - Program the MCUs.
 - Close the case.
 
-##### Programming headers detail:
+##### Programming headers detail
 
 <p align="center">
 <img src="../img/pcb-w-assembly2.jpg" alt="Programming headers detail" width="600"/>
 </p>
 
-##### MCUs detail:
+##### MCUs detail
 
 <p align="center">
 <img src="../img/pcb-w-assembly3.jpg" alt="MCUs detail" width="600"/>
 </p>
 
-##### Slider switch detail:
+##### Slider switch detail
 
 <p align="center">
 <img src="../img/pcb-w-assembly4.jpg" alt="Slider switch detail" width="600"/>
 </p>
 
-##### Diodes installation detail:
+##### Diodes installation detail
 
 <p align="center">
 <img src="../img/pcb-w-assembly5.jpg" alt="Diode installation detail" width="600"/>
 </p>
 
-##### Battery holder installation detail:
+##### Battery holder installation detail
 
 <p align="center">
 <img src="../img/battery-installation1.jpg" alt="Battery holder installation detail. Ground pad." width="300"/>
 <img src="../img/battery-installation2.jpg" alt="Battery holder installation detail. Assembled." width="300"/>
 </p>
 
-##### Left and right hand completed assembly:
+##### Left and right hand completed assembly
 
 <p align="center">
 <img src="../img/pcb-w-assembly6.jpg" alt="Left and right hand completed assembly" width="600"/>
 </p>
 
-##### Assembled PCB:
+##### Assembled PCB
 
 <p align="center">
 <img src="../img/pcb-w-assembly1.jpg" alt="Wireless Redox assembled PCB" width="600"/>
@@ -206,21 +206,21 @@ Suggested assembly order (there's no wrong way of doing this because all parts c
 5. Solder the battery holders.
 6. Solder the slide switch.
 
-##### MCUs detail:
+##### MCUs detail
 
 <p align="center">
 <img src="../img/redox-w-2.0-transmitters-assembly-2.jpg" alt="MCUs detail 1" width="300"/>
 <img src="../img/redox-w-2.0-transmitters-assembly-3.jpg" alt="MCUs detail 2" width="300"/>
 </p>
 
-##### Diodes and hot-swap socket detail:
+##### Diodes and hot-swap socket detail
 
 <p align="center">
 <img src="../img/redox-w-2.0-transmitters-assembly-4.jpg" alt="Diode and hot-swap socket detail 1" width="300"/>
 <img src="../img/redox-w-2.0-transmitters-assembly-5.jpg" alt="Diode and hot-swap socket detail 2" width="300"/>
 </p>
 
-##### Assembled PCB:
+##### Assembled PCB
 
 <p align="center">
 <img src="../img/redox-w-2.0-transmitters-assembly-7.jpg" alt="Wireless Redox assembled PCB" width="600"/>
