@@ -79,7 +79,7 @@ Installation steps:
   * If you want hot swappable switches, see
     [the hot swappable switch instructions](#hot-swappable-switches).
 - Flip the PCBs again.
-- Solder Pro Micros to the header pins following the PCB labeling.
+- Solder Pro Micros to the header pins **following the PCB labeling**. The Pro Micro on the right half should be installed with the bottom facing the Redox PCB, the Pro Micro on the left half should be installed with the bottom facing away from the PCB. See [pictures](https://github.com/mattdibi/redox-keyboard/tree/refactoring/docs/redox#left-hand-back-side-1) for details.
 
 ##### Right hand back side:
 <p align="center">
