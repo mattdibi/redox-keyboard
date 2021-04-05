@@ -464,6 +464,8 @@ Knowing that the CR2032 battery is rated for 220mAh we get:
 
 **TLDR**: We can expect **at least 880 hours** of continuous typing on the keyboard before needing to change the batteries. Keep in mind that when you're not typing (500ms without key presses is the time interval needed for the keyboard) the transmitters go into deep sleep mode and draw only 2.7uA. So for an everyday use (4 hours a day of continuous typing) you can expect a battery life of at least a year. Obviously your mileage may vary.
 
+> :information_source: After using my keyboard for a few years I can confirm that battery usage matches the above computations. Please note that a metallic case can greatly impact user experience and battery usage.
+
 ## Case compatibility
 
 Revision 1.0W and 2.0WHS share a lot of similarities with the exception of a single mounting hole.
