@@ -232,7 +232,7 @@ Suggested assembly order (there's no wrong way of doing this because all parts c
 <img src="../img/redox-w-2.0-case-1.jpg" alt="3D printed case" width="600"/>
 </p>
 
-Here you can find the newly designed case for the Redox 2.0 WHS. Features:
+[Here](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w/rev2.0WHS/case) you can find the newly designed case for the Redox 2.0 WHS. Features:
 - Easy to print
 - Sturdy feeling
 - Minimal footprint
