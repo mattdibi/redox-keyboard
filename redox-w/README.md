@@ -24,7 +24,7 @@ The two hardware revision share the firmware and the receiver dongle. In this pa
 
 | Qty | Item                                          | Notes                                               |
 |----:|-----------------------------------------------|-----------------------------------------------------|
-|   2 | Redox Wireless Transmitters PCB               | Available versions: Rev.1.0W, Rev.2.0WHS            |
+|   2 | Redox Wireless Transmitters PCB               | Available versions: [Rev.1.0W](https://falba.tech/), Rev.2.0WHS |
 |  70 | Cherry MX compatible switches                 |                                                     |
 |  70 | Kailh PCB sockets CPG151101S11                | Rev.2.0WHS **only**                                 |
 |   2 | YJ-14015 modules (Core51822B clones)          | [aliexpress](https://www.aliexpress.com/item/NRF51822-Core51822-BLE-4-0-Bluetooth-2-4G-Wireless-Module-Antenna-Board-For-ULP-SPI-I2C/32842154172.html?spm=2114.search0104.3.8.663a616aYeRlVr&ws_ab_test=searchweb0_0,searchweb201602_1_10065_10068_10843_10059_10884_10887_10696_100031_10084_10083_10103_10618_10304_10307_10820_10821_10302,searchweb201603_60,ppcSwitch_5&algo_expid=1dded059-5054-4890-bcc4-6face1150a21-1&algo_pvid=1dded059-5054-4890-bcc4-6face1150a21&priceBeautifyAB=0)
