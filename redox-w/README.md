@@ -266,7 +266,7 @@ Note that you'll need to upload the firmware for the YJ-14015 only once. Everyth
 
 #### Arduino Pro Micro Firmware upload
 
-Let's start by uploading the QMK firmware on the Arduino, this will help us in diagnosing problems early on. The Redox uses QMK for its firmware, follow the QMK installation instructions [here](https://docs.qmk.fm/#/getting_started_build_tools), then compile and burn the firmware as follows:
+Let's start by uploading the QMK firmware on the Arduino, this will help us in diagnosing problems early on. The Redox Wireless uses QMK for its firmware, follow the QMK installation instructions [here](https://docs.qmk.fm/#/getting_started_build_tools), then compile and burn the firmware as follows:
 
 ```sh
 $ cd path/to/qmk_firmware
@@ -275,46 +275,67 @@ $ make redox_w:default:avrdude
 
 You can find the code for the Redox here: [QMK - Redox Wireless keyboard](https://github.com/mattdibi/qmk_firmware/tree/redox_wireless/keyboards/redox_w).
 
-In the [Redox Wireless Keyboard firmware repository](https://github.com/mattdibi/redox-w-firmware/tree/master/precompiled) I added some pre-built hex files with the default keymap for testing purpose.
+In the [Redox Wireless Keyboard firmware repository](https://github.com/mattdibi/redox-w-firmware/tree/master/precompiled) I added some pre-built hex files with the default keymap for testing purposes.
 
-#### Nordic MCUs Firmware upload
+#### Nordic MCUs Firmware upload using Docker
 
-You'll need only to flash the pre-built `.hex` files to the corresponding MCUs, for this you'll need an STLinkV2 debugger.
+To flash the firmware files to the corresponding MCUs, you'll need an STLinkV2 debugger.
 
 <p align="center">
 <img src="../img/st-link-v2-programmer.jpg" alt="ST-Link v2 programmer" width="300"/>
 </p>
 
-*Note*: Tested on Ubuntu 16.04 and 18.04 but you should be able to find alternatives on all distros.
-
 ##### Setup
 
-###### Install OpenOCD (Open On-Chip Debugger)
+###### Requirements
 
-```sh
-sudo apt update
-sudo apt install openocd
-```
+- Linux-based distro (macOS should work too but wasn't tested)
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker-compose](https://docs.docker.com/compose/install/)
+- Download the [redox-w-firmware](https://github.com/mattdibi/redox-w-firmware) repository.
 
 ###### Download the repository
 
-Open a terminal and download this repository wherever you want. We'll need the `redox-w/firmware` folder content.
+Open a terminal and download the Redox Wireless firmware repository wherever you want.
 
-```sh
-git clone https://github.com/mattdibi/redox-keyboard.git
+```
+$ git clone https://github.com/mattdibi/redox-w-firmware.git
 ```
 
 or
 
-```sh
-wget https://github.com/mattdibi/redox-keyboard/archive/master.zip
+```
+$ wget https://github.com/mattdibi/redox-w-firmware/archive/refs/heads/master.zip
 ```
 
 ###### Install the udev rules
 
-```sh
-cd path/to/repository/redox-keyboard/redox-w/firmware/
-sudo cp 49-stlinkv2.rules /etc/udev/rules.d/
+Install the udev rules for the STLinkV2 programmer contained inside the repository.
+
+```
+$ cd path/to/repository/redox-w-firmare/
+$ sudo cp 49-stlinkv2.rules /etc/udev/rules.d/
+$ udevadm control --reload-rules && udevadm trigger
+```
+
+Plug in, or replug in the programmer after this.
+
+###### Build the two container images
+
+From inside the `redox-w-firmware` folder run:
+
+```
+$ docker-compose build
+```
+
+After the process completes you should see three new images:
+
+```
+$ docker images
+REPOSITORY           TAG       IMAGE ID       CREATED          SIZE
+redox-fw-toolchain   latest    810de995238e   16 minutes ago   896MB
+redox-fw-openocd     latest    173d86d1409c   18 minutes ago   168MB
+ubuntu               16.04     8185511cd5ad   4 weeks ago      132MB
 ```
 
 ##### Programming the receiver
@@ -336,59 +357,105 @@ Hook up the ST-Link debugger to the receiver board you assembled without the Ard
 
 Then plug in the ST-Link debugger into your PC.
 
-###### Launch a OpenOCD server session
+###### Run the two images using docker compose
 
-In a new terminal window launch an OpenOCD server session by issuing the following command:
+After connecting the STLinkV2 debugger, from inside the `redox-w-firmware` folder run:
 
-```sh
-openocd -s /usr/local/Cellar/open-ocd/0.8.0/share/openocd/scripts/ -f interface/stlink-v2.cfg -f target/nrf51.cfg
+```
+$ docker-compose up
+Creating redox-w-firmware_openocd_1 ... done
+Creating redox-w-firmware_toolchain_1 ... done
+Attaching to redox-w-firmware_openocd_1, redox-w-firmware_toolchain_1
+openocd_1    | Open On-Chip Debugger 0.9.0 (2018-01-24-01:05)
+openocd_1    | Licensed under GNU GPL v2
+openocd_1    | For bug reports, read
+openocd_1    | 	http://openocd.org/doc/doxygen/bugs.html
+openocd_1    | WARNING: target/nrf51_stlink.cfg is deprecated, please switch to target/nrf51.cfg
+openocd_1    | Info : auto-selecting first available session transport "hla_swd". To override use 'transport select <transport>'.
+openocd_1    | Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+openocd_1    | adapter speed: 1000 kHz
+openocd_1    | Info : Unable to match requested speed 1000 kHz, using 950 kHz
+openocd_1    | Info : Unable to match requested speed 1000 kHz, using 950 kHz
+openocd_1    | Info : clock speed 950 kHz
+openocd_1    | Info : STLINK v2 JTAG v17 API v2 SWIM v4 VID 0x0483 PID 0x3748
+openocd_1    | Info : using stlink api v2
+openocd_1    | Info : Target voltage: 3.274320
+openocd_1    | Info : nrf51.cpu: hardware has 4 breakpoints, 2 watchpoints
 ```
 
-This should give the following output:
+From another terminal window, you should see the two containers running with the following command:
 
-```sh
-Info : nrf51.cpu: hardware has 4 breakpoints, 2 watchpoints
+```
+$ docker ps
+CONTAINER ID   IMAGE                       COMMAND                  CREATED         STATUS         PORTS     NAMES
+84f606ad7e25   redox-fw-toolchain:latest   "tail -f /dev/null"      4 seconds ago   Up 3 seconds             redox-w-firmware_toolchain_1
+8d0d6b5da95a   redox-fw-openocd:latest     "/bin/sh -c 'openocd…"   4 seconds ago   Up 3 seconds             redox-w-firmware_openocd_1
 ```
 
-Leave this terminal window open.
+###### Build and upload the firmware
 
-###### Receiver firmware flashing
+We can now build and upload the firmware by issuing the following from the `redox-w-firmware` root directory:
 
-We can now issue the flashing commands. Open a terminal in the redox-w firmware folder.
-
-```sh
-cd path/to/repository/redox-keyboard/redox-w/firmware/
+```
+$ docker exec -it redox-w-firmware_toolchain_1 ./redox-w-firmware/redox-w-receiver-basic/program.sh
 ```
 
-From the factory, these chips need to be erased:
+if everything goes well we should see the following output:
 
-```sh
-echo reset halt | telnet localhost 4444
-echo nrf51 mass_erase | telnet localhost 4444
+```
+============================= PROGRAMMING =============================
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+Open On-Chip Debugger
+> reset halt
+target state: halted
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xc1000000 pc: 0x00000ba8 msp: 0x20004000
+> flash write_image erase /usr/src/nRF5_SDK_11/redox-w-firmware/redox-w-receiver-basic/custom/armgcc/_build/nrf51822_xxac-receiver.hex
+auto erase enabled
+Unknown device (HWID 0x000000d1)
+using fast async flash loader. This is currently supported
+only with ST-Link and CMSIS-DAP. If you have issues, add
+"set WORKAREASIZE 0" before sourcing nrf51.cfg to disable it
+target state: halted
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000001e msp: 0x20004000
+wrote 16384 bytes from file /usr/src/nRF5_SDK_11/redox-w-firmware/redox-w-keyboard-basic/custom/armgcc/_build/nrf51822_xxac-receiver.hex in 0.782274s (20.453 KiB/s)
+> reset
+> Connection closed by foreign host.
+
+============================== FINISHED ===============================
 ```
 
-You should be seeing some movement in the OpenOCD terminal window, and you desktop should be looking somewhat like this:
+while in the docker compose terminal we should see the following:
 
-<p align="center">
-<img src="../img/redox-w-firmware-2.png" alt="Receiver firmware flashing." width="900"/>
-</p>
-
-Now we can upload the receiver firmware onto the MCU.
-
-```sh
-echo reset halt | telnet localhost 4444
-echo flash write_image `readlink -f precompiled-basic-receiver.hex` | telnet localhost 4444
-echo reset | telnet localhost 4444
+```
+openocd_1    | Info : accepting 'telnet' connection on tcp/4444
+openocd_1    | target state: halted
+openocd_1    | target halted due to debug-request, current mode: Thread 
+openocd_1    | xPSR: 0xc1000000 pc: 0x00000ba8 msp: 0x20004000
+openocd_1    | auto erase enabled
+openocd_1    | Warn : Unknown device (HWID 0x000000d1)
+openocd_1    | Warn : using fast async flash loader. This is currently supported
+openocd_1    | Warn : only with ST-Link and CMSIS-DAP. If you have issues, add
+openocd_1    | Warn : "set WORKAREASIZE 0" before sourcing nrf51.cfg to disable it
+openocd_1    | target state: halted
+openocd_1    | target halted due to breakpoint, current mode: Thread 
+openocd_1    | xPSR: 0x61000000 pc: 0x2000001e msp: 0x20004000
+openocd_1    | wrote 16384 bytes from file /usr/src/nRF5_SDK_11/redox-w-firmware/redox-w-keyboard-basic/custom/armgcc/_build/nrf51822_xxac-receiver.hex in 0.782274s (20.453 KiB/s)
+openocd_1    | Info : dropped 'telnet' connection
 ```
 
-You should be looking at something like this:
+###### Shutdown the container and disconnect the programmer
 
-<p align="center">
-<img src="../img/redox-w-firmware-4.png" alt="Receiver firmware flashing." width="900"/>
-</p>
+We can now shutdown the containers by issuing a `Ctrl-C` inside the docker-compose terminal. After the command completes we can disconnect the STLinkV2 programmer and proceed to program the rest of the MCUs.
 
-
-Now close the OpenOCD session (use `Ctrl-C`) and you're done with the receiver. Repeat these steps for the two halves of the keyboard and you should be set.
+```
+^CGracefully stopping... (press Ctrl+C again to force)
+Stopping redox-w-firmware_toolchain_1 ... done
+Stopping redox-w-firmware_openocd_1   ... done
+```
 
 ##### Programming the two halves
 
@@ -400,44 +467,24 @@ Hook up the ST-Link programmer with the transmitters using the programming pins,
 <img src="../img/redox-w-firmware-3.jpg" alt="Transmitters programming pins." width="600"/>
 </p>
 
-Start a OpenOCD session as seen above and start flashing the firmware.
+Start a OpenOCD session as seen [above](#run-the-two-images-using-docker-compose) using docker-compose and start flashing the firmware.
 
 ###### Left hand firmware flashing
 
-From another terminal window issue the following commands. Again from the factory, these chips need to be erased:
+From another terminal window issue the following command:
 
-```sh
-echo reset halt | telnet localhost 4444
-echo nrf51 mass_erase | telnet localhost 4444
+```
+$ docker exec -it redox-w-firmware_toolchain_1 ./redox-w-firmware/redox-w-keyboard-basic/program_left.sh
 ```
 
-Upload the left hand firmware.
-
-```sh
-cd path/to/repository/redox-keyboard/redox-w/firmware/
-echo reset halt | telnet localhost 4444
-echo flash write_image `readlink -f precompiled-basic-left.hex` | telnet localhost 4444
-echo reset | telnet localhost 4444
-```
+You should see a similar output as above. You can now shutdown the two containers, disconnect the programmer and proceed with the next MCU.
 
 ###### Right hand firmware flashing
 
 After having hooked up the right hand to the ST-Link debugger and started a new OpenOCD session we can upload the right hand firmware.
 
-Again from the factory, these chips need to be erased:
-
-```sh
-echo reset halt | telnet localhost 4444
-echo nrf51 mass_erase | telnet localhost 4444
 ```
-
-Upload the right hand firmware.
-
-```sh
-cd path/to/repository/redox-keyboard/redox-w/firmware/
-echo reset halt | telnet localhost 4444
-echo flash write_image `readlink -f precompiled-basic-right.hex` | telnet localhost 4444
-echo reset | telnet localhost 4444
+$ docker exec -it redox-w-firmware_toolchain_1 ./redox-w-firmware/redox-w-keyboard-basic/program_right.sh
 ```
 
 Congratulations! You flashed the Redox-W firmware.
