@@ -275,7 +275,7 @@ $ make redox_w:default:avrdude
 
 You can find the code for the Redox here: [QMK - Redox Wireless keyboard](https://github.com/mattdibi/qmk_firmware/tree/redox_wireless/keyboards/redox_w).
 
-In the [Redox Wireless Keyboard firmware repository](https://github.com/mattdibi/redox-w-firmware/tree/master/precompiled) I added some pre-built hex files with the default keymap for testing purpose.
+In the [Redox Wireless Keyboard firmware repository](https://github.com/mattdibi/redox-w-firmware/tree/master/precompiled) I added some pre-built hex files with the default keymap for testing purposes.
 
 #### Nordic MCUs Firmware upload using Docker
 
@@ -293,6 +293,32 @@ To flash the firmware files to the corresponding MCUs, you'll need an STLinkV2 d
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker-compose](https://docs.docker.com/compose/install/)
 - Download the [redox-w-firmware](https://github.com/mattdibi/redox-w-firmware) repository.
+
+###### Download the repository
+
+Open a terminal and download the Redox Wireless firmware repository wherever you want.
+
+```
+$ git clone https://github.com/mattdibi/redox-w-firmware.git
+```
+
+or
+
+```
+$ wget https://github.com/mattdibi/redox-w-firmware/archive/refs/heads/master.zip
+```
+
+###### Install the udev rules
+
+Install the udev rules for the STLinkV2 programmer contained inside the repository.
+
+```
+$ cd path/to/repository/redox-w-firmare/
+$ sudo cp 49-stlinkv2.rules /etc/udev/rules.d/
+$ udevadm control --reload-rules && udevadm trigger
+```
+
+Plug in, or replug in the programmer after this.
 
 ###### Build the two container images
 
