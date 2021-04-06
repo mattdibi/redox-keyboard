@@ -365,20 +365,7 @@ After connecting the STLinkV2 debugger, from inside the `redox-w-firmware` folde
 $ docker-compose up
 Creating redox-w-firmware_openocd_1 ... done
 Creating redox-w-firmware_toolchain_1 ... done
-```
-
-From another terminal window, you should see the two containers running with the following command:
-
-```
-$ docker ps
-CONTAINER ID   IMAGE                       COMMAND                  CREATED         STATUS         PORTS     NAMES
-84f606ad7e25   redox-fw-toolchain:latest   "tail -f /dev/null"      4 seconds ago   Up 3 seconds             redox-w-firmware_toolchain_1
-8d0d6b5da95a   redox-fw-openocd:latest     "/bin/sh -c 'openocd…"   4 seconds ago   Up 3 seconds             redox-w-firmware_openocd_1
-```
-
-If everything works you should see the following output in the docker-compose terminal:
-
-```
+Attaching to redox-w-firmware_openocd_1, redox-w-firmware_toolchain_1
 openocd_1    | Open On-Chip Debugger 0.9.0 (2018-01-24-01:05)
 openocd_1    | Licensed under GNU GPL v2
 openocd_1    | For bug reports, read
@@ -396,9 +383,18 @@ openocd_1    | Info : Target voltage: 3.274320
 openocd_1    | Info : nrf51.cpu: hardware has 4 breakpoints, 2 watchpoints
 ```
 
+From another terminal window, you should see the two containers running with the following command:
+
+```
+$ docker ps
+CONTAINER ID   IMAGE                       COMMAND                  CREATED         STATUS         PORTS     NAMES
+84f606ad7e25   redox-fw-toolchain:latest   "tail -f /dev/null"      4 seconds ago   Up 3 seconds             redox-w-firmware_toolchain_1
+8d0d6b5da95a   redox-fw-openocd:latest     "/bin/sh -c 'openocd…"   4 seconds ago   Up 3 seconds             redox-w-firmware_openocd_1
+```
+
 ###### Build and upload the firmware
 
-We can now build and upload the firmware by issuing the following from the `redox-w-firmware` root directory from another terminal window:
+We can now build and upload the firmware by issuing the following from the `redox-w-firmware` root directory:
 
 ```
 $ docker exec -it redox-w-firmware_toolchain_1 ./redox-w-firmware/redox-w-receiver-basic/program.sh
@@ -454,6 +450,12 @@ openocd_1    | Info : dropped 'telnet' connection
 ###### Shutdown the container and disconnect the programmer
 
 We can now shutdown the containers by issuing a `Ctrl-C` inside the docker-compose terminal. After the command completes we can disconnect the STLinkV2 programmer and proceed to program the rest of the MCUs.
+
+```
+^CGracefully stopping... (press Ctrl+C again to force)
+Stopping redox-w-firmware_toolchain_1 ... done
+Stopping redox-w-firmware_openocd_1   ... done
+```
 
 ##### Programming the two halves
 
