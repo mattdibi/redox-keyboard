@@ -32,6 +32,7 @@ Hardware availability:
 
 
 > :warning: Pay attention to the Pro Micro you use in this project. Online you can find the infamous **Green Pro Micros** which have the same pinout of the normal Pro Micro but use a different power circuitry. Being the Redox a split keyboard that relies on detecting which side is directly powered to find which side is the master, these clones are not suited for the task. A more detailed explanation [here](http://www.40percent.club/2017/09/green-pro-micro.html). Please note that they can come in different colors, not necessarily green.
+
 > :warning: Before you start, flash the [Firmware](#firmware) to the ProMicros to make sure they are alright.
 
 ## Other assembly guides
