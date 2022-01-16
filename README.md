@@ -44,7 +44,7 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
 - [ZMK firmware](https://zmk.dev/) compatible (thanks to [toddmok](https://github.com/toddmok))
 
 > :information_source: **[1]Notes about wireless implementation**: The Redox keyboard uses two different wireless implementations:
-> - *QMK based*: Leveraging the [Gazel protocol](https://developer.nordicsemi.com/nRF5_SDK/nRF51_SDK_v5.x.x/doc/5.2.0/html/a00140.html). It needs its own PCB and a receiver dongle (see [Redox Wireless](https://github.com/mattdibi/redox-keyboard/tree/master/redox_w) for details).
+> - *QMK based*: Leveraging the [Gazel protocol](https://developer.nordicsemi.com/nRF5_SDK/nRF51_SDK_v5.x.x/doc/5.2.0/html/a00140.html). It needs its own PCB and a receiver dongle (see [Redox Wireless](https://github.com/mattdibi/redox-keyboard/tree/docs/zmk_update/redox-w) for details).
 > - *ZMK based*: Leveraging the Bluetooth protocol. It is based on the [Redox wired PCB](https://github.com/mattdibi/redox-keyboard/tree/master/redox) and the [nice!nano](https://nicekeyboards.com/nice-nano/) controller.
 
 ## Related projects
