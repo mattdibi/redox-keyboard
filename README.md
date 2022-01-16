@@ -39,7 +39,7 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
 - Either half can work as a standalone keyboard to be used as a macropad/gaming keyboard.
 - RGB backlighting support.
 - 3D-printer friendly case.
-- Wireless (see section below)[#wireless-implementations]
+- Wireless [see section below](#wireless-implementations)
 - [VIA](https://caniusevia.com/) compatible (thanks to [Harshit Goel](https://github.com/harshitgoel96))
 - [ZMK firmware](https://zmk.dev/) compatible (thanks to [toddmok](https://github.com/toddmok))
 
@@ -93,7 +93,7 @@ The Redox keyboard uses two different wireless implementations, for simplicity I
 
  The main differences for the two implementations are as follows:
  - _Battery life_: QMK Redox Wireless uses two CR2032 coin cell batteries which last approximately 6 months (YMMV), while the nice!nano support LiPo rechargable batteries (you can choose the capacity you want but expect them to last for a [few weeks on a single charge](https://zmk.dev/power-profiler)).
- - _Flexibility: The receiver dongle limits the flexibility of QMK Redox Wireless.
+ - _Flexibility_: The receiver dongle limits the flexibility of QMK Redox Wireless.
  - _Cost_: The 3x YJ-14015 + Pro Micro combo is cheaper than the two nice!nano you need for the ZMK Redox.
  - _Range_: The Bluetooth implementation should be more capable than what can be achieved with the QMK Redox Wireless (At this point in time, I lack the evidence to support these claims though).
 
