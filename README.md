@@ -92,7 +92,7 @@ The Redox keyboard uses two different wireless implementations, for simplicity I
  - *ZMK based*: Leveraging the Bluetooth protocol. It is based on the [Redox wired PCB](https://github.com/mattdibi/redox-keyboard/tree/master/redox) and the [nice!nano](https://nicekeyboards.com/nice-nano/) controller.
 
  The main differences for the two implementations are as follows:
- - _Battery life_: QMK Redox Wireless uses two CR2032 coin cell batteries which last approximately 6 months (YMMV), while the nice!nano support LiPo rechargable batteries (you can choose the capacity you want but expect them to last for a [few weeks on a single charge](https://zmk.dev/power-profiler)).
+ - _Battery life_: QMK Redox Wireless uses two CR2032 coin cell batteries which last [approximately one year (YMMV)](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w#battery-usage), while the nice!nano support LiPo rechargable batteries (you can choose the capacity you want but expect them to last for a [few weeks on a single charge](https://zmk.dev/power-profiler)).
  - _Flexibility_: The receiver dongle limits the flexibility of QMK Redox Wireless.
  - _Cost_: The 3x YJ-14015 + Pro Micro combo is cheaper than the two nice!nano you need for the ZMK Redox.
  - _Range_: The Bluetooth implementation should be more capable than what can be achieved with the QMK Redox Wireless (At this point in time, I lack the evidence to support these claims though).
