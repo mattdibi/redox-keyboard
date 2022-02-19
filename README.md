@@ -64,19 +64,18 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
 	- Commercially available cases:
 		- [Falbatech's bamboo cases with tilt kit](https://falba.tech/product/redox-standard-lift-bamboo-wood-case-with-oil-finish/)
 		- [Falbatech's fullhand bamboo cases](https://falba.tech/product/redox-fullhand-bamboo-wood-case-with-oil-finish-ver-2/)
-		- [Falbatech's PVC cases](https://falba.tech/product/redox-standard-pvc-white-case/)
 - [**Redox rev1.0W**](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w): the Redox rev 1.0W is the wireless version of the Redox keyboard.
-    - Rev1.0W PCBs: available at [Falbatech's store](https://falba.tech/product/redox-wireless-pcb-electrical-boards-set-of-2/)
+    - Rev1.0W PCBs: gerbers available in [this repo](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w/rev1.0W).
+    - Falbatech's Rev1.0W Hot-swap PCBs: available at [Falbatech's store](https://falba.tech/product/redox-wireless-pcb-electrical-boards-set-of-2/) (Incompatible with the 3D-printable cases down below)
     - Firmware sources:
         - [QMK firmware for Redox wireless](https://github.com/mattdibi/qmk_firmware/tree/master/keyboards/redox_w)
         - [Nordic MCUs firmware for Redox wireless](https://github.com/mattdibi/redox-w-firmware)
 	- 3D-printable cases:
         - [3D printed case](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w/case), freely available.
         - [Redox Neodox case](https://github.com/Pastitas/Redox-neodox-Case), by [Pastitas](https://github.com/Pastitas)
-    - Commercially available cases:
+    - Commercially available cases (only compatible with the Falbatech's store PCBs):
         - [Falbatech's bamboo and aliminium cases](https://falba.tech/product/redox-wireless-standard-lift-bamboo-wood-case-with-oil-finish/)
 		- [Falbatech's fullhand bamboo cases](https://falba.tech/product/redox-wireless-standard-lift-bamboo-wood-case-with-oil-finish-ver-1/)
-		- [Falbatech's PVC cases](https://falba.tech/product/redox-wireless-standard-pvc-white-case/)
 - [**Redox rev2.0WHS**](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w): the Redox rev 2.0WHS is the wireless hot-swappable version of the Redox keyboard.
     - Rev2.0WHS PCBs: gerber files available [here](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w/rev2.0WHS/pcb)
     - Firmware sources:
