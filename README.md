@@ -61,6 +61,7 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
         - [Redox keyboard case (high profile)](https://www.thingiverse.com/thing:3825752), by [Michele Ferri](https://www.thingiverse.com/sako83/about).
         - [Travel-friendly Redox Keyboard case](https://www.thingiverse.com/thing:3607303), by [Fosk\_LL](https://www.thingiverse.com/Fosk_LL/about).
         - [Redox Neodox case](https://github.com/Pastitas/Redox-neodox-Case), by [Pastitas](https://github.com/Pastitas)
+        - [Redox big battery](https://github.com/marco-silvestri/redox-big-battery), by [Marco Silvestri](https://github.com/marco-silvestri).
 	- Commercially available cases:
 		- [Falbatech's bamboo cases with tilt kit](https://falba.tech/product/redox-standard-lift-bamboo-wood-case-with-oil-finish/)
 		- [Falbatech's fullhand bamboo cases](https://falba.tech/product/redox-fullhand-bamboo-wood-case-with-oil-finish-ver-2/)
