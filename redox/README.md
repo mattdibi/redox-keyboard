@@ -43,6 +43,7 @@ External links to some other guides to building the Redox keyboard:
 - [Imgur build log](https://imgur.com/a/a6ck2Nc) (3D printed case).
 - ["*First Homebrew Keyboard -redox Build Log-*"](https://x1.inkenkun.com/archives/6007) by [インケンch](https://www.youtube.com/channel/UCXJZdip7JmW74HQHCtfYzFw) (Japanese only)
 - ["*Split Keyboard Build*"](https://kubami.com/articles/split-keyboard-build/) by Kuba Misiorny @kubami.
+- [Wooden case build with hand tools](https://www.instructables.com/Redox-Keyboard-With-Wooden-Case/) by Cédric Bosdonnat
 
 ### Video guides
 
