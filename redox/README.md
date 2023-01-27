@@ -3,16 +3,17 @@
 The Redox rev 1.0 is the first commercially available version of the Redox keyboard.
 
 Hardware availability:
-  - [Falbatech](https://falba.tech/)
+
+- [Falbatech](https://falba.tech/)
 
 ## Summary
 
-  - [Bill of materials](#bill-of-materials)
-  - [Other assembly guides](#other-assembly-guides)
-  - [Assembly guide](#assembly-guide)
-  - [Firmware](#firmware)
-  - [Hot swappable mod](#hot-swappable-mod)
-  - [RGB Underglow](#rgb-underglow)
+- [Bill of materials](#bill-of-materials)
+- [Other assembly guides](#other-assembly-guides)
+- [Assembly guide](#assembly-guide)
+- [Firmware](#firmware)
+- [Hot swappable mod](#hot-swappable-mod)
+- [RGB Underglow](#rgb-underglow)
 
 ## Bill of materials
 
@@ -30,7 +31,6 @@ Hardware availability:
 |  70 | Cherry MX compatible keycaps                  | 10x 1.25u keycaps, 6x 1.5u keycaps, 54x 1u keycaps  |
 |  14 | WS2812/WS2812B leds                           | Optional RGB-underglow                              |
 
-
 > :warning: Pay attention to the Pro Micro you use in this project. Online you can find the infamous **Green Pro Micros** which have the same pinout of the normal Pro Micro but use a different power circuitry. Being the Redox a split keyboard that relies on detecting which side is directly powered to find which side is the master, these clones are not suited for the task. A more detailed explanation [here](http://www.40percent.club/2017/09/green-pro-micro.html). Please note that they can come in different colors, not necessarily green.
 
 > :warning: Before you start, flash the [Firmware](#firmware) to the ProMicros to make sure they are alright.
@@ -44,6 +44,7 @@ External links to some other guides to building the Redox keyboard:
 - ["*First Homebrew Keyboard -redox Build Log-*"](https://x1.inkenkun.com/archives/6007) by [インケンch](https://www.youtube.com/channel/UCXJZdip7JmW74HQHCtfYzFw) (Japanese only)
 - ["*Split Keyboard Build*"](https://kubami.com/articles/split-keyboard-build/) by Kuba Misiorny @kubami.
 - [Wooden case build with hand tools](https://www.instructables.com/Redox-Keyboard-With-Wooden-Case/) by Cédric Bosdonnat
+- [Hand made wood case from pallet wood](https://github.com/attydeak/keyboard)
 
 ### Video guides
 
@@ -74,28 +75,31 @@ Installation steps:
   3. Solder momentary switches.
   4. Solder 4.7k Ohm resistors **on one half only**. If you are going for the RGB-underglow ignore this step.
   5. Solder the Pro Micro header pins (**do not solder the Pro Micro controllers yet**). This step may differ depending on which case you're using. Refer to the following:
-    * See 3D-Printed case [right hand controller installation detail](#3d-printed-case-assembly).
-    * See Falbatech's [bamboo case](#falbatechs-bamboo-case-assembly).
-    * See [socketed Pro Micro installation guide](#pro-micro-sockets).
+  - See 3D-Printed case [right hand controller installation detail](#3d-printed-case-assembly).
+  - See Falbatech's [bamboo case](#falbatechs-bamboo-case-assembly).
+  - See [socketed Pro Micro installation guide](#pro-micro-sockets).
   6. Optional see [RGB-underglow instructions](#rgb-underglow).
 - Flip the PCBs.
 - Solder switches to the PCB.
-  * If you want hot swappable switches, see
+  - If you want hot swappable switches, see
     [the hot swappable switch instructions](#hot-swappable-switches).
 - Flip the PCBs again.
 - Solder Pro Micros to the header pins **following the PCB labeling**. The Pro Micro on the right half should be installed with the bottom facing the Redox PCB, the Pro Micro on the left half should be installed with the bottom facing away from the PCB. See [pictures](#left-hand-back-side-1) for details.
 
-##### Right hand back side:
+##### Right hand back side
+
 <p align="center">
 <img src="../img/pcb-assembly1.jpg" alt="Right hand back side" width="600"/>
 </p>
 
-##### Left hand back side:
+##### Left hand back side
+
 <p align="center">
 <img src="../img/pcb-assembly2.jpg" alt="Left hand back side" width="600"/>
 </p>
 
-##### Diode installation detail:
+##### Diode installation detail
+
 <p align="center">
 <img src="../img/pcb-assembly3.jpg" alt="Diode installation detail" width="600"/>
 </p>
@@ -153,8 +157,8 @@ If you're using Falbatech's bamboo case the use of the diode's legs is not neede
 The Redox uses QMK for its firmware, follow the QMK installation instructions [here](https://docs.qmk.fm/#/getting_started_build_tools), then compile and burn the firmware on both halves as follows:
 
 ```sh
-$ cd path/to/qmk_firmware
-$ make redox/rev1:default:avrdude
+cd path/to/qmk_firmware
+make redox/rev1:default:avrdude
 ```
 
 After issuing this command you should see the following output:
@@ -182,15 +186,19 @@ avrdude -p atmega32u4 -P $(COM_PORT) -c avr109 -U flash:w:redox_rev1_default.hex
 ```
 
 ### Setting EE_hands to use either hands as master
+
 If you define `EE_HANDS` in your `config.h`, you will need to set the EEPROM for the left and right halves.
 
 The EEPROM is used to store whether the half is left handed or right handed. This makes it so that the same firmware file will run on both hands instead of having to flash left and right handed versions of the firmware to each half. To flash the EEPROM file for the left half run:
+
 ```
 $ cd path/to/qmk/folder
 avrdude -p atmega32u4 -P $(COM_PORT) -c avr109 -U eeprom:w:"./quantum/split_common/eeprom-lefthand.eep"
 // or the equivalent in dfu-programmer
 ```
+
 and similarly for right half
+
 ```
 avrdude -p atmega32u4 -P $(COM_PORT) -c avr109 -U eeprom:w:"./quantum/split_common/eeprom-righthand.eep"
 // or the equivalent in dfu-programmer
@@ -273,8 +281,8 @@ Installation steps, after initial soldering:
 5. Solder the sockets into the thru-holes.
 6. Install your switches. This step differs depending on whether you plan
    on making your switches hotswappable:
-   * For fixed, non-hotswap switches, follow [the standard assembly guide](#assembly-guide).
-   * Hotswap switch builds should follow [the hot swappable switch install guide](#hot-swappable-switches).
+   - For fixed, non-hotswap switches, follow [the standard assembly guide](#assembly-guide).
+   - Hotswap switch builds should follow [the hot swappable switch install guide](#hot-swappable-switches).
 7. Flip and orient your Pro Micro so that its labels match the labels on your
    PCB, then cover the bottom of the Pro Micro in electrical or Kapton tape
    to prevent shorts.
@@ -289,6 +297,7 @@ Installation steps, after initial soldering:
 ### Hot Swappable Switches
 
 > :warning: A few things to keep in mind:
+>
 > - Some switch pins (so far, Kailh Box Royals) may be slighly too wide to
 >   fit the Mill-Max receptacle. When in doubt, try it with spare receptacles.
 > - The only thing keeping the PCB attached to the top plate is the switches;
@@ -345,17 +354,20 @@ recommended.
      switches that were knocked out of place during this process.
 6. Repeat these steps for the other side of the keyboard.
 
-##### Installing Mill-Max receptacles onto switch pins:
+##### Installing Mill-Max receptacles onto switch pins
+
 <p align="center">
 <img src="../img/hs-mod-millmax.jpg" alt="Mill-Max receptacle installation" width="600"/>
 </p>
 
-##### Pins, receptacles, and PCB in proper alignment:
+##### Pins, receptacles, and PCB in proper alignment
+
 <p align="center">
 <img src="../img/hs-mod-pre-solder.jpg" alt="Proper alignment of receptacles, pins, and PCB" width="600"/>
 </p>
 
-##### Soldered hot swap receptacles:
+##### Soldered hot swap receptacles
+
 <p align="center">
 <img src="../img/hs-mod-soldered.jpg" alt="Soldered hot swap receptacles" width="600"/>
 </p>
@@ -363,10 +375,12 @@ recommended.
 ## RGB Underglow
 
 > :warning: With this configuration:
+>
 > - You don't need to solder the 4.7k resistors since the I2C connection won't be used.
 > - You can use only one hand as master.
 
 Parts:
+
 - [ ] WS2812/WS2812B LED strip
 - [ ] 24 AWG (or smaller) stranded wire (white, red, black are good choices)
 
@@ -377,6 +391,7 @@ Led strip Headers -> DIN -> DO -> TRRS pad -> (TRRS to other side) -> TRRS pad -
 ```
 
 ### Assembly: LEFT hand as master (usually plugged in to the PC)
+
 - On the LEFT hand:
   1. Solder the LED Strip headers as seen in the pictures below.
   2. Solder the DO Pin of the RGB strip to the TRRS pad as seen in the figures below.
@@ -385,18 +400,20 @@ Led strip Headers -> DIN -> DO -> TRRS pad -> (TRRS to other side) -> TRRS pad -
   2. Solder the DIN Pin of the RGB strip to the TRRS pad as seen in the figures below.
 - Flash the firmware with the serial and RGB Backlight options on, specifying the number of LEDs installed (see instruction [here](#rgb-underglow-firmware)).
 
-##### Left hand back side:
+##### Left hand back side
+
 <p align="center">
 <img src="../img/rgb-underglow1.jpg" alt="RGB underglow left hand backside" width="600"/>
 </p>
 
-##### Right hand back side:
+##### Right hand back side
 
 <p align="center">
 <img src="../img/rgb-underglow2.jpg" alt="RGB underglow left hand backside" width="600"/>
 </p>
 
 ### Assembly: RIGHT hand as master
+
 - On the RIGHT hand:
   1. Solder the LED Strip headers to the RGB strip.
   2. Solder the DO Pin of the RGB strip to the TRRS pad.
@@ -407,6 +424,7 @@ Led strip Headers -> DIN -> DO -> TRRS pad -> (TRRS to other side) -> TRRS pad -
 ### RGB Underglow firmware
 
 To enable RGB backlighting you need to modify the default firmware as follows:
+
 - Use serial communication instead of I2C.
 - Set the master hand.
 - Set the number of LED you installed.
@@ -439,8 +457,8 @@ the hand that drives the LED strip */
 Then compile and burn the firmware on both controllers:
 
 ```sh
-$ cd path/to/qmk_firmware
-$ make redox/rev1:default:avrdude
+cd path/to/qmk_firmware
+make redox/rev1:default:avrdude
 ```
 
 ## Layout
