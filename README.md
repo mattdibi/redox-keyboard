@@ -47,6 +47,8 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
 
 - [**Redox handwire**](https://www.thingiverse.com/thing:2704567): The first incarnation of the Redox keyboard. It consists of a 3D-printed case and a handwired matrix.
   - [Tilted Redox case](https://www.thingiverse.com/thing:2767216): tilted case for the Redox prototype by jschloer.
+    - [Tilted redox case pro micro](https://www.printables.com/model/382413-tilted-redox-case-for-micro-and-usbc): Remix of the tilted case to support pro micro and usb c instead of TRRS. 
+
   - [couscous-kbd](https://gitlab.com/cschalkwijk/couscous-kbd): Redox-inspired parametric OpenSCAD keyboard design.
   - [Redox tenting kit](https://www.thingiverse.com/make:484843): modified base to support tenting, mini-USB for the interconnect, and a hole for microswitch for reset needed when uploading new firmware by [Lenbok](https://github.com/Lenbok).
   - [Iris-inspired Redox case](https://github.com/Lenbok/scad-redox-case): a case inspired both by the Redox rev1.0 and the Iris designed with OpenSCAD by [Lenbok](https://github.com/Lenbok).
