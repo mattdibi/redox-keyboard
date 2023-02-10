@@ -5,11 +5,11 @@
   (paper "A4")
 
   (title_block
-    (title "Redox keyboard")
+    (title "Neodox keyboard")
     (date "2018-05-05")
     (rev "1.0")
-    (comment 1 "designed by Mattia Dal Ben")
-    (comment 2 "https://github.com/mattdibi/redox-keyboard")
+    (comment 1 "designed by Mattia Dal Ben, remixed by Pastitas")
+    (comment 2 "https://github.com/pastitas/neodox-keyboard")
   )
 
   (lib_symbols

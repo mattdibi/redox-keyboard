@@ -1,10 +1,10 @@
 {
   "board": {
-    "active_layer": 31,
-    "active_layer_preset": "All Layers",
+    "active_layer": 44,
+    "active_layer_preset": "Front Layers",
     "auto_track_width": true,
     "hidden_nets": [],
-    "high_contrast_mode": 1,
+    "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
       "pads": 1.0,
@@ -62,11 +62,11 @@
       35,
       36
     ],
-    "visible_layers": "fffffff_ffffffff",
+    "visible_layers": "00290aa_00000001",
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "redox_rev1.kicad_prl",
+    "filename": "neodox.kicad_prl",
     "version": 3
   },
   "project": {

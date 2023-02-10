@@ -1,4 +1,4 @@
-21182328922151406
+21182329285067658
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -58272,7 +58272,7 @@ Kailh_socket_MX_optional_reversible
 MX-style keyswitch with support for reversible optional Kailh socket
 MX,cherry,gateron,kailh,pg1511,socket
 0
-8
+10
 2
 Keyboard_reversible
 Kailh_socket_choc_optional_reversible
@@ -88330,7 +88330,7 @@ Kailh_socket_MX_optional_reversible
 MX-style keyswitch with support for reversible optional Kailh socket
 MX,cherry,gateron,kailh,pg1511,socket
 0
-8
+10
 2
 keyboard_reversible
 Kailh_socket_choc_optional_reversible
