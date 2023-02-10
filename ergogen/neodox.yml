@@ -1,0 +1,189 @@
+units:
+  row_spacing: 1
+  super_key_angle: -15
+  thumb_cluster_angle: -30
+
+  # Constants
+  ks_y: u
+  ks_x: u
+  choc_plate_thickness: 1.2
+  mx_plate_thickness: 1.5
+
+points:
+  key: # each key across all zones will have these properties
+    bind: 5
+    width: ks_x
+    height: ks_y
+    tags:
+      1u: true
+  zones:
+    main:
+      rows:
+        func:
+        bott:
+        home:
+        top:
+        num:
+      columns:
+        out:
+          key:
+            column_mark: 6
+            column_net: col6
+        pinky:
+          key:
+            column_mark: 5
+            column_net: col5
+        ring:
+          key:
+            stagger: 0.25*ks_y
+            column_mark: 4
+            column_net: col4
+        middle:
+          key:
+            stagger: 0.125*ks_y
+            column_mark: 3
+            column_net: col3
+        index:
+          key:
+            stagger: -0.125*ks_y
+            column_mark: 2
+            column_net: col2
+          rows:
+            func.skip: true
+        inner:
+          key:
+            stagger: -0.125*ks_y
+            column_mark: 1
+            column_net: col1
+          rows:
+            func.skip: true
+        thumb:
+          key.stagger: -0.7*ks_y
+          key.skip: true
+          rows:
+            num.skip: false
+            top.skip: false
+            top.padding: 1.25ks_y
+            top.height: 1.5ks_y
+            top.tags:
+              1u: false
+              15u: true
+
+    thumb_keys:
+      anchor:
+        ref: main_inner_bott
+        shift: [0.6ks_x, -1.4ks_y]
+        rotate: thumb_cluster_angle
+      columns:
+        thumb_inner:
+        thumb_outer:
+      rows:
+        thumb_bottom:
+          padding: 1.25ks_y
+          height: 1.5ks_y
+          tags:
+            1u: false
+            15u: true
+        thumb_top:
+
+    super_key:
+      anchor:
+        ref: main_index_bott
+        shift: [0.3ks_x, -1.2ks_y]
+        rotate: super_key_angle
+      key:
+        width: 1.25ks_x
+        tags:
+          1u: false
+          125u: true
+
+outlines:
+    raw:
+      - what: rectangle
+        where: true
+        bound: true
+        size: [ks_x, ks_x]
+      - what: rectangle
+        where: super_key
+        bound: true
+        size: [3ks_x, 1.25ks_x]
+      - what: rectangle
+        size: [55, 23]
+        #bound: true
+        where:
+          ref: main_thumb_num
+          rotate: -90
+          shift: [20, -30]
+    switches:
+      - what: rectangle
+        where: true
+        bound: false
+        size: [ks_x, ks_y]
+    filet:
+      - what: outline
+        name: raw
+        fillet: 1
+    cutout:
+      - what: outline
+        name: filet
+        fillet: 0.5
+
+
+pcbs:
+  lowerdox:
+    outlines:
+      edge:
+        outline: cutout
+      switches:
+        outline: switches
+        layer: F.fab
+    footprints:
+      mx_hotswap:
+        what: mx
+        where: true
+        params:
+          from: "{{colrow}}"
+          to: "{{column_net}}"
+          keycaps: true
+          reverse: true
+          hotswap: true
+      mx:
+        what: mx
+        where: true
+        adjust:
+          rotate: 180
+        params:
+          from: "{{colrow}}"
+          to: "{{column_net}}"
+          keycaps: false
+          reverse: true
+      promicro:
+        what: promicro
+        where:
+          ref: main_thumb_num
+          shift: [21, -21]
+          rotate: -90
+        params:
+          orientation: down
+      trrs:
+        what: trrs
+        where:
+          ref: main_thumb_num
+          shift: [30, -50]
+          rotate: 270
+        params:
+          reverse: true
+          symmetric: true
+          A: ""
+          B: VCC
+          C: GND
+          D: P0
+      oled:
+        what: oled
+        where:
+          ref: main_thumb_num
+          shift: [7, -15]
+          rotate: 0
+        params:
+          SDA: SDA
+          SCL: SCL
