@@ -11,7 +11,7 @@ units:
 
 points:
   key: # each key across all zones will have these properties
-    bind: 5
+    bind: 3
     width: ks_x
     height: ks_y
     tags:
@@ -44,17 +44,11 @@ points:
             column_mark: 3
             column_net: col3
         index:
-          key:
-            stagger: -0.125*ks_y
-            column_mark: 2
-            column_net: col2
+          key.stagger: -0.125*ks_y
           rows:
             func.skip: true
         inner:
-          key:
-            stagger: -0.125*ks_y
-            column_mark: 1
-            column_net: col1
+          key.stagger: -0.125*ks_y
           rows:
             func.skip: true
         thumb:
@@ -69,18 +63,19 @@ points:
               1u: false
               15u: true
 
-    thumb_keys:
+    thumb_cluster:
       anchor:
         ref: main_inner_bott
         shift: [0.6ks_x, -1.4ks_y]
         rotate: thumb_cluster_angle
       columns:
-        thumb_inner:
-        thumb_outer:
+        thumb_in:
+        thumb_out:
       rows:
-        thumb_bottom:
+        thumb_bot:
           padding: 1.25ks_y
           height: 1.5ks_y
+          size.y: 1.5ks_y
           tags:
             1u: false
             15u: true
@@ -102,11 +97,11 @@ outlines:
       - what: rectangle
         where: true
         bound: true
-        size: [ks_x, ks_x]
+        size: [ks_x, ks_y]
       - what: rectangle
         where: super_key
         bound: true
-        size: [3ks_x, 1.25ks_x]
+        size: [3ks_x, 1ks_y]
       - what: rectangle
         size: [55, 23]
         #bound: true
@@ -114,6 +109,11 @@ outlines:
           ref: main_thumb_num
           rotate: -90
           shift: [20, -30]
+      - what: rectangle
+        bound: true
+        size: [3ks_x, 1.25ks_y]
+        where:
+          ref: thumb_cluster_thumb_in_thumb_bot
     switches:
       - what: rectangle
         where: true
@@ -127,7 +127,6 @@ outlines:
       - what: outline
         name: filet
         fillet: 0.5
-
 
 pcbs:
   lowerdox:
