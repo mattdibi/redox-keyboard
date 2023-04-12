@@ -23,11 +23,11 @@
             // | CRTL  | ALT | GUI | LOWER |    GUI    | LOWER | SPACE   | --- | DEL  | SPACE |     RAISE     | LEFT  | DOWN | UP |   RIGHT   |
 
             bindings = <
-     &kp GRAVE     &kp N1         &kp N2        &kp N3    &kp N4  &kp N5                                                                         &kp N6  &kp N7     &kp N8    &kp N9    &kp N0       &kp BSPC
-       &kp TAB      &kp Q          &kp W         &kp E     &kp R   &kp T               &mo 3                                              &mo 3   &kp Y   &kp U      &kp I     &kp O     &kp P      &kp MINUS
-     &lt 3 ESC      &kp A          &kp S         &kp D     &kp F   &kp G  &lt 3 LEFT_BRACKET                                &lt 3 RIGHT_BRACKET   &kp H   &kp J      &kp K     &kp L  &kp SEMI        &kp SQT
-     &kt LSHFT      &kp Z          &kp X         &kp C     &kp V   &kp B             &kp DEL       &kp CAPS  &kp BACKSLASH           &kp INSERT   &kp N   &kp M  &kp COMMA   &kp DOT  &kp FSLH  &mt RSHFT RET
-&mt LCTRL HOME  &kp PG_UP  &kp PAGE_DOWN  &mt LALT END  &kt LGUI                 &lt 2 SPACE  &kp BACKSPACE      &kp ENTER          &lt 2 SPACE           &mo 2   &kp LEFT  &kp DOWN    &kp UP      &kp RIGHT
+     &kp GRAVE     &kp N1         &kp N2        &kp N3    &kp N4  &kp N5                                                                         &kp N6         &kp N7     &kp N8    &kp N9    &kp N0         &lt 3 MINUS
+       &kp TAB      &kp Q          &kp W         &kp E     &kp R   &kp T               &mo 3                                              &mo 3   &kp Y          &kp U      &kp I     &kp O     &kp P           &kp EQUAL
+     &lt 3 ESC      &kp A          &kp S         &kp D     &kp F   &kp G  &lt 3 LEFT_BRACKET                                &lt 3 RIGHT_BRACKET   &kp H          &kp J      &kp K     &kp L  &kp SEMI  &lt 3 SINGLE_QUOTE
+     &kt LSHFT      &kp Z          &kp X         &kp C     &kp V   &kp B             &kp DEL       &kp CAPS  &kp BACKSLASH           &kp INSERT   &kp N          &kp M  &kp COMMA   &kp DOT  &kp FSLH           &kt RSHFT
+&mt LCTRL HOME  &kp PG_UP  &kp PAGE_DOWN  &mt LALT END  &kt LGUI                 &lt 2 SPACE  &kp BACKSPACE      &kp ENTER          &lt 2 SPACE          &kt RIGHT_ALT   &kp LEFT  &kp DOWN    &kp UP           &kp RIGHT
             >;
         };
 
