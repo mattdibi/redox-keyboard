@@ -14,7 +14,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        default {
             // --------------------------------------------------------------------------------------------------------------------------------
             // | ESC   |  1  |  2  |   3   |  4  |  5  |                   ---                |  6    |  7    |  8    |  9   | 0  |    BKSP   |
             // | TAB   |  Q  |  W  |   E   |  R  |  T  |   (   |           ---        |  )    |  Y    |  U    |  I    |  O   | P  |     -     |
@@ -31,7 +31,7 @@
             >;
         };
 
-        lower_layer {
+        gaming {
             // --------------------------------------------------------------------------------------------------------------------------
             // | ESC   |  1  |  2  |   3   |   4   |  5  |                   ---              |  6  |  7  |   8  |  9   |  0  |  DEL  |
             // | ESC   |  1  |  2  |   3   |   4   |  5  |   (   |           ---        |  )  |  6  |  7  |   8  |  9   |  0  |  DEL  |
@@ -48,7 +48,7 @@
             >;
         };
 
-        raise_layer {
+        modifiers {
             // ----------------------------------------------------------------------------------------------------------------------------
             // | ESC   |  1  |  2  |   3   |  4  |  5  |                   ---                |  6   |  7   |  8   |  9   |  0    |  DEL  |
             // | ESC   |  !  |  @  |   #   |  $  |  %  |   (   |           ---        |  )    |  ^   |  &   |  *   |  (   |  )    |  DEL  |
@@ -57,15 +57,15 @@
             // | CRTL  | ALT | GUI | LOWER |    GUI    | LOWER | SPACE   | --- | DEL  | SPACE |    RAISE    | LEFT | DOWN | UP    | RIGHT |
 
             bindings = <
- &trans     &trans    &trans    &trans    &trans     &trans                                     &trans     &trans     &trans    &trans     &trans     &trans
-&kp ESC   &kp EXCL    &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &trans                  &trans  &kp CARET   &kp AMPS  &kp ASTRK  &kp LPAR   &kp RPAR    &kp DEL
- &trans  &kp UNDER  &kp PLUS  &kp LBRC  &kp RBRC   &kp PIPE  &trans                  &trans   &kp HOME  &kp PG_UP  &kp PSCRN    &kp UP  &kp GRAVE  &kp TILDE
- &trans    &kp ESC  &kp LGUI  &kp LPAR  &kp RPAR  &kp TILDE  &trans  &trans  &trans  &trans    &kp END  &kp PG_DN   &kp LEFT  &kp DOWN  &kp RIGHT    &kp RET
- &trans     &trans    &trans     &mo 3    &trans              &mo 3  &trans  &trans  &trans                &trans     &trans    &trans     &trans     &trans
+   &kp F1         &kp F2          &kp F3           &kp F4            &kp F5             &kp F6                                                             &kp F7         &kp F8        &kp F9     &kp F10           &kp F11          &kp F12
+&kp GRAVE     &kp LS(N1)      &kp LS(N2)       &kp LS(N3)        &kp LS(N4)         &kp LS(N5)         &mo 3                                    &mo 3  &kp LS(N6)     &kp LS(N7)    &kp LS(N8)  &kp LS(N9)        &kp LS(N0)        &kp MINUS
+   &trans         &kp N1          &kp N2           &kp N3            &kp N4             &kp N5  &kp LS(RBKT)                             &kp LS(RBRC)      &kp N6         &kp N7        &kp N8      &kp N9            &kp N0          &kp DQT
+&kp LSHFT  &kp BACKSLASH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET        &trans  &trans  &kp LS(BACKSLASH)        &trans    &kp PIPE       &kp LEFT      &kp DOWN      &kp UP         &kp RIGHT  &kt RIGHT_SHIFT
+&kt LCTRL         &trans          &trans         &kt LALT      &kt LEFT_GUI                           &trans  &trans             &trans        &trans              &kt RIGHT_ALT  &kp K_VOL_DN  &kp K_MUTE  &kp K_PLAY_PAUSE     &kp K_VOL_UP
             >;
         };
 
-        adjust_layer {
+        config {
             // -----------------------------------------------------------------------------------------
             // |  F1   |  F2   |    F3    |    F4     |     F5     | F6 |                   ---                | F7  | F8  |  F9  |  F10 | F11 | F12        |
             // | TAB   |       |          |           |            |    | BOOTL |           ---        |  )    | BT1 | BT2 |  BT3 |  BT4 | BT5 | OUTPUT TGL |
