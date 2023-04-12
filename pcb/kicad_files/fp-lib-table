@@ -2,5 +2,5 @@
   (lib (name "keyswitches")(type "KiCad")(uri "/home/pastitas/Repos/keyswitches.pretty")(options "")(descr ""))
   (lib (name "Keebio-Parts")(type "KiCad")(uri "/home/pastitas/Repos/Keebio-Parts.pretty")(options "")(descr ""))
   (lib (name "promicro")(type "KiCad")(uri "/home/pastitas/Repos/ProMicroKiCad/promicro.pretty")(options "")(descr ""))
-  (lib (name "keyboard_reversible")(type "KiCad")(uri "/home/pastitas/Repos/keyboard_reversible.pretty")(options "")(descr ""))
+  (lib (name "keyboard_reversible")(type "KiCad")(uri "/home/pastitas/Repos/keyboard_reversible.pretty")(options "")(descr "")(disabled))
 )
