@@ -7,8 +7,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/bt.h>
 
 / {
     keymap {
@@ -20,7 +20,7 @@
        &kp TAB      &kp Q          &kp W         &kp E     &kp R   &kp T               &mo 3                                              &mo 3   &kp Y          &kp U      &kp I     &kp O     &kp P           &kp EQUAL
      &lt 3 ESC      &kp A          &kp S         &kp D     &kp F   &kp G  &lt 3 LEFT_BRACKET                                &lt 3 RIGHT_BRACKET   &kp H          &kp J      &kp K     &kp L  &kp SEMI  &lt 3 SINGLE_QUOTE
      &kt LSHFT      &kp Z          &kp X         &kp C     &kp V   &kp B             &kp DEL       &kp CAPS  &kp BACKSLASH           &kp INSERT   &kp N          &kp M  &kp COMMA   &kp DOT  &kp FSLH           &kt RSHFT
-    &mt LCTRL HOME  &kp PG_UP  &kp PAGE_DOWN  &mt LALT END  &kt LGUI                 &lt 2 SPACE  &kp BACKSPACE      &kp ENTER          &lt 2 SPACE          &kt RIGHT_ALT   &kp LEFT  &kp DOWN    &kp UP           &kp RIGHT
+&mt LCTRL HOME  &kp PG_UP  &kp PAGE_DOWN  &mt LALT END  &kt LGUI                 &lt 2 SPACE  &kp BACKSPACE      &kp ENTER          &lt 2 SPACE          &kt RIGHT_ALT   &kp LEFT  &kp DOWN    &kp UP           &kp RIGHT
             >;
         };
 
@@ -46,11 +46,11 @@
 
         config {
             bindings = <
-    &trans        &trans        &trans        &trans        &trans        &trans                                                &trans           &trans           &trans           &trans        &trans        &trans
-     &none         &none         &none         &none         &none        &tog 0        &tog 0                 &tog 0   &kp KP_NUMLOCK  &kp KP_NUMBER_7        &kp KP_N8        &kp KP_N9         &kp 0         &none
-     &none         &none         &none         &none         &none        &tog 1        &tog 1                 &tog 1     &kp KP_SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &kp KP_PLUS         &none
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_TOG  &trans  &none   &none  &kp KP_ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL  &kp KP_ENTER
-     &none         &none         &none         &none         &none                       &none   &none  &none   &none                             &none  &kp KP_NUMBER_0       &kp KP_DOT  &kp KP_COMMA         &none
+      &trans        &trans        &trans        &trans        &trans        &trans                                              &trans           &trans           &trans           &trans        &trans        &trans
+       &none         &none         &none         &none         &none        &tog 0      &tog 0                 &tog 0   &kp KP_NUMLOCK  &kp KP_NUMBER_7        &kp KP_N8        &kp KP_N9  &kp KP_MINUS         &none
+       &none         &none         &none         &none         &none        &tog 1      &tog 1                 &tog 1     &kp KP_SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &kp KP_PLUS         &none
+&out OUT_BLE  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR  &trans  &none   &none  &kp KP_ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL  &kp KP_ENTER
+&out OUT_USB         &none         &none         &none         &none                     &none   &none  &none   &none                             &none  &kp KP_NUMBER_0       &kp KP_DOT  &kp KP_COMMA         &none
             >;
         };
     };
