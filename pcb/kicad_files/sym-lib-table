@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name "redox_rev1-rescue")(type "Legacy")(uri "${KIPRJMOD}/redox_rev1-rescue.lib")(options "")(descr ""))
+  (lib (name "keebio")(type "Legacy")(uri "/home/pastitas/Repos/keebio-components/keebio.lib")(options "")(descr ""))
+  (lib (name "promicro")(type "Legacy")(uri "/home/pastitas/Repos/ProMicroKiCad/promicro_library/promicro.lib")(options "")(descr ""))
+)
