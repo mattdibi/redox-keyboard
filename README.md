@@ -42,8 +42,9 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
 - Wireless [see section below](#wireless-implementations)
 - [VIA](https://caniusevia.com/) compatible (thanks to [Harshit Goel](https://github.com/harshitgoel96))
 - [ZMK firmware](https://zmk.dev/) compatible (thanks to [toddmok](https://github.com/toddmok))
+- [KMK firmware](http://kmkfw.io/) compatible
 
-## Related projects
+## Related Projects
 
 - [**Redox handwire**](https://www.thingiverse.com/thing:2704567): The first incarnation of the Redox keyboard. It consists of a 3D-printed case and a handwired matrix.
   - [Tilted Redox case](https://www.thingiverse.com/thing:2767216): tilted case for the Redox prototype by jschloer.
@@ -58,6 +59,7 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
 	- Rev1.0 PCBs: available at [Falbatech's store](https://falba.tech/product/redox-pcb-electrical-boards-set-of-2/)
     - Firmware sources:
         - [QMK firmware for Redox](https://github.com/mattdibi/qmk_firmware/tree/master/keyboards/redox)
+        - [KMK firmware for Redox](https://github.com/KMKfw/kmk_firmware/tree/master/boards/redox)
 	- 3D-printable cases:
         - [3D printable case](https://www.thingiverse.com/thing:2886662), freely available.
         - [Redox keyboard case (high profile)](https://www.thingiverse.com/thing:3825752), by [Michele Ferri](https://www.thingiverse.com/sako83/about).
@@ -87,19 +89,20 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
 	- 3D-printable case:
         - [3D printed case](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w/rev2.0WHS/case), freely available.
 
-## Wireless implementations
+## Wireless Implementations
 
-The Redox keyboard uses two different wireless implementations, for simplicity I'll differentiate them on a firmware basis:
+The Redox keyboard uses three different wireless implementations, differentiated by firmware:
  - *QMK based*: Leveraging the [Gazel protocol](https://developer.nordicsemi.com/nRF5_SDK/nRF51_SDK_v5.x.x/doc/5.2.0/html/a00140.html). It needs its own PCB and a receiver dongle (see [Redox Wireless](https://github.com/mattdibi/redox-keyboard/tree/docs/zmk_update/redox-w) for details) and needs three YJ-14015 MCUs + a Pro Micro compatible controller.
  - *ZMK based*: Leveraging the Bluetooth protocol. It is based on the [Redox wired PCB](https://github.com/mattdibi/redox-keyboard/tree/master/redox) and the [nice!nano](https://nicekeyboards.com/nice-nano/) controller.
+ - *KMK based*: Adding [Bluetooth Split](http://kmkfw.io/docs/split_keyboards#bluetooth-split-aka-no-trrs-currently-in-testing) code to `boards/redox/main.py`. Combined with a [compatible](http://kmkfw.io/docs/Officially_Supported_Microcontrollers) wireless controller completes wireless configuration. Would advice adding [Bluetooth keycodes](http://kmkfw.io/docs/keycodes#bluetooth-keys) in keymap; `keyboard.keymap` element in `main.py`.
 
- The main differences for the two implementations are as follows:
+ The notable differences for the three implementations are as follows:
  - _Battery life_: QMK Redox Wireless uses two CR2032 coin cell batteries which last [approximately one year (YMMV)](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w#battery-usage), while the nice!nano support LiPo rechargable batteries (you can choose the capacity you want but expect them to last for a [few weeks on a single charge](https://zmk.dev/power-profiler)).
  - _Flexibility_: The receiver dongle limits the flexibility of QMK Redox Wireless.
- - _Cost_: The 3x YJ-14015 + Pro Micro combo is cheaper than the two nice!nano you need for the ZMK Redox.
- - _Range_: The Bluetooth implementation should be more capable than what can be achieved with the QMK Redox Wireless (At this point in time, I lack the evidence to support these claims though).
+ - _Cost_: The 3x YJ-14015 + Pro Micro combo is cheaper than two wireless controllers required for ZMK and wireless KMK.
+ - _Range_: Bluetooth implementations, of ZMK and KMK, should be more capable than what can be achieved with the QMK Redox Wireless (At this point in time, I lack the evidence to support these claims though).
 
-## Layout
+## Physical Key Layout
 
 <p align="center">
 <img src="img/redox-layout.png" alt="Redox layout" width="600" style="border-radius:3%"/>
