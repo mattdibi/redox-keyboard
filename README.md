@@ -1,9 +1,8 @@
-# Redox rev 1.0
+# Neoredox rev 1.0
 
-The Redox rev 1.0 is the first commercially available version of the Redox keyboard.
+The Neoredox rev 1.0 is the first functional version of the Neoredox keyboard.
 
-Hardware availability:
-  - [Falbatech](https://falba.tech/)
+
 
 ## Summary
 
@@ -19,16 +18,19 @@ Hardware availability:
 | Qty | Item                                          | Notes                                               |
 |----:|-----------------------------------------------|-----------------------------------------------------|
 |  70 | Cherry MX compatible switches                 |                                                     |
-|   2 | Neoredox PCBs                                 | |
-|  70 | 1N4148 diodes                                 | SMD diodes can also be used                         |
+|  70 | Cherry MX hotswap sockets                     |                                                     |
+|   2 | Neoredox PCBs                                 |                                                     |
+|  70 | SOD-123 1N4148/1N4148W diodes                 |	1N4148 THT diodes can also be used                  |
 |   2 | PJ-320A 4 poles 3.5 mm TRRS connectors        |                                                     |
 |   2 | 4.7 kOhm resistors                            | Need to be soldered on one half only                |
 |   2 | Through hole momentary switch                 | Dimensions 6mm x 6mm x 4.3mm                        |
+|   2 | JS102011SAQN SMT slide switch	                | |
 |   2 | Arduino Pro Micro compatible microcontrollers | Beware of the infamous Green Pro Micro, see note below. |
 |   1 | TRRS cable                                    |                                                     |
 |   1 | USB micro cable                               |                                                     |
 |  70 | Cherry MX compatible keycaps                  | 10x 1.25u keycaps, 6x 1.5u keycaps, 54x 1u keycaps  |
-|  * | neopixel leds            | Optional RGB-underglow                              |
+|  *  | neopixel leds                                 | Optional RGB-underglow                              |
+
 
 
 > :warning: Pay attention to the Pro Micro you use in this project. Online you can find the infamous **Green Pro Micros** which have the same pinout of the normal Pro Micro but use a different power circuitry. Being the Redox a split keyboard that relies on detecting which side is directly powered to find which side is the master, these clones are not suited for the task. A more detailed explanation [here](http://www.40percent.club/2017/09/green-pro-micro.html). Please note that they can come in different colors, not necessarily green.
