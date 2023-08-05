@@ -14,9 +14,9 @@
 ---
 include:
   - board: nrfmicro_13
-    shield: neodox_left
+    shield: neo-redox_left
   - board: nrfmicro_13
-    shield: neodox_right
+    shield: neo-redox_right
   - board: nice_nano_v2
     shield: settings_reset
 

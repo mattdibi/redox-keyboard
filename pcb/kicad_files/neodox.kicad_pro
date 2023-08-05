@@ -408,7 +408,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "neodox.kicad_pro",
+    "filename": "neo-redox.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -444,7 +444,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "neodox.step",
+      "step": "neo-redox.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
