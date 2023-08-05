@@ -14,6 +14,10 @@
 ---
 include:
   - board: nrfmicro_13
-    shield: redox_left
+    shield: neodox_left
   - board: nrfmicro_13
-    shield: redox_right
+    shield: neodox_right
+  - board: nice_nano_v2
+    shield: settings_reset
+
+

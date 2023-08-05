@@ -1,0 +1,6 @@
+west build -z /home/pastitas/Repos/zmk/app -d build/left -b nrfmicro_13 -- -DSHIELD=settings_reset
+west build -z /home/pastitas/Repos/zmk/app -d build/left -b nrfmicro_13 -- -DSHIELD=neodox_left
+west build -z /home/pastitas/Repos/zmk/app -d build/right -b nrfmicro_13 -- -DSHIELD=neodox_right
+
+export ZEPHYR_BASE=/home/pastitas/Repos/zmk
+west build -s /home/pastitas/Repos/zmk/app
