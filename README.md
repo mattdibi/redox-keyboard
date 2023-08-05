@@ -7,10 +7,7 @@ The Neoredox rev 1.0 is the first functional version of the Neoredox keyboard.
 ## Summary
 
   - [Bill of materials](#bill-of-materials)
-  - [Other assembly guides](#other-assembly-guides)
-  - [Assembly guide](#assembly-guide)
   - [Firmware](#firmware)
-  - [Hot swappable mod](#hot-swappable-mod)
   - [RGB Underglow](#rgb-underglow)
 
 ## Bill of materials
@@ -32,10 +29,6 @@ The Neoredox rev 1.0 is the first functional version of the Neoredox keyboard.
 |  *  | neopixel leds                                 | Optional RGB-underglow                              |
 
 
-
-> :warning: Pay attention to the Pro Micro you use in this project. Online you can find the infamous **Green Pro Micros** which have the same pinout of the normal Pro Micro but use a different power circuitry. Being the Redox a split keyboard that relies on detecting which side is directly powered to find which side is the master, these clones are not suited for the task. A more detailed explanation [here](http://www.40percent.club/2017/09/green-pro-micro.html). Please note that they can come in different colors, not necessarily green.
-
-> :warning: Before you start, flash the [Firmware](#firmware) to the ProMicros to make sure they are alright.
 
 ## Assembly guide
 
@@ -77,3 +70,38 @@ Installation steps:
 <img src="../img/pcb-assembly3.jpg" alt="Diode installation detail" width="600"/>
 </p>
 
+
+
+## Firmware
+
+This keyboard uses ZMK for building, so follow the instructions for installing and building in https://zmk.dev/docs/development/setup
+
+The build command using docker is:
+
+Run the build container
+```bash
+cd zmk_config
+docker run -it -w /home/zmk -v $(pwd):/home/zmk/zmk-config:rw --name zmk_build zmkfirmware/zmk-build-arm:3.2-branch bash
+```
+Then inside the container execute:
+``` bash
+git clone https://github.com/zmkfirmware/zmk.git
+cd zmk
+west init -l app/
+west update
+```
+This takes a bit, after that exit the container
+ 
+restart the container and then execute:
+```bash
+docker start -i zmk_build
+cd /home/zmk/zmk/app
+docker rm -f zmk_build
+```
+
+otherwise:
+``` bash
+cd zmk_config
+export NEOREDOX_FOLDER=$(pwd) && echo $NEOREDOX_FOLDER 
+west build -b nrfmicro_13 -- -DZMK_CONFIG=$(NEOREDOX_FOLDER)
+```
