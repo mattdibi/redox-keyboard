@@ -92,7 +92,7 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
 ## Wireless Implementations
 
 The Redox keyboard uses three different wireless implementations, differentiated by firmware:
- - *QMK based*: Leveraging the [Gazel protocol](https://developer.nordicsemi.com/nRF5_SDK/nRF51_SDK_v5.x.x/doc/5.2.0/html/a00140.html). It needs its own PCB and a receiver dongle (see [Redox Wireless](https://github.com/mattdibi/redox-keyboard/tree/docs/zmk_update/redox-w) for details) and needs three YJ-14015 MCUs + a Pro Micro compatible controller.
+ - *QMK based*: Leveraging the [Gazel protocol](https://developer.nordicsemi.com/nRF5_SDK/nRF51_SDK_v5.x.x/doc/5.2.0/html/a00140.html). It needs its own PCB and a receiver dongle (see [Redox Wireless](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w) for details) and needs three YJ-14015 MCUs + a Pro Micro compatible controller.
  - *ZMK based*: Leveraging the Bluetooth protocol. It is based on the [Redox wired PCB](https://github.com/mattdibi/redox-keyboard/tree/master/redox) and the [nice!nano](https://nicekeyboards.com/nice-nano/) controller.
  - *KMK based*: Adding [Bluetooth Split](http://kmkfw.io/docs/split_keyboards#bluetooth-split-aka-no-trrs-currently-in-testing) code to `boards/redox/main.py`. Combined with a [compatible](http://kmkfw.io/docs/Officially_Supported_Microcontrollers) wireless controller completes wireless configuration. Would advice adding [Bluetooth keycodes](http://kmkfw.io/docs/keycodes#bluetooth-keys) in keymap; `keyboard.keymap` element in `main.py`.
 
