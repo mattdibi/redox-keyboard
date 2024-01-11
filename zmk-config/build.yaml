@@ -11,13 +11,12 @@
 #   - board: nice_nano_v2
 #     shield: reviung41
 #
----
 include:
-  - board: nrfmicro_13
-    shield: neo-redox_left
-  - board: nrfmicro_13
-    shield: neo-redox_right
-  - board: nice_nano_v2
-    shield: settings_reset
+- board: nrfmicro_13
+  shield: retrex_left
+- board: nrfmicro_13
+  shield: retrex_right
+- board: nice_nano_v2
+  shield: settings_reset
 
 
