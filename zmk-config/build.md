@@ -1,4 +1,8 @@
 ``` bash
+python3 -m venv .direnv/zmk && source .direnv/zmk/bin/activate
+python3 -m pip install west
+west init
+
 export ZMK_APP_FOLDER=~/Repos/zmk/app
 export ZEPHYR_BASE=~/Repos/zmk
 
