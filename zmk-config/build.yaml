@@ -11,6 +11,8 @@
 #   - board: nice_nano_v2
 #     shield: reviung41
 #
+board: ["nrfmicro_13"]
+shield: ["retrex_left", "retrex_right"]
 include:
 - board: nrfmicro_13
   shield: retrex_left
