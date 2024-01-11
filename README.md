@@ -1,6 +1,6 @@
-# Neoredox rev 1.0
+# Retrex rev 1.0
 
-The Neoredox rev 1.0 is the first functional version of the Neoredox keyboard.
+The Retrex rev 1.0 is the first functional version of the Retrex keyboard.
 
 
 
@@ -16,7 +16,7 @@ The Neoredox rev 1.0 is the first functional version of the Neoredox keyboard.
 |----:|-----------------------------------------------|-----------------------------------------------------|
 |  70 | Cherry MX compatible switches                 |                                                     |
 |  70 | Cherry MX hotswap sockets                     |                                                     |
-|   2 | Neoredox PCBs                                 |                                                     |
+|   2 | Retrex PCBs                                 |                                                     |
 |  70 | SOD-123 1N4148/1N4148W diodes                 |	1N4148 THT diodes can also be used                  |
 |   2 | PJ-320A 4 poles 3.5 mm TRRS connectors        |                                                     |
 |   2 | 4.7 kOhm resistors                            | Need to be soldered on one half only                |
@@ -102,6 +102,6 @@ docker rm -f zmk_build
 otherwise:
 ``` bash
 cd zmk_config
-export NEOREDOX_FOLDER=$(pwd) && echo $NEOREDOX_FOLDER 
-west build -b nrfmicro_13 -- -DZMK_CONFIG=$(NEOREDOX_FOLDER)
+export RETREX_FOLDER=$(pwd) && echo $RETREX_FOLDER 
+west build -b nrfmicro_13 -- -DZMK_CONFIG=$(RETREX_FOLDER)
 ```
