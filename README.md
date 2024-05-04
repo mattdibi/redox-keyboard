@@ -56,7 +56,7 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
   - [Redodactyl keyboard](https://www.reddit.com/r/MechanicalKeyboards/comments/9j5pw5/enter_the_redodactyl_first_build/): handwired 3D printed Dactyl-inspired Redox variant by u/darknao.
 - [**Redox Manuform**](https://www.thingiverse.com/thing:3503380): full rework of the Redox case inspired by the Dactyl Manuform. Designed by [Fosk\_LL](https://www.thingiverse.com/Fosk_LL/about).
 - [**Redox rev1.0**](https://github.com/mattdibi/redox-keyboard/tree/master/redox): the Redox rev 1.0 is the first commercially available version of the Redox keyboard.
-	- Rev1.0 PCBs: available at [Falbatech's store](https://falba.tech/product/redox-pcb-electrical-boards-set-of-2/)
+	- Rev1.0 PCBs: available at [Falbatech's store](https://falbatech.click/products/REDOX-PCB-Electrical-Boards-Set-of-2-p613836203)
     - Firmware sources:
         - [QMK firmware for Redox](https://github.com/mattdibi/qmk_firmware/tree/master/keyboards/redox)
         - [KMK firmware for Redox](https://github.com/KMKfw/kmk_firmware/tree/master/boards/redox)
@@ -71,7 +71,7 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
 		- [Falbatech's fullhand bamboo cases](https://falba.tech/product/redox-fullhand-bamboo-wood-case-with-oil-finish-ver-2/)
 - [**Redox rev1.0W**](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w): the Redox rev 1.0W is the wireless version of the Redox keyboard.
     - Rev1.0W PCBs: gerbers available in [this repo](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w/rev1.0W).
-    - Falbatech's Rev1.0W Hot-swap PCBs: available at [Falbatech's store](https://falbatech.click/products/REDOX-PCB-Electrical-Boards-Set-of-2-p613836203) (Incompatible with the 3D-printable cases down below)
+    - Falbatech's Rev1.0W Hot-swap PCBs: available at [Falbatech's store]([https://falbatech.click/products/REDOX-Wireless-PCB-Electrical-Boards-Set-of-2-receiver-PCB-p613839986) (Incompatible with the 3D-printable cases down below)
     - Firmware sources:
         - [QMK firmware for Redox wireless](https://github.com/mattdibi/qmk_firmware/tree/master/keyboards/redox_w)
         - [Nordic MCUs firmware for Redox wireless](https://github.com/mattdibi/redox-w-firmware)
