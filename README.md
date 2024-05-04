@@ -67,8 +67,8 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
         - [Redox Neodox case](https://github.com/Pastitas/Redox-neodox-Case), by [Pastitas](https://github.com/Pastitas)
         - [Redox big battery](https://github.com/marco-silvestri/redox-big-battery), by [Marco Silvestri](https://github.com/marco-silvestri).
 	- Commercially available cases:
-		- [Falbatech's bamboo cases with tilt kit](https://falba.tech/product/redox-standard-lift-bamboo-wood-case-with-oil-finish/)
-		- [Falbatech's fullhand bamboo cases](https://falba.tech/product/redox-fullhand-bamboo-wood-case-with-oil-finish-ver-2/)
+		- [Falbatech's bamboo cases with tilt kit](https://falbatech.click/products/REDOX-Standard-LIFT-Bamboo-Wood-Case-with-oil-finish-p613843480)
+		- [Falbatech's fullhand bamboo cases](https://falbatech.click/products/search?keyword=redox%20fullhand%20bamboo)
 - [**Redox rev1.0W**](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w): the Redox rev 1.0W is the wireless version of the Redox keyboard.
     - Rev1.0W PCBs: gerbers available in [this repo](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w/rev1.0W).
     - Falbatech's Rev1.0W Hot-swap PCBs: available at [Falbatech's store]([https://falbatech.click/products/REDOX-Wireless-PCB-Electrical-Boards-Set-of-2-receiver-PCB-p613839986) (Incompatible with the 3D-printable cases down below)
@@ -79,8 +79,8 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
         - [3D printed case](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w/case), freely available.
         - [Redox Neodox case](https://github.com/Pastitas/Redox-neodox-Case), by [Pastitas](https://github.com/Pastitas)
     - Commercially available cases (only compatible with the Falbatech's store PCBs):
-        - [Falbatech's bamboo and aliminium cases](https://falba.tech/product/redox-wireless-standard-lift-bamboo-wood-case-with-oil-finish/)
-		- [Falbatech's fullhand bamboo cases](https://falba.tech/product/redox-wireless-standard-lift-bamboo-wood-case-with-oil-finish-ver-1/)
+        - [Falbatech's bamboo cases with tilt kit](https://falbatech.click/products/REDOX-Wireless-Standard-LIFT-Bamboo-Wood-Case-with-oil-finish-ver-1-p613842405)
+		- [Falbatech's fullhand bamboo cases](https://falbatech.click/products/search?keyword=redox%20wireless%20bamboo)
 - [**Redox rev2.0WHS**](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w): the Redox rev 2.0WHS is the wireless hot-swappable version of the Redox keyboard.
     - Rev2.0WHS PCBs: gerber files available [here](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w/rev2.0WHS/pcb)
     - Firmware sources:
