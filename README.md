@@ -80,7 +80,7 @@ As an Ergodox user I couldn't ignore the few flaws of the original design and in
         - [Redox Neodox case](https://github.com/Pastitas/Redox-neodox-Case), by [Pastitas](https://github.com/Pastitas)
     - Commercially available cases (only compatible with the Falbatech's store PCBs):
         - [Falbatech's bamboo cases with tilt kit](https://falbatech.click/products/REDOX-Wireless-Standard-LIFT-Bamboo-Wood-Case-with-oil-finish-ver-1-p613842405)
-		- [Falbatech's fullhand bamboo cases](https://falbatech.click/products/search?keyword=redox%20wireless%20bamboo)
+		- [Falbatech's fullhand bamboo cases](https://falbatech.click/products/search?keyword=redox%20wireless%20bamboo%20fullhand)
 - [**Redox rev2.0WHS**](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w): the Redox rev 2.0WHS is the wireless hot-swappable version of the Redox keyboard.
     - Rev2.0WHS PCBs: gerber files available [here](https://github.com/mattdibi/redox-keyboard/tree/master/redox-w/rev2.0WHS/pcb)
     - Firmware sources:
