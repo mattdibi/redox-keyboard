@@ -121,11 +121,3 @@ The Redox keyboard uses three different wireless implementations, differentiated
 ## Affiliations
 
 In partnership with Falbatech you can now use the code "**mattdibi05**" on Falbatech's store for a 5% OFF special discount.
-
-## Donations
-
-If you've read this far and found something useful, please consider donating to help me maintain and further develop this project.
-
-<p align="center">
-<a href="https://www.paypal.me/MattiaDalBen"><img src="img/donate-button.png" alt="Donate button" width=300/></a>
-</p>
